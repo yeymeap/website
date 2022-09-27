@@ -1,12 +1,13 @@
-same code, different text color, wtf?
+same code, different text color, wtf? maybe i missed something?
 
 todo:	
 		fix excess margin in categories
 		separate into different categories the guitars, bass and amps on index
-		add scrolldown script to categories from carousel
-		look up bootstrap library, maybe implement latest
 		make colors more user friendly
-		copy index.html source code, modify, and make other pages with it (register, sign in, etc )
+		support more languages
 		make pages for all products with detail-en.html
 		make different categories with shop-en.html
+		copy index.html source code, modify, and make other pages with it (register, sign in, etc )
+		add scrolldown script to categories from carousel
+		look up bootstrap library, maybe implement latest stable version
 		only sell combo amps, or also amp heads with speakers? (maybe later when more important things are done)
