@@ -9797,7 +9797,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 .btn-twitter:not(:disabled):not(.disabled):active, .btn-twitter:not(:disabled):not(.disabled).active,
 .show > .btn-twitter.dropdown-toggle {
-  color: #00acee  ;
+  color: #00acee;
   background-color: black;
   border-color: black;
 }
@@ -9838,7 +9838,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 .btn-facebook:not(:disabled):not(.disabled):active, .btn-facebook:not(:disabled):not(.disabled).active,
 .show > .btn-facebook.dropdown-toggle {
-  color: #3b5998  ;
+  color: #3b5998;
   background-color: black;
   border-color: black;
 }
