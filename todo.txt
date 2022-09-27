@@ -6,6 +6,8 @@ todo:
 	not with margin sizes, solved by reducing all category pics to 150x150px)
 	separate into different categories the guitars, bass and amps on index
 	u̶p̶d̶a̶t̶e̶ ̶f̶o̶n̶t̶ ̶a̶w̶e̶s̶o̶m̶e̶
+	make continous navbar, remove dropdown menu
+	remove white outline when btn-black is pressed
 	make colors more user friendly - wip
 	add multi-language support - wip
 	make pages for all products with detail-en.html
