@@ -27,6 +27,9 @@
   --danger: #dc3545;
   --light: #FFFFFF;
   --dark: #3D464D;
+  --black: #000000;
+  --twitter: #00acee;
+  --facebook: #3b5998;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -9508,7 +9511,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link.active {
-  color: #FFD333;
+  color: gray;
 }
 
 @media (max-width: 991.98px) {
@@ -9604,7 +9607,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .cat-item:hover {
-  background: #FFD333;
+  background: #17a2b8;
 }
 
 .cat-item img {
@@ -9709,4 +9712,283 @@ a.text-dark:hover, a.text-dark:focus {
   100% {
     transform: translateY(-15px);
   }
+}
+
+.text-blue {
+  color: #007bff !important;
+}
+
+.text-indigo {
+  color: #6610f2 !important;
+}
+
+.text-purple {
+  color: #6f42c1 !important;
+}
+
+.text-pink {
+  color: #e83e8c !important;
+}
+
+.text-yellow {
+  color: #ffc107 !important;
+}
+
+.text-teal {
+  color: #20c997 !important;
+}
+
+.text-cyan {
+  color: #17a2b8 !important;
+}
+
+.text-gray {
+  color: #6c757d !important;
+}
+
+.text-gray-dark {
+  color: #343a40 !important;
+}
+
+.text-orange {
+  color: #fd7e14 !important;
+}
+
+.text-red {
+  color: #dc3545 !important;
+}
+
+.text-green {
+  color: #28a745 !important;
+}
+
+.text-black {
+  color: #000000!important;
+}
+
+.text-twitter {
+  color: #00acee !important;
+}
+
+.btn-twitter {
+  color: #00acee;
+  background-color: white;
+  border-color: white;
+}
+
+.btn-twitter:hover {
+  color: #00acee;
+  background-color: black;
+  border-color: black;
+}
+
+.btn-twitter:focus, .btn-twitter.focus {
+  color: #00acee;
+  background-color: black;
+  border-color: black;
+  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0);
+}
+
+.btn-twitter.disabled, .btn-twitter:disabled {
+  color: #00acee;
+  background-color: black;
+  border-color: black;
+}
+
+.btn-twitter:not(:disabled):not(.disabled):active, .btn-twitter:not(:disabled):not(.disabled).active,
+.show > .btn-twitter.dropdown-toggle {
+  color: #00acee;
+  background-color: black;
+  border-color: black;
+}
+
+.btn-twitter:not(:disabled):not(.disabled):active:focus, .btn-twitter:not(:disabled):not(.disabled).active:focus,
+.show > .btn-twitter.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0);
+}
+
+.text-facebook {
+  color: #3b5998 !important;
+}
+
+.btn-facebook {
+  color: #3b5998;
+  background-color: white;
+  border-color: white;
+}
+
+.btn-facebook:hover {
+  color: #3b5998;
+  background-color: black;
+  border-color: black;
+}
+
+.btn-facebook:focus, .btn-facebook.focus {
+  color: #3b5998;
+  background-color: black;
+  border-color: black;
+  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0);
+}
+
+.btn-facebook.disabled, .btn-facebook:disabled {
+  color: #3b5998;
+  background-color: black;
+  border-color: black;
+}
+
+.btn-facebook:not(:disabled):not(.disabled):active, .btn-facebook:not(:disabled):not(.disabled).active,
+.show > .btn-facebook.dropdown-toggle {
+  color: #3b5998;
+  background-color: black;
+  border-color: black;
+}
+
+.btn-facebook:not(:disabled):not(.disabled):active:focus, .btn-facebook:not(:disabled):not(.disabled).active:focus,
+.show > .btn-twitter.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0);
+}
+
+.btn-instagram {
+  color: var(--pink);
+  background-color: white;
+  border-color: white;
+}
+
+.btn-instagram:hover {
+  color: pink;
+  background-color: black;
+  border-color: black;
+}
+
+.btn-instagram:focus, .btn-instagram.focus {
+  color: pink;
+  background-color: black;
+  border-color: black;
+  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0);
+}
+
+.btn-instagram.disabled, .btn-instagram:disabled {
+  color: pink;
+  background-color: black;
+  border-color: black;
+}
+
+.btn-instagram:not(:disabled):not(.disabled):active, .btn-instagram:not(:disabled):not(.disabled).active,
+.show > .btn-instagram.dropdown-toggle {
+  color: pink;
+  background-color: black;
+  border-color: black;
+}
+
+.btn-instagram:not(:disabled):not(.disabled):active:focus, .btn-instagram:not(:disabled):not(.disabled).active:focus,
+.show > .btn-instagram.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0);
+}
+
+.bg-black {
+  background-color: black !important;
+}
+
+a.bg-black:hover, a.bg-black:focus,
+button.bg-success:hover,
+button.bg-success:focus {
+  background-color: gray !important;
+}
+
+.btn-black {
+  color: black;
+  background-color: white;
+  border-color: white;
+}
+
+.btn-black:hover {
+  color: white;
+  background-color: black;
+  border-color: black;
+}
+
+.btn-black:focus, .btn-black.focus {
+  color: white;
+  background-color: black;
+  border-color: black;
+  box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 255);
+}
+
+.btn-black.disabled, .btn-black:disabled {
+  color: white;
+  background-color: black;
+  border-color: black;
+}
+
+.btn-black:not(:disabled):not(.disabled):active, .btn-black:not(:disabled):not(.disabled).active,
+.show > .btn-black.dropdown-toggle {
+  color: white;
+  background-color: black;
+  border-color: black;
+}
+
+.btn-black:not(:disabled):not(.disabled):active:focus, .btn-black:not(:disabled):not(.disabled).active:focus,
+.show > .btn-black.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0);
+}
+
+.bg-whiter {
+  background-color: #fff !important;
+}
+
+a.bg-whiter:hover, a.bg-whiter:focus,
+button.bg-whiter:hover,
+button.bg-whiter:focus {
+  background-color: gray !important;
+}
+
+.bg-whites {
+  background-color: white !important;
+}
+
+a.bg-whites:hover, a.bg-whites:focus,
+button.bg-whites:hover,
+button.bg-whites:focus {
+  background-color: black !important;
+}
+
+.btn-backblack {
+  color: white;
+  background-color: black;
+  border-color: black;
+}
+
+.btn-backblack:hover {
+  color: white;
+  background-color: black;
+  border-color: black;
+}
+
+.btn-backblack:focus, .btn-backblack.focus {
+  color: black;
+  background-color: white;
+  border-color: white;
+  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0);
+}
+
+.btn-backblack.disabled, .btn-backblack:disabled {
+  color: white;
+  background-color: black;
+  border-color: black;
+}
+
+.btn-backblack:not(:disabled):not(.disabled):active, .btn-backblack:not(:disabled):not(.disabled).active,
+.show > .btn-backblack.dropdown-toggle {
+  color: white;
+  background-color: black;
+  border-color: black;
+}
+
+.btn-backblack:not(:disabled):not(.disabled):active:focus, .btn-backblack:not(:disabled):not(.disabled).active:focus,
+.show > .btn-backblack.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0);
+}
+
+.border-black {
+  border-color: #000000 !important;
 }
