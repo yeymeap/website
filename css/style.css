@@ -9988,3 +9988,7 @@ button.bg-whites:focus {
 .show > .btn-backblack.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0);
 }
+
+.border-black {
+  border-color: #000000 !important;
+}
