@@ -9951,3 +9951,40 @@ button.bg-whites:hover,
 button.bg-whites:focus {
   background-color: black !important;
 }
+
+.btn-backblack {
+  color: white;
+  background-color: black;
+  border-color: black;
+}
+
+.btn-backblack:hover {
+  color: white;
+  background-color: black;
+  border-color: black;
+}
+
+.btn-backblack:focus, .btn-backblack.focus {
+  color: black;
+  background-color: white;
+  border-color: white;
+  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0);
+}
+
+.btn-backblack.disabled, .btn-backblack:disabled {
+  color: white;
+  background-color: black;
+  border-color: black;
+}
+
+.btn-backblack:not(:disabled):not(.disabled):active, .btn-backblack:not(:disabled):not(.disabled).active,
+.show > .btn-backblack.dropdown-toggle {
+  color: white;
+  background-color: black;
+  border-color: black;
+}
+
+.btn-backblack:not(:disabled):not(.disabled):active:focus, .btn-backblack:not(:disabled):not(.disabled).active:focus,
+.show > .btn-backblack.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0);
+}
