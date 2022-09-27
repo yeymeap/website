@@ -12,3 +12,4 @@ todo:
 		look up bootstrap library, maybe implement latest stable version
 		only sell combo amps, or also amp heads with speakers? (maybe later when more important things are done)
 		live server
+		easyphp/wamp - windows apache mail 
