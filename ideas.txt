@@ -4,7 +4,7 @@ todo:
 		fix excess margin in categories
 		separate into different categories the guitars, bass and amps on index
 		make colors more user friendly
-		support more languages
+		add multi-language support
 		make pages for all products with detail-en.html
 		make different categories with shop-en.html
 		copy index.html source code, modify, and make other pages with it (register, sign in, etc )
