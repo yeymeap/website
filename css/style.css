@@ -9911,7 +9911,7 @@ button.bg-success:focus {
   color: white;
   background-color: black;
   border-color: black;
-  box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 255);
+  box-shadow: 0 0 0 0rem rgba(0, 0, 0, 0);
 }
 
 .btn-black.disabled, .btn-black:disabled {
@@ -9929,7 +9929,7 @@ button.bg-success:focus {
 
 .btn-black:not(:disabled):not(.disabled):active:focus, .btn-black:not(:disabled):not(.disabled).active:focus,
 .show > .btn-black.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0);
+  box-shadow: 0 0 0 0rem rgba(0, 0, 0, 0);
 }
 
 .bg-whiter {
