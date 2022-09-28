@@ -9,7 +9,7 @@ todo:
 	fix header
 	fix carousel
 	m̶a̶k̶e̶ ̶c̶o̶n̶t̶i̶n̶o̶u̶s̶ ̶n̶a̶v̶b̶a̶r̶,̶ ̶r̶e̶m̶o̶v̶e̶ ̶d̶r̶o̶p̶d̶o̶w̶n̶ ̶m̶e̶n̶u̶
-	remove white outline when btn-black is pressed
+	r̶e̶m̶o̶v̶e̶ ̶w̶h̶i̶t̶e̶ ̶o̶u̶t̶l̶i̶n̶e̶ ̶w̶h̶e̶n̶ ̶b̶t̶n̶-̶b̶l̶a̶c̶k̶ ̶i̶s̶ ̶p̶r̶e̶s̶s̶e̶d̶
 	make colors more user friendly - wip
 	add multi-language support - wip
 	make pages for all products with detail-en.html
