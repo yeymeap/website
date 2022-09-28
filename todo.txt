@@ -8,7 +8,7 @@ todo:
 	u̶p̶d̶a̶t̶e̶ ̶f̶o̶n̶t̶ ̶a̶w̶e̶s̶o̶m̶e̶
 	fix header
 	fix carousel
-	make continous navbar, remove dropdown menu
+	m̶a̶k̶e̶ ̶c̶o̶n̶t̶i̶n̶o̶u̶s̶ ̶n̶a̶v̶b̶a̶r̶,̶ ̶r̶e̶m̶o̶v̶e̶ ̶d̶r̶o̶p̶d̶o̶w̶n̶ ̶m̶e̶n̶u̶
 	remove white outline when btn-black is pressed
 	make colors more user friendly - wip
 	add multi-language support - wip
