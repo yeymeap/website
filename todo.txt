@@ -3,7 +3,7 @@ because of the view angle of the display, but it's actually the same color)
 
 todo:	
 	f̶i̶x̶ ̶e̶x̶c̶e̶s̶s̶ ̶m̶a̶r̶g̶i̶n̶ ̶i̶n̶ ̶c̶a̶t̶e̶g̶o̶r̶i̶e̶s̶  - (the problem was with the picture sizes, 
-	not with margin sizes, solved by reducing all category pics to 150x150px)
+	not with margin sizes, solved by resizng all category pics to 150x150px)
 	separate into different categories the guitars, bass and amps on index
 	u̶p̶d̶a̶t̶e̶ ̶f̶o̶n̶t̶ ̶a̶w̶e̶s̶o̶m̶e̶
 	make continous navbar, remove dropdown menu
