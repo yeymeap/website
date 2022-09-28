@@ -19,3 +19,7 @@ todo:
 	̶l̶i̶v̶e̶ ̶s̶e̶r̶v̶e̶r̶
 	easyphp/wamp - windows apache mail 
 	get "inspired" with features from other musical instrument shops
+
+	mr - me
+	pr - pe
+	mb - mb

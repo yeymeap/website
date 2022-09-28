@@ -11308,7 +11308,7 @@ textarea.form-control-lg {
 }
 
 .btn-instagram {
-  color: var(--pink);
+  color: var(--bs-pink);
   background-color: white;
   border-color: white;
 }
