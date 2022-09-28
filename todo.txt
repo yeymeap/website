@@ -6,6 +6,8 @@ todo:
 	not with margin sizes, solved by resizng all category pics to 150x150px)
 	s̶e̶p̶a̶r̶a̶t̶e̶ ̶i̶n̶t̶o̶ ̶d̶i̶f̶f̶e̶r̶e̶n̶t̶ ̶c̶a̶t̶e̶g̶o̶r̶i̶e̶s̶ ̶t̶h̶e̶ ̶g̶u̶i̶t̶a̶r̶s̶,̶ ̶b̶a̶s̶s̶ ̶a̶n̶d̶ ̶a̶m̶p̶s̶ ̶o̶n̶ ̶i̶n̶d̶e̶x̶
 	u̶p̶d̶a̶t̶e̶ ̶f̶o̶n̶t̶ ̶a̶w̶e̶s̶o̶m̶e̶
+	fix header
+	fix carousel
 	make continous navbar, remove dropdown menu
 	remove white outline when btn-black is pressed
 	make colors more user friendly - wip
@@ -19,7 +21,3 @@ todo:
 	̶l̶i̶v̶e̶ ̶s̶e̶r̶v̶e̶r̶
 	easyphp/wamp - windows apache mail 
 	get "inspired" with features from other musical instrument shops
-
-	mr - me
-	pr - pe
-	mb - mb
