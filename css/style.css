@@ -10970,7 +10970,7 @@ textarea.form-control-lg {
 
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link.active {
-  color: gray;
+  color: var(--bs-gray-600);
 }
 
 @media (max-width: 991.98px) {
@@ -11066,7 +11066,7 @@ textarea.form-control-lg {
 }
 
 .cat-item:hover {
-  background: #17a2b8;
+  background: var(--bs-gray-500);
 }
 
 .cat-item img {
@@ -11225,125 +11225,6 @@ textarea.form-control-lg {
   color: #000000!important;
 }
 
-.text-twitter {
-  color: #00acee !important;
-}
-
-.btn-twitter {
-  color: #00acee;
-  background-color: white;
-  border-color: white;
-}
-
-.btn-twitter:hover {
-  color: #00acee;
-  background-color: black;
-  border-color: black;
-}
-
-.btn-twitter:focus, .btn-twitter.focus {
-  color: #00acee;
-  background-color: black;
-  border-color: black;
-  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0);
-}
-
-.btn-twitter.disabled, .btn-twitter:disabled {
-  color: #00acee;
-  background-color: black;
-  border-color: black;
-}
-
-.btn-twitter:not(:disabled):not(.disabled):active, .btn-twitter:not(:disabled):not(.disabled).active,
-.show > .btn-twitter.dropdown-toggle {
-  color: #00acee;
-  background-color: black;
-  border-color: black;
-}
-
-.btn-twitter:not(:disabled):not(.disabled):active:focus, .btn-twitter:not(:disabled):not(.disabled).active:focus,
-.show > .btn-twitter.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0);
-}
-
-.text-facebook {
-  color: #3b5998 !important;
-}
-
-.btn-facebook {
-  color: #3b5998;
-  background-color: white;
-  border-color: white;
-}
-
-.btn-facebook:hover {
-  color: #3b5998;
-  background-color: black;
-  border-color: black;
-}
-
-.btn-facebook:focus, .btn-facebook.focus {
-  color: #3b5998;
-  background-color: black;
-  border-color: black;
-  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0);
-}
-
-.btn-facebook.disabled, .btn-facebook:disabled {
-  color: #3b5998;
-  background-color: black;
-  border-color: black;
-}
-
-.btn-facebook:not(:disabled):not(.disabled):active, .btn-facebook:not(:disabled):not(.disabled).active,
-.show > .btn-facebook.dropdown-toggle {
-  color: #3b5998;
-  background-color: black;
-  border-color: black;
-}
-
-.btn-facebook:not(:disabled):not(.disabled):active:focus, .btn-facebook:not(:disabled):not(.disabled).active:focus,
-.show > .btn-twitter.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0);
-}
-
-.btn-instagram {
-  color: var(--bs-pink);
-  background-color: white;
-  border-color: white;
-}
-
-.btn-instagram:hover {
-  color: pink;
-  background-color: black;
-  border-color: black;
-}
-
-.btn-instagram:focus, .btn-instagram.focus {
-  color: pink;
-  background-color: black;
-  border-color: black;
-  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0);
-}
-
-.btn-instagram.disabled, .btn-instagram:disabled {
-  color: pink;
-  background-color: black;
-  border-color: black;
-}
-
-.btn-instagram:not(:disabled):not(.disabled):active, .btn-instagram:not(:disabled):not(.disabled).active,
-.show > .btn-instagram.dropdown-toggle {
-  color: pink;
-  background-color: black;
-  border-color: black;
-}
-
-.btn-instagram:not(:disabled):not(.disabled):active:focus, .btn-instagram:not(:disabled):not(.disabled).active:focus,
-.show > .btn-instagram.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0);
-}
-
 .bg-black {
   background-color: black !important;
 }
@@ -11374,43 +11255,6 @@ button.bg-whites:focus {
   background-color: black !important;
 }
 
-.btn-backblack {
-  color: white;
-  background-color: black;
-  border-color: black;
-}
-
-.btn-backblack:hover {
-  color: white;
-  background-color: black;
-  border-color: black;
-}
-
-.btn-backblack:focus, .btn-backblack.focus {
-  color: black;
-  background-color: white;
-  border-color: white;
-  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0);
-}
-
-.btn-backblack.disabled, .btn-backblack:disabled {
-  color: white;
-  background-color: black;
-  border-color: black;
-}
-
-.btn-backblack:not(:disabled):not(.disabled):active, .btn-backblack:not(:disabled):not(.disabled).active,
-.show > .btn-backblack.dropdown-toggle {
-  color: white;
-  background-color: black;
-  border-color: black;
-}
-
-.btn-backblack:not(:disabled):not(.disabled):active:focus, .btn-backblack:not(:disabled):not(.disabled).active:focus,
-.show > .btn-backblack.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0);
-}
-
 .border-black {
   border-color: #000000 !important;
 }
@@ -11428,6 +11272,74 @@ button.bg-whites:focus {
   --bs-btn-active-border-color: black;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: #198754;
-  --bs-btn-disabled-border-color: #198754;
+  --bs-btn-disabled-bg: black;
+  --bs-btn-disabled-border-color: black;
+}
+
+.btn-backblack {
+  --bs-btn-color: white;
+  --bs-btn-bg: black;
+  --bs-btn-border-color: white;
+  --bs-btn-hover-color: black;
+  --bs-btn-hover-bg: white;
+  --bs-btn-hover-border-color: white;
+  --bs-btn-focus-shadow-rgb: 0, 0, 0;
+  --bs-btn-active-color: black;
+  --bs-btn-active-bg: white;
+  --bs-btn-active-border-color: white;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: black;
+  --bs-btn-disabled-border-color: black;
+}
+
+.btn-twitter {
+  --bs-btn-color: #00acee;
+  --bs-btn-bg: white;
+  --bs-btn-border-color: black;
+  --bs-btn-hover-color: #00acee;
+  --bs-btn-hover-bg: black;
+  --bs-btn-hover-border-color: black;
+  --bs-btn-focus-shadow-rgb: 0, 0, 0;
+  --bs-btn-active-color: #00acee;
+  --bs-btn-active-bg: white;
+  --bs-btn-active-border-color: black;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: black;
+  --bs-btn-disabled-border-color: black;
+}
+
+.btn-facebook {
+  --bs-btn-color: #3b5998;
+  --bs-btn-bg: white;
+  --bs-btn-border-color: black;
+  --bs-btn-hover-color: #3b5998;
+  --bs-btn-hover-bg: black;
+  --bs-btn-hover-border-color: black;
+  --bs-btn-focus-shadow-rgb: 0, 0, 0;
+  --bs-btn-active-color: #3b5998;
+  --bs-btn-active-bg: white;
+  --bs-btn-active-border-color: black;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: black;
+  --bs-btn-disabled-border-color: black;
+}
+
+.btn-instagram {
+  --bs-btn-color: pink;
+  --bs-btn-bg: white;
+  --bs-btn-border-color: black;
+  --bs-btn-hover-color: var(--bs-pink);
+  --bs-btn-hover-bg: black;
+  --bs-btn-hover-border-color: black;
+  --bs-btn-focus-shadow-rgb: 0, 0, 0;
+  --bs-btn-active-color: var(--bs-pink);
+  --bs-btn-active-bg: white;
+  --bs-btn-active-border-color: black;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: black;
+  --bs-btn-disabled-border-color: black;
 }
