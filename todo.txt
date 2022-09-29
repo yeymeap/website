@@ -10,12 +10,11 @@ todo:
 	fix carousel
 	m̶a̶k̶e̶ ̶c̶o̶n̶t̶i̶n̶o̶u̶s̶ ̶n̶a̶v̶b̶a̶r̶,̶ ̶r̶e̶m̶o̶v̶e̶ ̶d̶r̶o̶p̶d̶o̶w̶n̶ ̶m̶e̶n̶u̶
 	r̶e̶m̶o̶v̶e̶ ̶w̶h̶i̶t̶e̶ ̶o̶u̶t̶l̶i̶n̶e̶ ̶w̶h̶e̶n̶ ̶b̶t̶n̶-̶b̶l̶a̶c̶k̶ ̶i̶s̶ ̶p̶r̶e̶s̶s̶e̶d̶
-	make colors more user friendly - wip
+	m̶a̶k̶e̶ ̶c̶o̶l̶o̶r̶s̶ ̶m̶o̶r̶e̶ ̶u̶s̶e̶r̶ ̶f̶r̶i̶e̶n̶d̶l̶y̶
 	add multi-language support - wip
 	make pages for all products with detail-en.html
 	make different categories with shop-en.html
 	copy index.html source code, modify, and make other pages with it (register, sign in, etc )
-	add scrolldown script to categories from carousel
 	l̶o̶o̶k̶ ̶u̶p̶ ̶b̶o̶o̶t̶s̶t̶r̶a̶p̶ ̶l̶i̶b̶r̶a̶r̶y̶,̶ ̶m̶a̶y̶b̶e̶ ̶i̶m̶p̶l̶e̶m̶e̶n̶t̶ ̶l̶a̶t̶e̶s̶t̶ ̶s̶t̶a̶b̶l̶e̶ ̶v̶e̶r̶s̶i̶o̶n̶
 	only sell combo amps, or also amp heads with speakers? (maybe later when more important things are done)
 	̶l̶i̶v̶e̶ ̶s̶e̶r̶v̶e̶r̶
