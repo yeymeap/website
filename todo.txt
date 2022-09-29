@@ -6,7 +6,7 @@ todo:
 	not with margin sizes, solved by resizng all category pics to 150x150px)
 	s̶e̶p̶a̶r̶a̶t̶e̶ ̶i̶n̶t̶o̶ ̶d̶i̶f̶f̶e̶r̶e̶n̶t̶ ̶c̶a̶t̶e̶g̶o̶r̶i̶e̶s̶ ̶t̶h̶e̶ ̶g̶u̶i̶t̶a̶r̶s̶,̶ ̶b̶a̶s̶s̶ ̶a̶n̶d̶ ̶a̶m̶p̶s̶ ̶o̶n̶ ̶i̶n̶d̶e̶x̶
 	u̶p̶d̶a̶t̶e̶ ̶f̶o̶n̶t̶ ̶a̶w̶e̶s̶o̶m̶e̶
-	fix header
+	f̶i̶x̶ ̶h̶e̶a̶d̶e̶r̶
 	fix carousel
 	m̶a̶k̶e̶ ̶c̶o̶n̶t̶i̶n̶o̶u̶s̶ ̶n̶a̶v̶b̶a̶r̶,̶ ̶r̶e̶m̶o̶v̶e̶ ̶d̶r̶o̶p̶d̶o̶w̶n̶ ̶m̶e̶n̶u̶
 	r̶e̶m̶o̶v̶e̶ ̶w̶h̶i̶t̶e̶ ̶o̶u̶t̶l̶i̶n̶e̶ ̶w̶h̶e̶n̶ ̶b̶t̶n̶-̶b̶l̶a̶c̶k̶ ̶i̶s̶ ̶p̶r̶e̶s̶s̶e̶d̶
