@@ -21,4 +21,4 @@ todo:
 	̶l̶i̶v̶e̶ ̶s̶e̶r̶v̶e̶r̶
 	easyphp/wamp - windows apache mail 
 	get "inspired" with features from other musical instrument shops
-        make search button clickable to support database search (when they are implemented)
+    make search button clickable to support database search (when it is implemented)
