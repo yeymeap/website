@@ -11349,3 +11349,11 @@ button.bg-whites:focus {
   display: inline-flex;
   animation: 3s tada 1s 2 ease-in-out;
 }
+
+.min-width-account{
+  min-width: 105px;
+}
+
+.min-width-lang{
+  min-width: 75px;
+}
