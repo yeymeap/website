@@ -11236,26 +11236,6 @@ button.bg-success:focus {
   background-color: black !important;
 }
 
-.bg-whiter {
-  background-color: #fff !important;
-}
-
-a.bg-whiter:hover, a.bg-whiter:focus,
-button.bg-whiter:hover,
-button.bg-whiter:focus {
-  background-color: gray !important;
-}
-
-.bg-whites {
-  background-color: white !important;
-}
-
-a.bg-whites:hover, a.bg-whites:focus,
-button.bg-whites:hover,
-button.bg-whites:focus {
-  background-color: black !important;
-}
-
 .border-black {
   border-color: #000000 !important;
 }
