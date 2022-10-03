@@ -11344,3 +11344,8 @@ button.bg-whites:focus {
   --bs-btn-disabled-bg: black;
   --bs-btn-disabled-border-color: black;
 }
+
+.tadaer {
+  display: inline-flex;
+  animation: 3s tada 1s 2 ease-in-out;
+}
