@@ -20,6 +20,5 @@ todo:
 	only sell combo amps, or also amp heads with speakers? (maybe later when more important things are done)
 	̶l̶i̶v̶e̶ ̶s̶e̶r̶v̶e̶r̶
 	easyphp/wamp - windows apache mail
-	get "inspired" with features(particularly detail and description bar) from other musical instrument shops
     m̶a̶k̶e̶ ̶s̶e̶a̶r̶c̶h̶ ̶b̶u̶t̶t̶o̶n̶ ̶c̶l̶i̶c̶k̶a̶b̶l̶e̶ ̶t̶o̶ ̶s̶u̶p̶p̶o̶r̶t̶ ̶d̶a̶t̶a̶b̶a̶s̶e̶ ̶s̶e̶a̶r̶c̶h̶ ̶(̶w̶h̶e̶n̶ ̶i̶t̶ ̶i̶s̶ ̶i̶m̶p̶l̶e̶m̶e̶n̶t̶e̶d̶)̶
 	m̶a̶k̶e̶ ̶m̶a̶r̶g̶i̶n̶ ̶s̶m̶a̶l̶l̶e̶r̶ ̶i̶n̶ ̶n̶a̶v̶b̶a̶r̶
