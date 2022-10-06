@@ -7,18 +7,21 @@ todo:
 	s̶e̶p̶a̶r̶a̶t̶e̶ ̶i̶n̶t̶o̶ ̶d̶i̶f̶f̶e̶r̶e̶n̶t̶ ̶c̶a̶t̶e̶g̶o̶r̶i̶e̶s̶ ̶t̶h̶e̶ ̶g̶u̶i̶t̶a̶r̶s̶,̶ ̶b̶a̶s̶s̶ ̶a̶n̶d̶ ̶a̶m̶p̶s̶ ̶o̶n̶ ̶i̶n̶d̶e̶x̶
 	u̶p̶d̶a̶t̶e̶ ̶f̶o̶n̶t̶ ̶a̶w̶e̶s̶o̶m̶e̶
 	f̶i̶x̶ ̶h̶e̶a̶d̶e̶r̶
-	fix carousel
-	fix dropdown button size
+	f̶i̶x̶ ̶c̶a̶r̶o̶u̶s̶e̶l̶ ̶a̶n̶i̶m̶a̶t̶i̶o̶n̶,̶ ̶l̶o̶o̶p̶ ̶+̶
+	f̶i̶x̶ ̶d̶r̶o̶p̶d̶o̶w̶n̶ ̶b̶u̶t̶t̶o̶n̶ ̶s̶i̶z̶e̶
 	m̶a̶k̶e̶ ̶c̶o̶n̶t̶i̶n̶o̶u̶s̶ ̶n̶a̶v̶b̶a̶r̶,̶ ̶r̶e̶m̶o̶v̶e̶ ̶d̶r̶o̶p̶d̶o̶w̶n̶ ̶m̶e̶n̶u̶
 	r̶e̶m̶o̶v̶e̶ ̶w̶h̶i̶t̶e̶ ̶o̶u̶t̶l̶i̶n̶e̶ ̶w̶h̶e̶n̶ ̶b̶t̶n̶-̶b̶l̶a̶c̶k̶ ̶i̶s̶ ̶p̶r̶e̶s̶s̶e̶d̶
 	m̶a̶k̶e̶ ̶c̶o̶l̶o̶r̶s̶ ̶m̶o̶r̶e̶ ̶u̶s̶e̶r̶ ̶f̶r̶i̶e̶n̶d̶l̶y̶
 	add multi-language support - wip
-	make pages for all products with detail-en.html
-	make different categories with shop-en.html
+	make pages for all products with detail-en.html - wip
+	make different categories with shop-en.html - wip
 	copy index.html source code, modify, and make other pages with it (register, sign in, etc )
 	l̶o̶o̶k̶ ̶u̶p̶ ̶b̶o̶o̶t̶s̶t̶r̶a̶p̶ ̶l̶i̶b̶r̶a̶r̶y̶,̶ ̶m̶a̶y̶b̶e̶ ̶i̶m̶p̶l̶e̶m̶e̶n̶t̶ ̶l̶a̶t̶e̶s̶t̶ ̶s̶t̶a̶b̶l̶e̶ ̶v̶e̶r̶s̶i̶o̶n̶
 	only sell combo amps, or also amp heads with speakers? (maybe later when more important things are done)
 	̶l̶i̶v̶e̶ ̶s̶e̶r̶v̶e̶r̶
-	easyphp/wamp - windows apache mail 
-	get "inspired" with features from other musical instrument shops
-    make search button clickable to support database search (when it is implemented)
+	easyphp/wamp - windows apache mail
+    m̶a̶k̶e̶ ̶s̶e̶a̶r̶c̶h̶ ̶b̶u̶t̶t̶o̶n̶ ̶c̶l̶i̶c̶k̶a̶b̶l̶e̶ ̶t̶o̶ ̶s̶u̶p̶p̶o̶r̶t̶ ̶d̶a̶t̶a̶b̶a̶s̶e̶ ̶s̶e̶a̶r̶c̶h̶ ̶(̶w̶h̶e̶n̶ ̶i̶t̶ ̶i̶s̶ ̶i̶m̶p̶l̶e̶m̶e̶n̶t̶e̶d̶)̶
+	m̶a̶k̶e̶ ̶m̶a̶r̶g̶i̶n̶ ̶s̶m̶a̶l̶l̶e̶r̶ ̶i̶n̶ ̶n̶a̶v̶b̶a̶r̶
+	make shop pages multiple categories, less pages this way: guitars -> electric, acoustic
+	
+	250x250px or 300x300px
