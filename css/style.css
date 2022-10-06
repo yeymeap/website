@@ -11147,7 +11147,7 @@ textarea.form-control-lg {
 
 .table.table-borderless thead tr,
 .table.table-borderless tbody tr:not(:last-child) {
-  border-bottom: 15px solid #F5F5F5;
+  border-bottom: 15px solid #fff;
 }
 
 .contact-form .help-block ul {
@@ -11336,4 +11336,18 @@ button.bg-success:focus {
 
 .min-width-lang{
   min-width: 75px;
+}
+
+.table-white {
+  --bs-table-color: #000;
+  --bs-table-bg: #fff;
+  --bs-table-border-color: #fff;
+  --bs-table-striped-bg: #ecedee;
+  --bs-table-striped-color: #000;
+  --bs-table-active-bg: #dfe0e1;
+  --bs-table-active-color: #000;
+  --bs-table-hover-bg: #e5e6e7;
+  --bs-table-hover-color: #000;
+  color: var(--bs-table-color);
+  border-color: var(--bs-table-border-color);
 }
