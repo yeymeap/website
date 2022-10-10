@@ -26,3 +26,4 @@ todo:
 	̶f̶i̶x̶ ̶c̶a̶r̶t̶ ̶t̶a̶b̶l̶e̶,̶ ̶c̶h̶e̶c̶k̶o̶u̶t̶ ̶b̶u̶t̶t̶o̶n̶
 	̶a̶m̶p̶l̶i̶f̶i̶e̶r̶s̶ ̶f̶o̶r̶ ̶g̶u̶i̶t̶a̶r̶s̶ ̶a̶n̶d̶ ̶b̶a̶s̶s̶
 	maybe remove shop-en.html, as it is useless
+	remove "share on" from product pages
