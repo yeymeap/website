@@ -27,3 +27,7 @@ todo:
 	̶a̶m̶p̶l̶i̶f̶i̶e̶r̶s̶ ̶f̶o̶r̶ ̶g̶u̶i̶t̶a̶r̶s̶ ̶a̶n̶d̶ ̶b̶a̶s̶s̶
 	maybe remove shop-en.html, as it is useless
 	remove "share on" from product pages
+	change shop breadcrumb for shop to *relevant category*
+	fix breadcrumb to show name of product
+	make adding to cart avaible on product pages
+	make section titles on categories
