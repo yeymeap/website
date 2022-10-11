@@ -30,4 +30,8 @@ todo:
 	change shop breadcrumb for shop to *relevant category*
 	fix breadcrumb to show name of product
 	make adding to cart avaible on product pages
-	make section titles on categories
+	make section titles on category names
+	make pictures on category products clickabl
+	remove filters on product categories
+	remove reviews
+	remove unnecessary icons on products
