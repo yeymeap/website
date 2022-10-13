@@ -34,3 +34,4 @@ todo:
 	make pictures on category products link clickable
 	̶r̶e̶m̶o̶v̶e̶ ̶f̶i̶l̶t̶e̶r̶s̶ ̶o̶n̶ ̶p̶r̶o̶d̶u̶c̶t̶ ̶c̶a̶t̶e̶g̶o̶r̶i̶e̶s̶
 	remove icons on products
+	add chapters on product page, linking to relevant category
