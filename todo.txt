@@ -28,10 +28,9 @@ todo:
 	maybe remove shop-en.html, as it is useless
 	r̶e̶m̶o̶v̶e̶ ̶"̶s̶h̶a̶r̶e̶ ̶o̶n̶"̶ ̶f̶r̶o̶m̶ ̶p̶r̶o̶d̶u̶c̶t̶ ̶p̶a̶g̶e̶s̶
 	̶c̶h̶a̶n̶g̶e̶ ̶s̶h̶o̶p̶ ̶b̶r̶e̶a̶d̶c̶r̶u̶m̶b̶ ̶f̶o̶r̶ ̶s̶h̶o̶p̶ ̶t̶o̶ ̶*̶r̶e̶l̶e̶v̶a̶n̶t̶ ̶c̶a̶t̶e̶g̶o̶r̶y̶*̶
-	fix breadcrumb to show name of product
+	f̶i̶x̶ ̶b̶r̶e̶a̶d̶c̶r̶u̶m̶b̶ ̶t̶o̶ ̶s̶h̶o̶w̶ ̶n̶a̶m̶e̶ ̶o̶f̶ ̶p̶r̶o̶d̶u̶c̶t̶
 	make adding to cart avaible on product pages
-	make section titles on category names
+	m̶a̶k̶e̶ ̶s̶e̶c̶t̶i̶o̶n̶ ̶t̶i̶t̶l̶e̶s̶ ̶o̶n̶ ̶c̶a̶t̶e̶g̶o̶r̶y̶ ̶n̶a̶m̶e̶s̶
 	make pictures on category products link clickable
 	̶r̶e̶m̶o̶v̶e̶ ̶f̶i̶l̶t̶e̶r̶s̶ ̶o̶n̶ ̶p̶r̶o̶d̶u̶c̶t̶ ̶c̶a̶t̶e̶g̶o̶r̶i̶e̶s̶
-	remove reviews
 	remove icons on products

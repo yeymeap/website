@@ -30,30 +30,22 @@
     <!-- Topbar Start -->
     <div class="container-fluid">
         <div class="row bg-light py-1 px-xl-5">
-            <div class="col-lg-6 d-none d-lg-block">
-            </div>
+            <div class="col-lg-6 d-none d-lg-block"></div>
             <div class="col-lg-6 text-center text-lg-end">
                 <div class="d-inline-flex align-items-center">
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-sm btn-black dropdown-toggle" data-toggle="dropdown">My Account</button>
-                        <div class="dropdown-menu dropdown-menu-end">
-                            <button onclick="window.location='#'" class="dropdown-item btn-black" type="button">Sign in</button>
-                            <button onclick="window.location='#'" class="dropdown-item btn-black" type="button">Sign up</button>
-                        </div>
+                    <div class="dropdown-center mx-1">
+                        <button type="button" class="btn btn-sm btn-black dropdown-toggle" data-toggle="dropdown" aria-expanded="false">My Account</button>
+                        <ul class="dropdown-menu dropdown-menu-end min-width-account">
+                            <li><a class="dropdown-item text-decoration-none" href="sign-in-en.html">Sign in</a></li>
+                            <li><a class="dropdown-item text-decoration-none" href="sign-up-en.html">Sign up</a></li>
+                        </ul>
                     </div>
-                    <div class="btn-group mx-2">
-                        <button type="button" class="btn btn-sm btn-black dropdown-toggle" data-toggle="dropdown">EUR</button>
-                        <div class="dropdown-menu dropdown-menu-end">
-                            <button class="dropdown-item btn-black" type="button">EUR</button>
-                            <button class="dropdown-item btn-black" type="button">USD</button>
-                        </div>
-                    </div>
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-sm btn-black dropdown-toggle" data-toggle="dropdown">EN</button>
-                        <div class="dropdown-menu dropdown-menu-end">
-                            <button onclick="window.location='#'" class="dropdown-item btn-black" type="button">EN</button>
-                            <button onclick="window.location='#'" class="dropdown-item btn-black" type="button">HU</button>
-                        </div>
+                    <div class="dropdown-center mx-1">
+                        <button type="button" class="btn btn-sm btn-black dropdown-toggle" data-toggle="dropdown" aria-expanded="false">English</button>
+                        <ul class="dropdown-menu dropdown-menu-end min-width-lang">
+                            <li><a class="dropdown-item text-decoration-none" href="#">EN</a></li>
+                            <li><a class="dropdown-item text-decoration-none" href="#">HU</a></li>
+                        </ul>
                     </div>
                 </div>
                 <div class="d-inline-flex align-items-center d-block d-lg-none">
@@ -85,12 +77,48 @@
                 </form>
             </div>
             <div class="col-lg-4 col-6 text-end">                  
-                <p class="m-0 text-dark animate__animated animate__pulse animate__infinite">Customer Service</p>
-                <h5 class="m-0">+421 949 131 222</h5>
+                <p class="m-0 text-black">Customer Service</p>
+                <h5 class="m-0  tadaer">+421 949 131 222</h5>
             </div>
         </div>
     </div>
     <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid bg-black mb-30">
+        <div class="row px-xl-5">
+            <div class="col-lg-12">
+                <nav class="navbar navbar-expand-lg bg-black navbar-dark py-3 py-lg-0 px-0">
+                    <a href="" class="text-decoration-none d-block d-lg-none">
+                        <span class="h1 text-uppercase text-white bg-black px-2">Gitár Shop</span>
+                    </a>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                        <div class="navbar-nav me-4 py-0">
+                            <a href="guitars-en.html" class="nav-item nav-link text-decoration-none">Shop Guitars</a>
+                            <a href="bass-en.html" class="nav-item nav-link text-decoration-none">Shop Bass Guitars</a>
+                            <a href="amplifiers-en.html" class="nav-item nav-link text-decoration-none">Shop Amplifiers</a>
+                            <a href="#" class="nav-item nav-link text-decoration-none">Shop Misc</a>
+                        </div>
+                        <div class="navbar-nav py-0">
+                            <a href="guides-en.html" class="nav-item nav-link text-decoration-none">Beginner's Guides</a>
+                            <a href="contact-en.html" class="nav-item nav-link text-decoration-none">Contact</a>
+                        </div>
+                        <div class="navbar-nav ms-auto py-0 d-none d-lg-block">
+                            <a href="cart-en.html" class="btn px-0 ms-3 text-decoration-none">
+                                <i class="fas fa-shopping-cart text-white"></i>
+                                <span class="badge text-light border border-white rounded-circle">0</span>
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar End -->
 
 
     <!-- Footer Start -->
