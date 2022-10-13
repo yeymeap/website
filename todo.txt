@@ -35,3 +35,70 @@ todo:
 	̶r̶e̶m̶o̶v̶e̶ ̶f̶i̶l̶t̶e̶r̶s̶ ̶o̶n̶ ̶p̶r̶o̶d̶u̶c̶t̶ ̶c̶a̶t̶e̶g̶o̶r̶i̶e̶s̶
 	remove icons on products
 	add chapters on product page, linking to relevant category
+
+	                    <div class="col-12 pb-1">
+                        <h2 id="gastrings" class="section-title position-relative mb-4 text-black"><span class="bg-white pe-3">ACOUSTIC GUITAR STRINGS</span></h2>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
+                        <div class="product-item bg-light mb-4">
+                            <div class="product-img position-relative overflow-hidden">
+                                <a href="string-1-en.html"><img class="img-fluid w-100" src="img/string-1.png" alt=""></a>
+                            </div>
+                            <div class="text-center py-4">
+                                <a class="h6 text-decoration-none text-truncate text-black" href="string-1-en.html">D'Addario EXL130</a>
+                                <div class="d-flex align-items-center justify-content-center mt-2">
+                                    <h5>7,59€</h5>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-center mb-1">
+                                    <small class="fa fa-star text-warning me-1"></small>
+                                    <small class="fa fa-star text-warning me-1"></small>
+                                    <small class="fa fa-star text-warning me-1"></small>
+                                    <small class="fa fa-star text-warning me-1"></small>
+                                    <small class="fa fa-star text-warning me-1"></small>
+                                    <small>(99)</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
+                        <div class="product-item bg-light mb-4">
+                            <div class="product-img position-relative overflow-hidden">
+                                <a href="string-1-en.html"><img class="img-fluid w-100" src="img/string-1.png" alt=""></a>
+                            </div>
+                            <div class="text-center py-4">
+                                <a class="h6 text-decoration-none text-truncate text-black" href="string-1-en.html">D'Addario EXL130</a>
+                                <div class="d-flex align-items-center justify-content-center mt-2">
+                                    <h5>7,59€</h5>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-center mb-1">
+                                    <small class="fa fa-star text-warning me-1"></small>
+                                    <small class="fa fa-star text-warning me-1"></small>
+                                    <small class="fa fa-star text-warning me-1"></small>
+                                    <small class="fa fa-star text-warning me-1"></small>
+                                    <small class="fa fa-star text-warning me-1"></small>
+                                    <small>(99)</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
+                        <div class="product-item bg-light mb-4">
+                            <div class="product-img position-relative overflow-hidden">
+                                <a href="string-1-en.html"><img class="img-fluid w-100" src="img/string-1.png" alt=""></a>
+                            </div>
+                            <div class="text-center py-4">
+                                <a class="h6 text-decoration-none text-truncate text-black" href="string-1-en.html">D'Addario EXL130</a>
+                                <div class="d-flex align-items-center justify-content-center mt-2">
+                                    <h5>7,59€</h5>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-center mb-1">
+                                    <small class="fa fa-star text-warning me-1"></small>
+                                    <small class="fa fa-star text-warning me-1"></small>
+                                    <small class="fa fa-star text-warning me-1"></small>
+                                    <small class="fa fa-star text-warning me-1"></small>
+                                    <small class="fa fa-star text-warning me-1"></small>
+                                    <small>(99)</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
