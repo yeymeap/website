@@ -34,4 +34,7 @@ todo:
 	̶m̶a̶k̶e̶ ̶p̶i̶c̶t̶u̶r̶e̶s̶ ̶o̶n̶ ̶c̶a̶t̶e̶g̶o̶r̶y̶ ̶p̶r̶o̶d̶u̶c̶t̶s̶ ̶l̶i̶n̶k̶ ̶c̶l̶i̶c̶k̶a̶b̶l̶e̶
 	̶r̶e̶m̶o̶v̶e̶ ̶f̶i̶l̶t̶e̶r̶s̶ ̶o̶n̶ ̶p̶r̶o̶d̶u̶c̶t̶ ̶c̶a̶t̶e̶g̶o̶r̶i̶e̶s̶
 	̶r̶e̶m̶o̶v̶e̶ ̶i̶c̶o̶n̶s̶ ̶o̶n̶ ̶p̶r̶o̶d̶u̶c̶t̶s̶
-	add chapters on product page, linking to relevant category
+	̶a̶d̶d̶ ̶c̶h̶a̶p̶t̶e̶r̶s̶ ̶o̶n̶ ̶p̶r̶o̶d̶u̶c̶t̶ ̶p̶a̶g̶e̶,̶ ̶l̶i̶n̶k̶i̶n̶g̶ ̶t̶o̶ ̶r̶e̶l̶e̶v̶a̶n̶t̶ ̶c̶a̶t̶e̶g̶o̶r̶y̶
+	̶p̶u̶t̶ ̶l̶a̶m̶p̶ ̶a̶m̶p̶l̶i̶f̶i̶e̶r̶s̶ ̶a̶s̶ ̶l̶a̶s̶t̶,̶ ̶a̶l̶s̶o̶ ̶f̶i̶x̶ ̶c̶h̶a̶p̶t̶e̶r̶s̶
+	fix 4 digit numbers
+	fix favicon
