@@ -11358,8 +11358,10 @@ button.bg-success:focus {
   display: table;
   font-size: 95%;
   margin-bottom: 1em;
-  padding: 20px;
+  padding: 10px;
   width: auto;
+  position: sticky;
+  top: 0;
 }
 
 .toc_title {
@@ -11369,4 +11371,8 @@ button.bg-success:focus {
 
 #toc_container li, #toc_container ul, #toc_container ul li{
   list-style: outside none none !important;
+}
+
+.footer {
+  height: 10px;
 }
