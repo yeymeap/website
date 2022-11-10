@@ -7,7 +7,7 @@
 					<nav class="breadcrumb bg-white mb-30">
 						<a
 							class="breadcrumb-item text-dark"
-							href="index-en.html"
+							href="index-en.php"
 							>Home</a
 						>
 						<span class="breadcrumb-item active"
@@ -263,7 +263,7 @@
 								<h5>$160</h5>
 							</div>
 							<a
-								href="checkout-en.html"
+								href="checkout-en.php"
 								class="btn btn-block btn-black font-weight-bold my-3 py-3 text-decoration-none"
 								>Proceed To Checkout</a
 							>
