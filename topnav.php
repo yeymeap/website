@@ -49,8 +49,8 @@
                         <div class="dropdown-center mx-1">
                             <button type="button" class="btn btn-sm btn-black dropdown-toggle" data-toggle="dropdown" aria-expanded="false">My Account</button>
                             <ul class="dropdown-menu dropdown-menu-end min-width-account">
-                                <li><a class="dropdown-item text-decoration-none" href="sign-in-en.html">Sign in</a></li>
-                                <li><a class="dropdown-item text-decoration-none" href="sign-up-en.html">Sign up</a></li>
+                                <li><a class="dropdown-item text-decoration-none" href="sign-in-en.php">Sign in</a></li>
+                                <li><a class="dropdown-item text-decoration-none" href="sign-up-en.php">Sign up</a></li>
                             </ul>
                         </div>
                         <div class="dropdown-center mx-1">
@@ -71,7 +71,7 @@
             </div>
             <div class="row align-items-center bg-light py-3 px-xl-5 d-none d-lg-flex">
                 <div class="col-lg-4">
-                    <a href="index-en.html" title="Back to main page" class="text-decoration-none">
+                    <a href="index-en.php" title="Back to main page" class="text-decoration-none">
                         <span class="h1 text-uppercase text-white bg-black px-2">gitár shop</span>
                     </a>
                 </div>
@@ -117,11 +117,11 @@
                                 <a href="misc-en.html" class="nav-item nav-link text-decoration-none">Shop Misc</a>
                             </div>
                             <div class="navbar-nav py-0">
-                                <a href="guides-en.html" class="nav-item nav-link text-decoration-none">Beginner's Guides</a>
-                                <a href="contact-en.html" class="nav-item nav-link text-decoration-none">Contact</a>
+                                <a href="guides-en.php" class="nav-item nav-link text-decoration-none">Beginner's Guides</a>
+                                <a href="contact-en.php" class="nav-item nav-link text-decoration-none">Contact</a>
                             </div>
                             <div class="navbar-nav ms-auto py-0 d-none d-lg-block">
-                                <a href="cart-en.html" class="btn px-0 ms-3 text-decoration-none">
+                                <a href="cart-en.php" class="btn px-0 ms-3 text-decoration-none">
                                     <i class="fas fa-shopping-cart text-white"></i>
                                     <span class="badge text-light border border-white rounded-circle">0</span>
                                 </a>
