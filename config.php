@@ -1,40 +1,16 @@
-
- <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname="users";
-
-// Create connection
-$conn = mysqli_connect($servername, $username, $password, $dbname);
-
+<?php
+/* Database credentials. Assuming you are running MySQL
+server with default setting (user 'root' with no password) */
+define('DB_SERVER', 'localhost');
+define('DB_USERNAME', 'root');
+define('DB_PASSWORD', '');
+define('DB_NAME', 'users');
+ 
+/* Attempt to connect to MySQL database */
+$link = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
+ 
 // Check connection
-if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
+if($link === false){
+    die("ERROR: Could not connect. " . mysqli_connect_error());
 }
-echo "Connected successfully";
-
-
-
-
-
-// ----- ez nem kell--------
-
-// sql to create table
-/*$sql = "CREATE TABLE adatok(
-id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-felhasznalonev VARCHAR(30) NOT NULL,
-email VARCHAR(50) NOT NULL,
-jelszo VARCHAR(30) NOT NULL,
-orszag VARCHAR(30)
-)";*/
-
-/*if (mysqli_query($conn, $sql)) {
-    echo "Table MyGuests created successfully";
-} else {
-    echo "Error creating table: " . mysqli_error($conn);
-}*/
-/*
-mysqli_close($conn);*/
-
-?> 
+?>
