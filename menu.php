@@ -42,7 +42,7 @@
       <div id="search">
         <form action="#" method="get" accept-charset="utf-8">
           <label  for="search-field">Keresés</label>
-          <input type="text" name="search field" value=" Mit keresel ?" id="search-field" class="blink search-field"  />
+          <input type="text" name="search field" placeholder="Mit keresel?" id="search-field" class="blink search-field"  />
           <input type="submit" value="GO!" class="search-button" />
         </form>
       </div>
