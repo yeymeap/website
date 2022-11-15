@@ -26,14 +26,14 @@ include 'config.php';
 
 <?php 
 	
-	$nev = $_POST["nev"];
-	$pws = $_POST["jelszo"];
+	$name = $_POST["name"];
+	$pwd = $_POST["pwd"];
 
 	
-	if (($nev != "" ) and ($pws != "") ){
+	if (($name != "" ) and ($pwd != "") ){
 	
 	
-	$sql = "SELECT `jelszo` FROM `adatok` WHERE `felhasznalonev` = '$nev'";
+	$sql = "SELECT password FROM userdata WHERE username = '$user'";
 
 $result = $conn->query($sql);
 
@@ -43,20 +43,20 @@ if ($result->num_rows > 0) {
 	
 	
     while($row = $result->fetch_assoc()) {
-        $lekertpws = $row["jelszo"];
+        $lekertpwd = $row["password"];
 		
     }
 		
 		
-	if (sha1($pws) == $lekertpws) {
-		$_SESSION["felhasznalonev"] = $nev;
+	if (sha1($pwd) == $lekertpwd) {
+		$_SESSION["username"] = $user;
 		Header( "HTTP/1.1 301 Moved Permanently" ); /* véglegesen átirányítva */
 		Header( "Location: index.php" ); /* hova van átirányítva */
 		exit;
 	} else {
 		?>
 		<div class="error">Rossz jelszo vagy felhasznalonev
-			<?php echo $lekertpws ?>
+			<?php echo $lekertpwd ?>
 		</div>
 		
 		<?php
@@ -70,7 +70,7 @@ if ($result->num_rows > 0) {
 		
 	}
 	}
-	if (isset($_SESSION["felhasznalonev"])) {
+	if (isset($_SESSION["username"])) {
 ?>
 
 <h1>Be vagy jelentkezve</h1>
@@ -86,13 +86,13 @@ if ($result->num_rows > 0) {
     
     <hr>
 
-    <label for="Név"><b>Felhasználónév</b></label>
-    <input type="text" placeholder="Felhasználónév" name="nev" required>
+    <label for="user"><b>Felhasználónév</b></label>
+    <input type="text" placeholder="Felhasználónév" name="user" required>
 	
 
 
-    <label for="pws"><b>Jelszó</b></label>
-    <input type="password" placeholder="Jelszó" name="jelszo" required>
+    <label for="pwd"><b>Jelszó</b></label>
+    <input type="password" placeholder="Jelszó" name="password" required>
     <hr>
 
    
