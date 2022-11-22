@@ -1,3 +1,18 @@
+<?php
+session_start();
+// Check if the user is logged in, if not
+if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
+    $href1 = 'sign-in-en.php';
+    $href2 = 'sign-up-en.php';
+    $login = 'Login';
+    $register = 'Register';
+} else {
+    $href1 = '#';
+    $href2 = 'logout.php';
+    $login = htmlspecialchars($_SESSION["email"]);
+    $register = 'Log out';
+}
+?>
 <!DOCTYPE html>
 <html lang="en-SK">
 
@@ -49,8 +64,8 @@
                     <div class="dropdown-center mx-1">
                         <button type="button" class="btn btn-sm btn-black dropdown-toggle" data-toggle="dropdown" aria-expanded="false">My Account</button>
                         <ul class="dropdown-menu dropdown-menu-end min-width-account">
-                            <li><a class="dropdown-item text-decoration-none" href="sign-in-en.php">Sign in</a></li>
-                            <li><a class="dropdown-item text-decoration-none" href="sign-up-en.php">Sign up</a></li>
+                            <li><a class="dropdown-item text-decoration-none" href="<?php echo $href1; ?>"><?php echo $login; ?></a></li>
+                            <li><a class="dropdown-item text-decoration-none" href="<?php echo $href2; ?>"><?php echo $register; ?></a></li>
                         </ul>
                     </div>
                     <div class="dropdown-center mx-1">

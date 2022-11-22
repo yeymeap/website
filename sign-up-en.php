@@ -1,4 +1,8 @@
 <?php
+if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
+    header("location: welcome.php");
+    exit;
+}
 // Include config file
 require_once "config.php";
 
@@ -8,42 +12,6 @@ $username_err = $password_err = $confirm_password_err = $email_err = "";
 
 // Processing form data when form is submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Validate username
-    if (empty(trim($_POST["username"]))) {
-        $username_err = "Please enter a username.";
-    } elseif (!preg_match('/^[a-zA-Z0-9_]+$/', trim($_POST["username"]))) {
-        $username_err = "Username can only contain letters, numbers, and underscores.";
-    } else {
-        // Prepare a select statement
-        $sql = "SELECT id FROM users WHERE username = ?";
-
-        if ($stmt = mysqli_prepare($link, $sql)) {
-            // Bind variables to the prepared statement as parameters
-            mysqli_stmt_bind_param($stmt, "s", $param_username);
-
-            // Set parameters
-            $param_username = trim($_POST["username"]);
-
-            // Attempt to execute the prepared statement
-            if (mysqli_stmt_execute($stmt)) {
-                /* store result */
-                mysqli_stmt_store_result($stmt);
-
-                if (mysqli_stmt_num_rows($stmt) == 1) {
-                    $username_err = "This username is already taken.";
-                } else {
-                    $username = trim($_POST["username"]);
-                }
-            } else {
-                echo "Oops! Something went wrong. Please try again later.";
-            }
-
-            // Close statement
-            mysqli_stmt_close($stmt);
-        }
-    }
-
-
     // Validate password
     if (empty(trim($_POST["password"]))) {
         $password_err = "Please enter a password.";
@@ -99,19 +67,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Check input errors before inserting in database
-    if (empty($username_err) && empty($password_err) && empty($confirm_password_err) && empty($email_err)) {
+    if (empty($password_err) && empty($confirm_password_err) && empty($email_err)) {
 
         // Prepare an insert statement
-        $sql = "INSERT INTO users (username, password, email) VALUES (?, ?, ?)";
+        $sql = "INSERT INTO users (email, password) VALUES (?, ?)";
 
         if ($stmt = mysqli_prepare($link, $sql)) {
             // Bind variables to the prepared statement as parameters
-            mysqli_stmt_bind_param($stmt, "sss", $param_username, $param_password, $param_email);
+            mysqli_stmt_bind_param($stmt, "ss", $param_email, $param_password);
 
             // Set parameters
-            $param_username = $username;
-            $param_password = password_hash($password, PASSWORD_DEFAULT); // Creates a password hash
             $param_email = $email;
+            $param_password = password_hash($password, PASSWORD_DEFAULT); // Creates a password hash
 
             // Attempt to execute the prepared statement
             if (mysqli_stmt_execute($stmt)) {
@@ -152,9 +119,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <p>Please fill this form to create an account.</p>
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
             <div class="form-group mb-2 col-2">
-                <label>Username</label>
-                <input type="text" name="username" class="form-control <?php echo (!empty($username_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $username; ?>">
-                <span class="invalid-feedback"><?php echo $username_err; ?></span>
+                <label>Email</label>
+                <input type="text" name="email" class="form-control <?php echo (!empty($email_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $email; ?>">
+                <span class="invalid-feedback"><?php echo $email_err; ?></span>
             </div>
             <div class="form-group mb-2 col-2">
                 <label>Password</label>
@@ -165,11 +132,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <label>Confirm Password</label>
                 <input type="password" name="confirm_password" class="form-control <?php echo (!empty($confirm_password_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $confirm_password; ?>">
                 <span class="invalid-feedback"><?php echo $confirm_password_err; ?></span>
-            </div>
-            <div class="form-group mb-2 col-2">
-                <label>Email</label>
-                <input type="text" name="email" class="form-control <?php echo (!empty($email_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $email; ?>">
-                <span class="invalid-feedback"><?php echo $email_err; ?></span>
             </div>
             <div class="form-group mb-2 col-2">
                 <input type="submit" class="btn btn-black" value="Submit">
