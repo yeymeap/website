@@ -19,7 +19,7 @@ todo:
 	l̶o̶o̶k̶ ̶u̶p̶ ̶b̶o̶o̶t̶s̶t̶r̶a̶p̶ ̶l̶i̶b̶r̶a̶r̶y̶,̶ ̶m̶a̶y̶b̶e̶ ̶i̶m̶p̶l̶e̶m̶e̶n̶t̶ ̶l̶a̶t̶e̶s̶t̶ ̶s̶t̶a̶b̶l̶e̶ ̶v̶e̶r̶s̶i̶o̶n̶
 	only sell combo amps, or also amp heads with speakers? (maybe later when more important things are done)
 	̶l̶i̶v̶e̶ ̶s̶e̶r̶v̶e̶r̶
-	easyphp/wamp - windows apache mail
+	easyphp/wamp
     m̶a̶k̶e̶ ̶s̶e̶a̶r̶c̶h̶ ̶b̶u̶t̶t̶o̶n̶ ̶c̶l̶i̶c̶k̶a̶b̶l̶e̶ ̶t̶o̶ ̶s̶u̶p̶p̶o̶r̶t̶ ̶d̶a̶t̶a̶b̶a̶s̶e̶ ̶s̶e̶a̶r̶c̶h̶ ̶(̶w̶h̶e̶n̶ ̶i̶t̶ ̶i̶s̶ ̶i̶m̶p̶l̶e̶m̶e̶n̶t̶e̶d̶)̶
 	m̶a̶k̶e̶ ̶m̶a̶r̶g̶i̶n̶ ̶s̶m̶a̶l̶l̶e̶r̶ ̶i̶n̶ ̶n̶a̶v̶b̶a̶r̶
 	̶m̶a̶k̶e̶ ̶s̶h̶o̶p̶ ̶p̶a̶g̶e̶s̶ ̶m̶u̶l̶t̶i̶p̶l̶e̶ ̶c̶a̶t̶e̶g̶o̶r̶i̶e̶s̶,̶ ̶l̶e̶s̶s̶ ̶p̶a̶g̶e̶s̶ ̶t̶h̶i̶s̶ ̶w̶a̶y̶:̶ ̶g̶u̶i̶t̶a̶r̶s̶ ̶-̶>̶ ̶e̶l̶e̶c̶t̶r̶i̶c̶,̶ ̶a̶c̶o̶u̶s̶t̶i̶c̶
@@ -37,4 +37,5 @@ todo:
 	̶a̶d̶d̶ ̶c̶h̶a̶p̶t̶e̶r̶s̶ ̶o̶n̶ ̶p̶r̶o̶d̶u̶c̶t̶ ̶p̶a̶g̶e̶,̶ ̶l̶i̶n̶k̶i̶n̶g̶ ̶t̶o̶ ̶r̶e̶l̶e̶v̶a̶n̶t̶ ̶c̶a̶t̶e̶g̶o̶r̶y̶
 	̶p̶u̶t̶ ̶l̶a̶m̶p̶ ̶a̶m̶p̶l̶i̶f̶i̶e̶r̶s̶ ̶a̶s̶ ̶l̶a̶s̶t̶,̶ ̶a̶l̶s̶o̶ ̶f̶i̶x̶ ̶c̶h̶a̶p̶t̶e̶r̶s̶
 	fix 4 digit numbers
-	fix favicon
+	f̶i̶x̶ f̶a̶v̶i̶c̶o̶n̶
+	fix button colors not updating?
