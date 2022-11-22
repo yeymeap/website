@@ -11376,3 +11376,20 @@ button.bg-success:focus {
 .footer {
   height: 10px;
 }
+
+.btn-white {
+  --bs-btn-color: red;
+  --bs-btn-bg: #f8f9fa;
+  --bs-btn-border-color: #303030;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: black;
+  --bs-btn-hover-border-color: black;
+  --bs-btn-focus-shadow-rgb: 0, 0, 0;
+  --bs-btn-active-color: black;
+  --bs-btn-active-bg: white;
+  --bs-btn-active-border-color: black;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: black;
+  --bs-btn-disabled-border-color: black;
+}
