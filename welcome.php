@@ -1,8 +1,8 @@
 <?php
-// Initialize the session
-session_start();
 
-// Check if the user is logged in, if not then redirect him to login page
+session_start(); // session indítása
+
+// megnézi, hogy a felhasználó már be e jelentkezett, ha nem, átirányítja a bejelentkezési oldalra
 if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
     header("location: login.php");
     exit;

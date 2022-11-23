@@ -1,4 +1,4 @@
-        <!-- Footer Start -->
+        <!-- Lábléc kezdet -->
         <div class="container-fluid bg-black text-white pt-5">
             <div class="row px-xl-5 pt-0">
                 <div class="col-lg-4 col-md-12 mb-5 pe-3">
@@ -42,10 +42,10 @@
                 </div>
             </div>
         </div>
-        <!-- Footer End -->
+        <!-- Lábléc vége -->
 
 
-        <!-- Back to Top -->
+        <!-- vissza az oldal tetejére -->
         <a href="#" title="Back to top" class="btn btn-backblack back-to-top"><i class="fa fa-angle-double-up"></i></a>
     </body>
 </html>

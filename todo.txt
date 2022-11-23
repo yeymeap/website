@@ -38,4 +38,4 @@ todo:
 	̶p̶u̶t̶ ̶l̶a̶m̶p̶ ̶a̶m̶p̶l̶i̶f̶i̶e̶r̶s̶ ̶a̶s̶ ̶l̶a̶s̶t̶,̶ ̶a̶l̶s̶o̶ ̶f̶i̶x̶ ̶c̶h̶a̶p̶t̶e̶r̶s̶
 	fix 4 digit numbers
 	f̶i̶x̶ f̶a̶v̶i̶c̶o̶n̶
-	fix button colors not updating?
+	f̶i̶x̶ b̶u̶t̶t̶o̶n̶ c̶o̶l̶o̶r̶s̶ n̶o̶t̶ u̶p̶d̶a̶t̶i̶n̶g̶?̶ c̶t̶r̶l̶+̶s̶h̶i̶f̶t̶+̶s̶

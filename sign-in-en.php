@@ -1,95 +1,95 @@
 <?php
-// Initialize the session
 
-// Check if the user is already logged in, if yes then redirect him to welcome page
+// megnézi, hogy a felhasználó már be e jelentkezett, ha nem, átirányítja az üdvözlő oldalra
 if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
     header("location: welcome.php");
-    exit;
+    exit; //megszakítja a scriptet
 }
 
-// Include config file
+// config fájl
 require_once "config.php";
 
-// Define variables and initialize with empty values
+// Érték nélküli változók létrehozása 
 $email = $password = "";
 $email_err = $password_err = $login_err = "";
 
-// Processing form data when form is submitted
+// Adatfeldolgozás
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     !filter_var(trim($_POST["email"]), FILTER_VALIDATE_EMAIL);
-    // Check if username is empty
+    // Megnezézi, hogy üres helyes e az email formátum
     if (empty(trim($_POST["email"]))) {
         $email_err = "Please enter your email.";
     } else {
         $email = trim($_POST["email"]);
     }
 
-    // Check if password is empty
+    // Megnezézi, hogy üres e a jelszó sor
     if (empty(trim($_POST["password"]))) {
         $password_err = "Please enter your password.";
     } else {
         $password = trim($_POST["password"]);
     }
 
-    // Validate credentials
+    // Adatatok ellenőrzése
     if (empty($email_err) && empty($password_err)) {
-        // Prepare a select statement
+        // Adatbázisból kiválasztás
         $sql = "SELECT id, email, password FROM users WHERE email = ?";
 
         if ($stmt = mysqli_prepare($link, $sql)) {
-            // Bind variables to the prepared statement as parameters
+            // Változók ideiglenes mentése statementbe
             mysqli_stmt_bind_param($stmt, "s", $param_email);
 
-            // Set parameters
+            // Változó beállítása
             $param_email = $email;
 
-            // Attempt to execute the prepared statement
+            // Megpróbálja lefuttatni
             if (mysqli_stmt_execute($stmt)) {
-                // Store result
+                // Az eredmény tárolása
                 mysqli_stmt_store_result($stmt);
 
-                // Check if username exists, if yes then verify password
+                // Megnézi, hogy létezik e az email az adatbázisban, ha igen, ellenőrzi, hogy helyes e a hozzátartozó jelszó
                 if (mysqli_stmt_num_rows($stmt) == 1) {
-                    // Bind result variables
+                    // Változók tárolása
                     mysqli_stmt_bind_result($stmt, $id, $email, $hashed_password);
                     if (mysqli_stmt_fetch($stmt)) {
                         if (password_verify($password, $hashed_password)) {
-                            // Password is correct, so start a new session
+                            // Helyes jelszó esetén új session létrehozása
                             session_start();
 
-                            // Store data in session variables
+                            // Változók tárolása session változóként
                             $_SESSION["loggedin"] = true;
                             $_SESSION["id"] = $id;
                             $_SESSION["email"] = $email;
 
-                            // Redirect user to welcome page
+                            // Átirányítás üdvözlőlapra
                             header("location: welcome.php");
                         } else {
-                            // Password is not valid, display a generic error message
+                            // Helytelen jelszó
                             $login_err = "Invalid email or password.";
                         }
                     }
                 } else {
-                    // Email doesn't exist, display a generic error message
+                    // Helytelen email
                     $login_err = "Invalid email or password.";
                 }
             } else {
+                //Egyéb esetben, általános hibaüzenet
                 echo "Oops! Something went wrong. Please try again later.";
             }
 
-            // Close statement
+            // Statement bezárása
             mysqli_stmt_close($stmt);
         }
     }
 
-    // Close connection
+    // Csatlakozás zárása
     mysqli_close($link);
 }
 ?>
 
 <?php include 'topnav.php'; ?>
 
-<!-- Breadcrumb Start -->
+<!-- Breadrumb kezdete -->
 <div class="container-fluid">
     <div class="row px-xl-5">
         <div class="col-12">
@@ -100,8 +100,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
     </div>
 </div>
-<!-- Breadcrumb End -->
+<!-- Breadcrumb vége -->
 
+<!-- Bejelentkezés kezdete -->
 <div class="container-fluid">
     <div class="col-12 text-center">
         <h2>Login</h2>
@@ -112,24 +113,26 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             echo '<div class="alert alert-danger">' . $login_err . '</div>';
         }
         ?>
-
-        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-            <div class="form-group mb-2 col-2">
-                <label>Email</label>
-                <input type="text" name="email" class="form-control <?php echo (!empty($email_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $email; ?>">
-                <span class="invalid-feedback"><?php echo $email_err; ?></span>
-            </div>
-            <div class="form-group mb-2 col-2">
-                <label>Password</label>
-                <input type="password" name="password" class="form-control <?php echo (!empty($password_err)) ? 'is-invalid' : ''; ?>">
-                <span class="invalid-feedback"><?php echo $password_err; ?></span>
-            </div>
-            <div class="form-group mb-2 col-2">
-                <input type="submit" class="btn btn-black" value="Login">
-            </div>
-            <p>Don't have an account? <a href="sign-up-en.php" class="text-decoration-none">Sign up now</a>.</p>
-        </form>
+        <div class="col-12 d-flex justify-content-center">
+            <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+                <div class="form-group mb-2 col-auto">
+                    <label>Email</label>
+                    <input type="text" name="email" class="form-control <?php echo (!empty($email_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $email; ?>">
+                    <span class="invalid-feedback"><?php echo $email_err; ?></span>
+                </div>
+                <div class="form-group mb-2 col-auto">
+                    <label>Password</label>
+                    <input type="password" name="password" class="form-control <?php echo (!empty($password_err)) ? 'is-invalid' : ''; ?>">
+                    <span class="invalid-feedback"><?php echo $password_err; ?></span>
+                </div>
+                <div class="form-group mb-2 col-auto">
+                    <input type="submit" class="btn btn-black" value="Login">
+                </div>
+                <p>Don't have an account? <a href="sign-up-en.php" class="text-decoration-none">Sign up now</a>.</p>
+            </form>
+        </div>
     </div>
 </div>
+<!-- Bejelentkezés vége -->
 
 <?php include 'footer.php'; ?>
