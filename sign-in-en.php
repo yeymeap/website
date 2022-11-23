@@ -1,12 +1,12 @@
 <?php
 
-// megnézi, hogy a felhasználó már be e jelentkezett, ha nem, átirányítja az üdvözlő oldalra
+// Megnézi, hogy a felhasználó már be e jelentkezett, ha nem, átirányítja az üdvözlő oldalra
 if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
     header("location: welcome.php");
     exit; //megszakítja a scriptet
 }
 
-// config fájl
+// Config fájl
 require_once "config.php";
 
 // Érték nélküli változók létrehozása 
