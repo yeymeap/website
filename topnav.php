@@ -1,5 +1,7 @@
 <?php
-session_start(); // session indítása
+if (session_id() == '' || !isset($_SESSION) || session_status() === PHP_SESSION_NONE) { //megnézi fut e már session
+    session_start(); // ha nem indít egy sessiont
+}
 
 if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) { // megnézi, hogy a felhasználó már be e jelentkezett, ha nem, átirányítja a bejelentkezési oldalra
     $href1 = 'sign-in-en.php';                                         // változók megnevezése, különböző kimenetelekkel
