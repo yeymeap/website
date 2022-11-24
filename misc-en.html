@@ -1,1557 +1,2706 @@
 <!DOCTYPE html>
 <html lang="en-SK">
+	<head>
+		<meta charset="utf-8" />
+		<title>GitárShop - Online Guitar Store</title>
+		<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+		<meta content="HangszerShop" name="keywords" />
+		<meta content="Online Guitar Store" name="description" />
 
-<head>
-    <meta charset="utf-8">
-    <title>GitárShop - Online Guitar Store</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="HangszerShop" name="keywords">
-    <meta content="Online Guitar Store" name="description">
+		<!-- Favicon -->
+		<link href="img/favicon.ico" rel="icon" />
 
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+		<!-- Google Web Fonts -->
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+			rel="stylesheet" />
 
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">  
+		<!-- Font Awesome -->
+		<link
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+			rel="stylesheet" />
 
-    <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet">
+		<!-- Libraries Stylesheet -->
+		<link
+			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+			rel="stylesheet" />
+		<link
+			href="lib/owlcarousel/assets/owl.carousel.min.css"
+			rel="stylesheet" />
 
-    <!-- Libraries Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+		<!-- Customized Bootstrap Stylesheet -->
+		<link href="css/style.css" rel="stylesheet" />
+	</head>
 
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
-</head>
+	<body>
+		<!-- Topbar Start -->
+		<div class="container-fluid">
+			<div class="row bg-light py-1 px-xl-5">
+				<div class="col-lg-6 d-none d-lg-block"></div>
+				<div class="col-lg-6 text-center text-lg-end">
+					<div class="d-inline-flex align-items-center">
+						<div class="dropdown-center mx-1">
+							<button
+								type="button"
+								class="btn btn-sm btn-black dropdown-toggle"
+								data-toggle="dropdown"
+								aria-expanded="false">
+								My Account
+							</button>
+							<ul
+								class="dropdown-menu dropdown-menu-end min-width-account">
+								<li>
+									<a
+										class="dropdown-item text-decoration-none"
+										href="sign-in-en.html"
+										>Sign in</a
+									>
+								</li>
+								<li>
+									<a
+										class="dropdown-item text-decoration-none"
+										href="sign-up-en.html"
+										>Sign up</a
+									>
+								</li>
+							</ul>
+						</div>
+						<div class="dropdown-center mx-1">
+							<button
+								type="button"
+								class="btn btn-sm btn-black dropdown-toggle"
+								data-toggle="dropdown"
+								aria-expanded="false">
+								English
+							</button>
+							<ul
+								class="dropdown-menu dropdown-menu-end min-width-lang">
+								<li>
+									<a
+										class="dropdown-item text-decoration-none"
+										href="#"
+										>EN</a
+									>
+								</li>
+								<li>
+									<a
+										class="dropdown-item text-decoration-none"
+										href="#"
+										>HU</a
+									>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div
+						class="d-inline-flex align-items-center d-block d-lg-none">
+						<a href="" class="btn px-0 ms-2 text-decoration-none">
+							<i class="fas fa-shopping-cart text-black"></i>
+							<span
+								class="badge text-black border border-black rounded-circle"
+								>0</span
+							>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div
+				class="row align-items-center bg-light py-3 px-xl-5 d-none d-lg-flex">
+				<div class="col-lg-4">
+					<a
+						href="index-en.html"
+						title="Back to main page"
+						class="text-decoration-none">
+						<span class="h1 text-uppercase text-white bg-black px-2"
+							>gitár shop</span
+						>
+					</a>
+				</div>
+				<div class="col-lg-4 col-6 text-start">
+					<form action="">
+						<div class="input-group">
+							<input
+								type="text"
+								class="form-control"
+								placeholder="Search for products" />
+							<div class="input-group-append">
+								<a
+									href="#"
+									title="Search"
+									class="text-decoration-none">
+									<span
+										class="input-group-text bg-transparent text-black pt-3">
+										<i class="fa fa-search mb-2"></i>
+									</span>
+								</a>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="col-lg-4 col-6 text-end">
+					<p class="m-0 text-black">Customer Service</p>
+					<h5 class="m-0 tadaer">+421 949 131 222</h5>
+				</div>
+			</div>
+		</div>
+		<!-- Topbar End -->
 
-<body>
-    <!-- Topbar Start -->
-    <div class="container-fluid">
-        <div class="row bg-light py-1 px-xl-5">
-            <div class="col-lg-6 d-none d-lg-block"></div>
-            <div class="col-lg-6 text-center text-lg-end">
-                <div class="d-inline-flex align-items-center">
-                    <div class="dropdown-center mx-1">
-                        <button type="button" class="btn btn-sm btn-black dropdown-toggle" data-toggle="dropdown" aria-expanded="false">My Account</button>
-                        <ul class="dropdown-menu dropdown-menu-end min-width-account">
-                            <li><a class="dropdown-item text-decoration-none" href="sign-in-en.html">Sign in</a></li>
-                            <li><a class="dropdown-item text-decoration-none" href="sign-up-en.html">Sign up</a></li>
-                        </ul>
-                    </div>
-                    <div class="dropdown-center mx-1">
-                        <button type="button" class="btn btn-sm btn-black dropdown-toggle" data-toggle="dropdown" aria-expanded="false">English</button>
-                        <ul class="dropdown-menu dropdown-menu-end min-width-lang">
-                            <li><a class="dropdown-item text-decoration-none" href="#">EN</a></li>
-                            <li><a class="dropdown-item text-decoration-none" href="#">HU</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="d-inline-flex align-items-center d-block d-lg-none">
-                    <a href="" class="btn px-0 ms-2 text-decoration-none">
-                        <i class="fas fa-shopping-cart text-black"></i>
-                        <span class="badge text-black border border-black rounded-circle">0</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="row align-items-center bg-light py-3 px-xl-5 d-none d-lg-flex">
-            <div class="col-lg-4">
-                <a href="index-en.html" title="Back to main page" class="text-decoration-none">
-                    <span class="h1 text-uppercase text-white bg-black px-2">gitár shop</span>
-                </a>
-            </div>
-            <div class="col-lg-4 col-6 text-start">
-                <form action="">
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Search for products">
-                        <div class="input-group-append">
-                            <a href="#" title="Search" class="text-decoration-none" >
-                                <span class="input-group-text bg-transparent text-black pt-3">
-                                    <i class="fa fa-search mb-2"></i>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                </form>
-            </div>
-            <div class="col-lg-4 col-6 text-end">                  
-                <p class="m-0 text-black">Customer Service</p>
-                <h5 class="m-0  tadaer">+421 949 131 222</h5>
-            </div>
-        </div>
-    </div>
-    <!-- Topbar End -->
+		<!-- Navbar Start -->
+		<div class="container-fluid bg-black mb-30">
+			<div class="row px-xl-5">
+				<div class="col-lg-12">
+					<nav
+						class="navbar navbar-expand-lg bg-black navbar-dark py-3 py-lg-0 px-0">
+						<a
+							href=""
+							class="text-decoration-none d-block d-lg-none">
+							<span
+								class="h1 text-uppercase text-white bg-black px-2"
+								>Gitár Shop</span
+							>
+						</a>
+						<button
+							type="button"
+							class="navbar-toggler"
+							data-toggle="collapse"
+							data-target="#navbarCollapse">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div
+							class="collapse navbar-collapse justify-content-between"
+							id="navbarCollapse">
+							<div class="navbar-nav me-4 py-0">
+								<a
+									href="guitars-en.html"
+									class="nav-item nav-link text-decoration-none"
+									>Shop Guitars</a
+								>
+								<a
+									href="bass-en.html"
+									class="nav-item nav-link text-decoration-none"
+									>Shop Bass Guitars</a
+								>
+								<a
+									href="amplifiers-en.html"
+									class="nav-item nav-link text-decoration-none"
+									>Shop Amplifiers</a
+								>
+								<a
+									href="#"
+									class="nav-item nav-link text-decoration-none"
+									>Shop Misc</a
+								>
+							</div>
+							<div class="navbar-nav py-0">
+								<a
+									href="guides-en.html"
+									class="nav-item nav-link text-decoration-none"
+									>Beginner's Guides</a
+								>
+								<a
+									href="contact-en.html"
+									class="nav-item nav-link text-decoration-none"
+									>Contact</a
+								>
+							</div>
+							<div
+								class="navbar-nav ms-auto py-0 d-none d-lg-block">
+								<a
+									href="cart-en.html"
+									class="btn px-0 ms-3 text-decoration-none">
+									<i
+										class="fas fa-shopping-cart text-white"></i>
+									<span
+										class="badge text-light border border-white rounded-circle"
+										>0</span
+									>
+								</a>
+							</div>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<!-- Navbar End -->
 
+		<!-- Breadcrumb Start -->
+		<div class="container-fluid">
+			<div class="row px-xl-5">
+				<div class="col-12">
+					<nav class="breadcrumb bg-white mb-30">
+						<a
+							class="breadcrumb-item text-black"
+							href="index-en.html"
+							>Home</a
+						>
+						<span class="breadcrumb-item active"
+							>Miscellaneous</span
+						>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<!-- Breadcrumb End -->
 
-    <!-- Navbar Start -->
-    <div class="container-fluid bg-black mb-30">
-        <div class="row px-xl-5">
-            <div class="col-lg-12">
-                <nav class="navbar navbar-expand-lg bg-black navbar-dark py-3 py-lg-0 px-0">
-                    <a href="" class="text-decoration-none d-block d-lg-none">
-                        <span class="h1 text-uppercase text-white bg-black px-2">Gitár Shop</span>
-                    </a>
-                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                        <div class="navbar-nav me-4 py-0">
-                            <a href="guitars-en.html" class="nav-item nav-link text-decoration-none">Shop Guitars</a>
-                            <a href="bass-en.html" class="nav-item nav-link text-decoration-none">Shop Bass Guitars</a>
-                            <a href="amplifiers-en.html" class="nav-item nav-link text-decoration-none">Shop Amplifiers</a>
-                            <a href="#" class="nav-item nav-link text-decoration-none">Shop Misc</a>
-                        </div>
-                        <div class="navbar-nav py-0">
-                            <a href="guides-en.html" class="nav-item nav-link text-decoration-none">Beginner's Guides</a>
-                            <a href="contact-en.html" class="nav-item nav-link text-decoration-none">Contact</a>
-                        </div>
-                        <div class="navbar-nav ms-auto py-0 d-none d-lg-block">
-                            <a href="cart-en.html" class="btn px-0 ms-3 text-decoration-none">
-                                <i class="fas fa-shopping-cart text-white"></i>
-                                <span class="badge text-light border border-white rounded-circle">0</span>
-                            </a>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-        </div>
-    </div>
-    <!-- Navbar End -->
+		<!-- Shop Start -->
+		<div class="container-fluid">
+			<div class="row px-xl-5">
+				<!-- Shop Sidebar Start -->
+				<div class="col-lg-2 col-md-2">
+					<div id="toc_container">
+						<p class="toc_title">Contents</p>
+						<ul class="toc_list">
+							<li>
+								<a href="#gastrings">Strings</a>
+								<ul>
+									<li>
+										<a href="#gastrings"
+											>Acoustic Guitar Strings</a
+										>
+									</li>
+									<li>
+										<a href="#gestrings"
+											>Electric Guitar Strings</a
+										>
+									</li>
+									<li>
+										<a href="#bstrings"
+											>Acoustic Bass Guitar Strings</a
+										>
+									</li>
+									<li>
+										<a href="#bestrings"
+											>Electric Bass Guitar Strings</a
+										>
+									</li>
+								</ul>
+							</li>
+							<li><a href="#picks">Picks</a></li>
+							<li><a href="#cables">Instrument Cables</a></li>
+							<li><a href="#bags">Bags</a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- Shop Sidebar End -->
 
+				<!-- Shop Product Start -->
+				<div class="col-lg-9 col-md-8 mb-5">
+					<div class="row pb-3">
+						<div class="col-12 pb-1">
+							<h2
+								id="gastrings"
+								class="section-title position-relative mb-4 text-black">
+								<span class="bg-white pe-3"
+									>ACOUSTIC GUITAR STRINGS</span
+								>
+							</h2>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-6 pb-1">
+							<div class="product-item bg-light mb-4">
+								<div
+									class="product-img position-relative overflow-hidden">
+									<a href="string-21-en.html"
+										><img
+											class="img-fluid w-100"
+											src="img/string-21.png"
+											alt=""
+									/></a>
+								</div>
+								<div class="text-center py-4">
+									<a
+										class="h6 text-decoration-none text-truncate text-black"
+										href="string-21-en.html"
+										>D'Addario EZ-890</a
+									>
+									<div
+										class="d-flex align-items-center justify-content-center mt-2">
+										<h5>7,89€</h5>
+									</div>
+									<div
+										class="d-flex align-items-center justify-content-center mb-1">
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small>(99)</small>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-6 pb-1">
+							<div class="product-item bg-light mb-4">
+								<div
+									class="product-img position-relative overflow-hidden">
+									<a href="string-22-en.html"
+										><img
+											class="img-fluid w-100"
+											src="img/string-22.png"
+											alt=""
+									/></a>
+								</div>
+								<div class="text-center py-4">
+									<a
+										class="h6 text-decoration-none text-truncate text-black"
+										href="string-22-en.html"
+										>Rotosound JK 9 Jumbo King</a
+									>
+									<div
+										class="d-flex align-items-center justify-content-center mt-2">
+										<h5>7,90€</h5>
+									</div>
+									<div
+										class="d-flex align-items-center justify-content-center mb-1">
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star-half-alt text-warning me-1"></small>
+										<small>(99)</small>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-6 pb-1">
+							<div class="product-item bg-light mb-4">
+								<div
+									class="product-img position-relative overflow-hidden">
+									<a href="string-23-en.html"
+										><img
+											class="img-fluid w-100"
+											src="img/string-23.png"
+											alt=""
+									/></a>
+								</div>
+								<div class="text-center py-4">
+									<a
+										class="h6 text-decoration-none text-truncate text-black"
+										href="string-23-en.html"
+										>D'Addario EJ15</a
+									>
+									<div
+										class="d-flex align-items-center justify-content-center mt-2">
+										<h5>11,90€</h5>
+									</div>
+									<div
+										class="d-flex align-items-center justify-content-center mb-1">
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star-half-alt text-warning me-1"></small>
+										<small
+											class="far fa-star text-warning me-1"></small>
+										<small>(99)</small>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-6 pb-1">
+							<div class="product-item bg-light mb-4">
+								<div
+									class="product-img position-relative overflow-hidden">
+									<a href="string-24-en.html"
+										><img
+											class="img-fluid w-100"
+											src="img/string-24.png"
+											alt=""
+									/></a>
+								</div>
+								<div class="text-center py-4">
+									<a
+										class="h6 text-decoration-none text-truncate text-black"
+										href="string-24-en.html"
+										>D'Addario EZ-900</a
+									>
+									<div
+										class="d-flex align-items-center justify-content-center mt-2">
+										<h5>7,99€</h5>
+									</div>
+									<div
+										class="d-flex align-items-center justify-content-center mb-1">
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star-half-alt text-warning me-1"></small>
+										<small
+											class="far fa-star text-warning me-1"></small>
+										<small>(99)</small>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Shop Product End -->
 
-    <!-- Breadcrumb Start -->
-    <div class="container-fluid">
-        <div class="row px-xl-5">
-            <div class="col-12">
-                <nav class="breadcrumb bg-white mb-30">
-                    <a class="breadcrumb-item text-black" href="index-en.html">Home</a>
-                    <span class="breadcrumb-item active">Miscellaneous</span>
-                </nav>
-            </div>
-        </div>
-    </div>
-    <!-- Breadcrumb End -->
+					<!-- Shop Start -->
+					<!-- Shop Sidebar Start -->
+					<div class="col-lg-2 col-md-2"></div>
+					<!-- Shop Sidebar End -->
 
-    <!-- Shop Start -->
-    <div class="container-fluid">
-        <div class="row px-xl-5">
-            <!-- Shop Sidebar Start -->
-            <div class="col-lg-2 col-md-2">
-            </div>
-            <!-- Shop Sidebar End -->
+					<!-- Shop Product Start -->
+					<div class="row pb-3">
+						<div class="col-12 pb-1">
+							<h2
+								id="gestrings"
+								class="section-title position-relative mb-4 text-black">
+								<span class="bg-white pe-3"
+									>ELECTRIC GUITAR STRINGS</span
+								>
+							</h2>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-6 pb-1">
+							<div class="product-item bg-light mb-4">
+								<div
+									class="product-img position-relative overflow-hidden">
+									<a href="string-1-en.html"
+										><img
+											class="img-fluid w-100"
+											src="img/string-1.png"
+											alt=""
+									/></a>
+								</div>
+								<div class="text-center py-4">
+									<a
+										class="h6 text-decoration-none text-truncate text-black"
+										href="string-1-en.html"
+										>D'Addario EXL130</a
+									>
+									<div
+										class="d-flex align-items-center justify-content-center mt-2">
+										<h5>7,59€</h5>
+									</div>
+									<div
+										class="d-flex align-items-center justify-content-center mb-1">
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small>(99)</small>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-6 pb-1">
+							<div class="product-item bg-light mb-4">
+								<div
+									class="product-img position-relative overflow-hidden">
+									<a href="string-2-en.html"
+										><img
+											class="img-fluid w-100"
+											src="img/string-2.png"
+											alt=""
+									/></a>
+								</div>
+								<div class="text-center py-4">
+									<a
+										class="h6 text-decoration-none text-truncate text-black"
+										href="string-2-en.html"
+										>D'Addario NYXL0838</a
+									>
+									<div
+										class="d-flex align-items-center justify-content-center mt-2">
+										<h5>17,90€</h5>
+									</div>
+									<div
+										class="d-flex align-items-center justify-content-center mb-1">
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star-half-alt text-warning me-1"></small>
+										<small>(99)</small>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-6 pb-1">
+							<div class="product-item bg-light mb-4">
+								<div
+									class="product-img position-relative overflow-hidden">
+									<a href="string-3-en.html"
+										><img
+											class="img-fluid w-100"
+											src="img/string-3.png"
+											alt=""
+									/></a>
+								</div>
+								<div class="text-center py-4">
+									<a
+										class="h6 text-decoration-none text-truncate text-black"
+										href="string-3-en.html"
+										>Ernie Ball 2225 Extra Slinky</a
+									>
+									<div
+										class="d-flex align-items-center justify-content-center mt-2">
+										<h5>8,19€</h5>
+									</div>
+									<div
+										class="d-flex align-items-center justify-content-center mb-1">
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star-half-alt text-warning me-1"></small>
+										<small
+											class="far fa-star text-warning me-1"></small>
+										<small>(99)</small>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-6 pb-1">
+							<div class="product-item bg-light mb-4">
+								<div
+									class="product-img position-relative overflow-hidden">
+									<a href="string-4-en.html"
+										><img
+											class="img-fluid w-100"
+											src="img/string-4.png"
+											alt=""
+									/></a>
+								</div>
+								<div class="text-center py-4">
+									<a
+										class="h6 text-decoration-none text-truncate text-black"
+										href="string-4-en.html"
+										>Elixir 12002 Nanoweb 9-42</a
+									>
+									<div
+										class="d-flex align-items-center justify-content-center mt-2">
+										<h5>14,90€</h5>
+									</div>
+									<div
+										class="d-flex align-items-center justify-content-center mb-1">
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="far fa-star text-warning me-1"></small>
+										<small
+											class="far fa-star text-warning me-1"></small>
+										<small>(99)</small>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-6 pb-1">
+							<div class="product-item bg-light mb-4">
+								<div
+									class="product-img position-relative overflow-hidden">
+									<a href="string-5-en.html"
+										><img
+											class="img-fluid w-100"
+											src="img/string-5.png"
+											alt=""
+									/></a>
+								</div>
+								<div class="text-center py-4">
+									<a
+										class="h6 text-decoration-none text-truncate text-black"
+										href="string-5-en.html"
+										>Elixir 19002 Optiweb 9-42</a
+									>
+									<div
+										class="d-flex align-items-center justify-content-center mt-2">
+										<h5>15,90€</h5>
+									</div>
+									<div
+										class="d-flex align-items-center justify-content-center mb-1">
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small>(99)</small>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-6 pb-1">
+							<div class="product-item bg-light mb-4">
+								<div
+									class="product-img position-relative overflow-hidden">
+									<a href="string-6-en.html"
+										><img
+											class="img-fluid w-100"
+											src="img/string-6.png"
+											alt=""
+									/></a>
+								</div>
+								<div class="text-center py-4">
+									<a
+										class="h6 text-decoration-none text-truncate text-black"
+										href="string-6-en.html"
+										>Elixir 12000 Polyweb 9-42</a
+									>
+									<div
+										class="d-flex align-items-center justify-content-center mt-2">
+										<h5>13,90€</h5>
+									</div>
+									<div
+										class="d-flex align-items-center justify-content-center mb-1">
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star-half-alt text-warning me-1"></small>
+										<small>(99)</small>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-6 pb-1">
+							<div class="product-item bg-light mb-4">
+								<div
+									class="product-img position-relative overflow-hidden">
+									<a href="string-7-en.html"
+										><img
+											class="img-fluid w-100"
+											src="img/string-7.png"
+											alt=""
+									/></a>
+								</div>
+								<div class="text-center py-4">
+									<a
+										class="h6 text-decoration-none text-truncate text-black"
+										href="string-7-en.html"
+										>D'Addario NYXL0942</a
+									>
+									<div
+										class="d-flex align-items-center justify-content-center mt-2">
+										<h5>17,90€</h5>
+									</div>
+									<div
+										class="d-flex align-items-center justify-content-center mb-1">
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star-half-alt text-warning me-1"></small>
+										<small
+											class="far fa-star text-warning me-1"></small>
+										<small>(99)</small>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-6 pb-1">
+							<div class="product-item bg-light mb-4">
+								<div
+									class="product-img position-relative overflow-hidden">
+									<a href="string-8-en.html"
+										><img
+											class="img-fluid w-100"
+											src="img/string-8.png"
+											alt=""
+									/></a>
+								</div>
+								<div class="text-center py-4">
+									<a
+										class="h6 text-decoration-none text-truncate text-black"
+										href="string-8-en.html"
+										>D'Addario EXL120</a
+									>
+									<div
+										class="d-flex align-items-center justify-content-center mt-2">
+										<h5>7,59€</h5>
+									</div>
+									<div
+										class="d-flex align-items-center justify-content-center mb-1">
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="far fa-star text-warning me-1"></small>
+										<small
+											class="far fa-star text-warning me-1"></small>
+										<small>(99)</small>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-6 pb-1">
+							<div class="product-item bg-light mb-4">
+								<div
+									class="product-img position-relative overflow-hidden">
+									<a href="string-9-en.html"
+										><img
+											class="img-fluid w-100"
+											src="img/string-9.png"
+											alt=""
+									/></a>
+								</div>
+								<div class="text-center py-4">
+									<a
+										class="h6 text-decoration-none text-truncate text-black"
+										href="string-9-en.html"
+										>D'Addario NYXL0946</a
+									>
+									<div
+										class="d-flex align-items-center justify-content-center mt-2">
+										<h5>17,90€</h5>
+									</div>
+									<div
+										class="d-flex align-items-center justify-content-center mb-1">
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="far fa-star text-warning me-1"></small>
+										<small
+											class="far fa-star text-warning me-1"></small>
+										<small>(99)</small>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-6 pb-1">
+							<div class="product-item bg-light mb-4">
+								<div
+									class="product-img position-relative overflow-hidden">
+									<a href="string-10-en.html"
+										><img
+											class="img-fluid w-100"
+											src="img/string-10.png"
+											alt=""
+									/></a>
+								</div>
+								<div class="text-center py-4">
+									<a
+										class="h6 text-decoration-none text-truncate text-black"
+										href="string-10-en.html"
+										>Ernie Ball 2223 Super Slinky</a
+									>
+									<div
+										class="d-flex align-items-center justify-content-center mt-2">
+										<h5>8,19€</h5>
+									</div>
+									<div
+										class="d-flex align-items-center justify-content-center mb-1">
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="far fa-star text-warning me-1"></small>
+										<small
+											class="far fa-star text-warning me-1"></small>
+										<small>(99)</small>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-6 pb-1">
+							<div class="product-item bg-light mb-4">
+								<div
+									class="product-img position-relative overflow-hidden">
+									<a href="string-11-en.html"
+										><img
+											class="img-fluid w-100"
+											src="img/string-11.png"
+											alt=""
+									/></a>
+								</div>
+								<div class="text-center py-4">
+									<a
+										class="h6 text-decoration-none text-truncate text-black"
+										href="string-11-en.html"
+										>Ernie Ball 2222 Hybrid Slinky</a
+									>
+									<div
+										class="d-flex align-items-center justify-content-center mt-2">
+										<h5>8,19€</h5>
+									</div>
+									<div
+										class="d-flex align-items-center justify-content-center mb-1">
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="far fa-star text-warning me-1"></small>
+										<small
+											class="far fa-star text-warning me-1"></small>
+										<small>(99)</small>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-6 pb-1">
+							<div class="product-item bg-light mb-4">
+								<div
+									class="product-img position-relative overflow-hidden">
+									<a href="string-12-en.html"
+										><img
+											class="img-fluid w-100"
+											src="img/string-12.png"
+											alt=""
+									/></a>
+								</div>
+								<div class="text-center py-4">
+									<a
+										class="h6 text-decoration-none text-truncate text-black"
+										href="string-12-en.html"
+										>D'Addario NYXL1052</a
+									>
+									<div
+										class="d-flex align-items-center justify-content-center mt-2">
+										<h5>18,90€</h5>
+									</div>
+									<div
+										class="d-flex align-items-center justify-content-center mb-1">
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="far fa-star text-warning me-1"></small>
+										<small
+											class="far fa-star text-warning me-1"></small>
+										<small>(99)</small>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-6 pb-1">
+							<div class="product-item bg-light mb-4">
+								<div
+									class="product-img position-relative overflow-hidden">
+									<a href="string-13-en.html"
+										><img
+											class="img-fluid w-100"
+											src="img/string-13.png"
+											alt=""
+									/></a>
+								</div>
+								<div class="text-center py-4">
+									<a
+										class="h6 text-decoration-none text-truncate text-black"
+										href="string-13-en.html"
+										>D'Addario NYXL1046</a
+									>
+									<div
+										class="d-flex align-items-center justify-content-center mt-2">
+										<h5>17,90€</h5>
+									</div>
+									<div
+										class="d-flex align-items-center justify-content-center mb-1">
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="far fa-star text-warning me-1"></small>
+										<small
+											class="far fa-star text-warning me-1"></small>
+										<small>(99)</small>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-6 pb-1">
+							<div class="product-item bg-light mb-4">
+								<div
+									class="product-img position-relative overflow-hidden">
+									<a href="string-14-en.html"
+										><img
+											class="img-fluid w-100"
+											src="img/string-14.png"
+											alt=""
+									/></a>
+								</div>
+								<div class="text-center py-4">
+									<a
+										class="h6 text-decoration-none text-truncate text-black"
+										href="string-14-en.html"
+										>D'Addario EXL110</a
+									>
+									<div
+										class="d-flex align-items-center justify-content-center mt-2">
+										<h5>7,99€</h5>
+									</div>
+									<div
+										class="d-flex align-items-center justify-content-center mb-1">
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="far fa-star text-warning me-1"></small>
+										<small
+											class="far fa-star text-warning me-1"></small>
+										<small>(99)</small>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-6 pb-1">
+							<div class="product-item bg-light mb-4">
+								<div
+									class="product-img position-relative overflow-hidden">
+									<a href="string-15-en.html"
+										><img
+											class="img-fluid w-100"
+											src="img/string-15.png"
+											alt=""
+									/></a>
+								</div>
+								<div class="text-center py-4">
+									<a
+										class="h6 text-decoration-none text-truncate text-black"
+										href="string-15-en.html"
+										>Elixir 19052 Optiweb 10-46</a
+									>
+									<div
+										class="d-flex align-items-center justify-content-center mt-2">
+										<h5>15,90€</h5>
+									</div>
+									<div
+										class="d-flex align-items-center justify-content-center mb-1">
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="far fa-star text-warning me-1"></small>
+										<small
+											class="far fa-star text-warning me-1"></small>
+										<small>(99)</small>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-6 pb-1">
+							<div class="product-item bg-light mb-4">
+								<div
+									class="product-img position-relative overflow-hidden">
+									<a href="string-16-en.html"
+										><img
+											class="img-fluid w-100"
+											src="img/string-16.png"
+											alt=""
+									/></a>
+								</div>
+								<div class="text-center py-4">
+									<a
+										class="h6 text-decoration-none text-truncate text-black"
+										href="string-16-en.html"
+										>Elixir 12052 Nanoweb 10-46</a
+									>
+									<div
+										class="d-flex align-items-center justify-content-center mt-2">
+										<h5>14,90€</h5>
+									</div>
+									<div
+										class="d-flex align-items-center justify-content-center mb-1">
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="far fa-star text-warning me-1"></small>
+										<small
+											class="far fa-star text-warning me-1"></small>
+										<small>(99)</small>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-6 pb-1">
+							<div class="product-item bg-light mb-4">
+								<div
+									class="product-img position-relative overflow-hidden">
+									<a href="string-17-en.html"
+										><img
+											class="img-fluid w-100"
+											src="img/string-17.png"
+											alt=""
+									/></a>
+								</div>
+								<div class="text-center py-4">
+									<a
+										class="h6 text-decoration-none text-truncate text-black"
+										href="string-17-en.html"
+										>Elixir 12050 Polyweb 10-46</a
+									>
+									<div
+										class="d-flex align-items-center justify-content-center mt-2">
+										<h5>13,90€</h5>
+									</div>
+									<div
+										class="d-flex align-items-center justify-content-center mb-1">
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="far fa-star text-warning me-1"></small>
+										<small
+											class="far fa-star text-warning me-1"></small>
+										<small>(99)</small>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-6 pb-1">
+							<div class="product-item bg-light mb-4">
+								<div
+									class="product-img position-relative overflow-hidden">
+									<a href="string-18-en.html"
+										><img
+											class="img-fluid w-100"
+											src="img/string-18.png"
+											alt=""
+									/></a>
+								</div>
+								<div class="text-center py-4">
+									<a
+										class="h6 text-decoration-none text-truncate text-black"
+										href="string-18-en.html"
+										>Ernie Ball 2221 Regular Slinky</a
+									>
+									<div
+										class="d-flex align-items-center justify-content-center mt-2">
+										<h5>8,19€</h5>
+									</div>
+									<div
+										class="d-flex align-items-center justify-content-center mb-1">
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="far fa-star text-warning me-1"></small>
+										<small
+											class="far fa-star text-warning me-1"></small>
+										<small>(99)</small>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-6 pb-1">
+							<div class="product-item bg-light mb-4">
+								<div
+									class="product-img position-relative overflow-hidden">
+									<a href="string-19-en.html"
+										><img
+											class="img-fluid w-100"
+											src="img/string-19.png"
+											alt=""
+									/></a>
+								</div>
+								<div class="text-center py-4">
+									<a
+										class="h6 text-decoration-none text-truncate text-black"
+										href="string-19-en.html"
+										>Ernie Ball 2215 Skinny Top Heavy
+										Bottom</a
+									>
+									<div
+										class="d-flex align-items-center justify-content-center mt-2">
+										<h5>8,89€</h5>
+									</div>
+									<div
+										class="d-flex align-items-center justify-content-center mb-1">
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="far fa-star text-warning me-1"></small>
+										<small
+											class="far fa-star text-warning me-1"></small>
+										<small>(99)</small>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-6 pb-1">
+							<div class="product-item bg-light mb-4">
+								<div
+									class="product-img position-relative overflow-hidden">
+									<a href="string-20-en.html"
+										><img
+											class="img-fluid w-100"
+											src="img/string-20.png"
+											alt=""
+									/></a>
+								</div>
+								<div class="text-center py-4">
+									<a
+										class="h6 text-decoration-none text-truncate text-black"
+										href="string-20-en.html"
+										>Ernie Ball 2227 Ultra Slinky</a
+									>
+									<div
+										class="d-flex align-items-center justify-content-center mt-2">
+										<h5>8,19€</h5>
+									</div>
+									<div
+										class="d-flex align-items-center justify-content-center mb-1">
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="far fa-star text-warning me-1"></small>
+										<small
+											class="far fa-star text-warning me-1"></small>
+										<small>(99)</small>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Shop Product End -->
+					<!-- Shop End -->
 
+					<!-- Shop Start -->
+					<!-- Shop Sidebar Start -->
+					<div class="col-lg-2 col-md-2"></div>
+					<!-- Shop Sidebar End -->
 
-            <!-- Shop Product Start -->
-            <div class="col-lg-9 col-md-8 mb-5">
-                <div class="row pb-3">
-                    <div class="col-12 pb-1">
-                        <h2 id="gastrings" class="section-title position-relative mb-4 text-black"><span class="bg-white pe-3">ACOUSTIC GUITAR STRINGS</span></h2>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
-                        <div class="product-item bg-light mb-4">
-                            <div class="product-img position-relative overflow-hidden">
-                                <a href="string-21-en.html"><img class="img-fluid w-100" src="img/string-21.png" alt=""></a>
-                            </div>
-                            <div class="text-center py-4">
-                                <a class="h6 text-decoration-none text-truncate text-black" href="string-21-en.html">D'Addario EZ-890</a>
-                                <div class="d-flex align-items-center justify-content-center mt-2">
-                                    <h5>7,89€</h5>
-                                </div>
-                                <div class="d-flex align-items-center justify-content-center mb-1">
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small>(99)</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
-                        <div class="product-item bg-light mb-4">
-                            <div class="product-img position-relative overflow-hidden">
-                                <a href="string-22-en.html"><img class="img-fluid w-100" src="img/string-22.png" alt=""></a>
-                            </div>
-                            <div class="text-center py-4">
-                                <a class="h6 text-decoration-none text-truncate text-black" href="string-22-en.html">Rotosound JK 9 Jumbo King</a>
-                                <div class="d-flex align-items-center justify-content-center mt-2">
-                                    <h5>7,90€</h5>
-                                </div>
-                                <div class="d-flex align-items-center justify-content-center mb-1">
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star-half-alt text-warning me-1"></small>
-                                    <small>(99)</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
-                        <div class="product-item bg-light mb-4">
-                            <div class="product-img position-relative overflow-hidden">
-                                <a href="string-23-en.html"><img class="img-fluid w-100" src="img/string-23.png" alt=""></a>
-                            </div>
-                            <div class="text-center py-4">
-                                <a class="h6 text-decoration-none text-truncate text-black" href="string-23-en.html">D'Addario EJ15</a>
-                                <div class="d-flex align-items-center justify-content-center mt-2">
-                                    <h5>11,90€</h5>
-                                </div>
-                                <div class="d-flex align-items-center justify-content-center mb-1">
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star-half-alt text-warning me-1"></small>
-                                    <small class="far fa-star text-warning me-1"></small>
-                                    <small>(99)</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
-                        <div class="product-item bg-light mb-4">
-                            <div class="product-img position-relative overflow-hidden">
-                                <a href="string-24-en.html"><img class="img-fluid w-100" src="img/string-24.png" alt=""></a>
-                            </div>
-                            <div class="text-center py-4">
-                                <a class="h6 text-decoration-none text-truncate text-black" href="string-24-en.html">D'Addario EZ-900</a>
-                                <div class="d-flex align-items-center justify-content-center mt-2">
-                                    <h5>7,99€</h5>
-                                </div>
-                                <div class="d-flex align-items-center justify-content-center mb-1">
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star-half-alt text-warning me-1"></small>
-                                    <small class="far fa-star text-warning me-1"></small>
-                                    <small>(99)</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Shop Product End -->
-        </div>
-    </div>
+					<!-- Shop Product Start -->
+					<div class="row pb-3">
+						<div class="col-12 pb-1">
+							<h2
+								id="bstrings"
+								class="section-title position-relative mb-4 text-black">
+								<span class="bg-white pe-3"
+									>ACOUSTIC BASS GUITAR STRINGS</span
+								>
+							</h2>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-6 pb-1">
+							<div class="product-item bg-light mb-4">
+								<div
+									class="product-img position-relative overflow-hidden">
+									<a href="bstring-9-en.html"
+										><img
+											class="img-fluid w-100"
+											src="img/bstring-9.png"
+											alt=""
+									/></a>
+								</div>
+								<div class="text-center py-4">
+									<a
+										class="h6 text-decoration-none text-truncate text-black"
+										href="bstring-9-en.html"
+										>D'Addario EPBB170</a
+									>
+									<div
+										class="d-flex align-items-center justify-content-center mt-2">
+										<h5>42,90€</h5>
+									</div>
+									<div
+										class="d-flex align-items-center justify-content-center mb-1">
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small>(99)</small>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-6 pb-1">
+							<div class="product-item bg-light mb-4">
+								<div
+									class="product-img position-relative overflow-hidden">
+									<a href="bstring-10-en.html"
+										><img
+											class="img-fluid w-100"
+											src="img/bstring-10.png"
+											alt=""
+									/></a>
+								</div>
+								<div class="text-center py-4">
+									<a
+										class="h6 text-decoration-none text-truncate text-black"
+										href="bstring-10-en.html"
+										>Rotosound RS44LC</a
+									>
+									<div
+										class="d-flex align-items-center justify-content-center mt-2">
+										<h5>39,90€</h5>
+									</div>
+									<div
+										class="d-flex align-items-center justify-content-center mb-1">
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star-half-alt text-warning me-1"></small>
+										<small>(99)</small>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-6 pb-1">
+							<div class="product-item bg-light mb-4">
+								<div
+									class="product-img position-relative overflow-hidden">
+									<a href="bstring-11-en.html"
+										><img
+											class="img-fluid w-100"
+											src="img/bstring-11.png"
+											alt=""
+									/></a>
+								</div>
+								<div class="text-center py-4">
+									<a
+										class="h6 text-decoration-none text-truncate text-black"
+										href="bstring-11-en.html"
+										>Rotosound RS44LD</a
+									>
+									<div
+										class="d-flex align-items-center justify-content-center mt-2">
+										<h5>39,90€</h5>
+									</div>
+									<div
+										class="d-flex align-items-center justify-content-center mb-1">
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star-half-alt text-warning me-1"></small>
+										<small
+											class="far fa-star text-warning me-1"></small>
+										<small>(99)</small>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-6 pb-1">
+							<div class="product-item bg-light mb-4">
+								<div
+									class="product-img position-relative overflow-hidden">
+									<a href="bstring-12-en.html"
+										><img
+											class="img-fluid w-100"
+											src="img/bstring-12.png"
+											alt=""
+									/></a>
+								</div>
+								<div class="text-center py-4">
+									<a
+										class="h6 text-decoration-none text-truncate text-black"
+										href="bstring-12-en.html"
+										>Elixir 14502 Anti-Rust Nanoweb</a
+									>
+									<div
+										class="d-flex align-items-center justify-content-center mt-2">
+										<h5>51,90€</h5>
+									</div>
+									<div
+										class="d-flex align-items-center justify-content-center mb-1">
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="far fa-star text-warning me-1"></small>
+										<small
+											class="far fa-star text-warning me-1"></small>
+										<small>(99)</small>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Shop Product End -->
 
-    <!-- Shop Start -->
-    <div class="container-fluid">
-        <div class="row px-xl-5">
-            <!-- Shop Sidebar Start -->
-            <div class="col-lg-2 col-md-2">
-            </div>
-            <!-- Shop Sidebar End -->
+					<!-- Shop End -->
 
+					<!-- Shop Start -->
 
-            <!-- Shop Product Start -->
-            <div class="col-lg-9 col-md-8 mb-5">
-                <div class="row pb-3">
-                    <div class="col-12 pb-1">
-                        <h2 id="gestrings" class="section-title position-relative mb-4 text-black"><span class="bg-white pe-3">ELECTRIC GUITAR STRINGS</span></h2>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
-                        <div class="product-item bg-light mb-4">
-                            <div class="product-img position-relative overflow-hidden">
-                                <a href="string-1-en.html"><img class="img-fluid w-100" src="img/string-1.png" alt=""></a>
-                            </div>
-                            <div class="text-center py-4">
-                                <a class="h6 text-decoration-none text-truncate text-black" href="string-1-en.html">D'Addario EXL130</a>
-                                <div class="d-flex align-items-center justify-content-center mt-2">
-                                    <h5>7,59€</h5>
-                                </div>
-                                <div class="d-flex align-items-center justify-content-center mb-1">
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small>(99)</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
-                        <div class="product-item bg-light mb-4">
-                            <div class="product-img position-relative overflow-hidden">
-                                <a href="string-2-en.html"><img class="img-fluid w-100" src="img/string-2.png" alt=""></a>
-                            </div>
-                            <div class="text-center py-4">
-                                <a class="h6 text-decoration-none text-truncate text-black" href="string-2-en.html">D'Addario NYXL0838</a>
-                                <div class="d-flex align-items-center justify-content-center mt-2">
-                                    <h5>17,90€</h5>
-                                </div>
-                                <div class="d-flex align-items-center justify-content-center mb-1">
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star-half-alt text-warning me-1"></small>
-                                    <small>(99)</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
-                        <div class="product-item bg-light mb-4">
-                            <div class="product-img position-relative overflow-hidden">
-                                <a href="string-3-en.html"><img class="img-fluid w-100" src="img/string-3.png" alt=""></a>
-                            </div>
-                            <div class="text-center py-4">
-                                <a class="h6 text-decoration-none text-truncate text-black" href="string-3-en.html">Ernie Ball 2225 Extra Slinky</a>
-                                <div class="d-flex align-items-center justify-content-center mt-2">
-                                    <h5>8,19€</h5>
-                                </div>
-                                <div class="d-flex align-items-center justify-content-center mb-1">
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star-half-alt text-warning me-1"></small>
-                                    <small class="far fa-star text-warning me-1"></small>
-                                    <small>(99)</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
-                        <div class="product-item bg-light mb-4">
-                            <div class="product-img position-relative overflow-hidden">
-                                <a href="string-4-en.html"><img class="img-fluid w-100" src="img/string-4.png" alt=""></a>
-                            </div>
-                            <div class="text-center py-4">
-                                <a class="h6 text-decoration-none text-truncate text-black" href="string-4-en.html">Elixir 12002 Nanoweb 9-42</a>
-                                <div class="d-flex align-items-center justify-content-center mt-2">
-                                    <h5>14,90€</h5>
-                                </div>
-                                <div class="d-flex align-items-center justify-content-center mb-1">
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="far fa-star text-warning me-1"></small>
-                                    <small class="far fa-star text-warning me-1"></small>
-                                    <small>(99)</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
-                        <div class="product-item bg-light mb-4">
-                            <div class="product-img position-relative overflow-hidden">
-                                <a href="string-5-en.html"><img class="img-fluid w-100" src="img/string-5.png" alt=""></a>
-                            </div>
-                            <div class="text-center py-4">
-                                <a class="h6 text-decoration-none text-truncate text-black" href="string-5-en.html">Elixir 19002 Optiweb 9-42</a>
-                                <div class="d-flex align-items-center justify-content-center mt-2">
-                                    <h5>15,90€</h5>
-                                </div>
-                                <div class="d-flex align-items-center justify-content-center mb-1">
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small>(99)</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
-                        <div class="product-item bg-light mb-4">
-                            <div class="product-img position-relative overflow-hidden">
-                                <a href="string-6-en.html"><img class="img-fluid w-100" src="img/string-6.png" alt=""></a>
-                            </div>
-                            <div class="text-center py-4">
-                                <a class="h6 text-decoration-none text-truncate text-black" href="string-6-en.html">Elixir 12000 Polyweb 9-42</a>
-                                <div class="d-flex align-items-center justify-content-center mt-2">
-                                    <h5>13,90€</h5>
-                                </div>
-                                <div class="d-flex align-items-center justify-content-center mb-1">
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star-half-alt text-warning me-1"></small>
-                                    <small>(99)</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
-                        <div class="product-item bg-light mb-4">
-                            <div class="product-img position-relative overflow-hidden">
-                                <a href="string-7-en.html"><img class="img-fluid w-100" src="img/string-7.png" alt=""></a>
-                            </div>
-                            <div class="text-center py-4">
-                                <a class="h6 text-decoration-none text-truncate text-black" href="string-7-en.html">D'Addario NYXL0942</a>
-                                <div class="d-flex align-items-center justify-content-center mt-2">
-                                    <h5>17,90€</h5>
-                                </div>
-                                <div class="d-flex align-items-center justify-content-center mb-1">
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star-half-alt text-warning me-1"></small>
-                                    <small class="far fa-star text-warning me-1"></small>
-                                    <small>(99)</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
-                        <div class="product-item bg-light mb-4">
-                            <div class="product-img position-relative overflow-hidden">
-                                <a href="string-8-en.html"><img class="img-fluid w-100" src="img/string-8.png" alt=""></a>
-                            </div>
-                            <div class="text-center py-4">
-                                <a class="h6 text-decoration-none text-truncate text-black" href="string-8-en.html">D'Addario EXL120</a>
-                                <div class="d-flex align-items-center justify-content-center mt-2">
-                                    <h5>7,59€</h5>
-                                </div>
-                                <div class="d-flex align-items-center justify-content-center mb-1">
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="far fa-star text-warning me-1"></small>
-                                    <small class="far fa-star text-warning me-1"></small>
-                                    <small>(99)</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
-                        <div class="product-item bg-light mb-4">
-                            <div class="product-img position-relative overflow-hidden">
-                                <a href="string-9-en.html"><img class="img-fluid w-100" src="img/string-9.png" alt=""></a>
-                            </div>
-                            <div class="text-center py-4">
-                                <a class="h6 text-decoration-none text-truncate text-black" href="string-9-en.html">D'Addario NYXL0946</a>
-                                <div class="d-flex align-items-center justify-content-center mt-2">
-                                    <h5>17,90€</h5>
-                                </div>
-                                <div class="d-flex align-items-center justify-content-center mb-1">
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="far fa-star text-warning me-1"></small>
-                                    <small class="far fa-star text-warning me-1"></small>
-                                    <small>(99)</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
-                        <div class="product-item bg-light mb-4">
-                            <div class="product-img position-relative overflow-hidden">
-                                <a href="string-10-en.html"><img class="img-fluid w-100" src="img/string-10.png" alt=""></a>
-                            </div>
-                            <div class="text-center py-4">
-                                <a class="h6 text-decoration-none text-truncate text-black" href="string-10-en.html">Ernie Ball 2223 Super Slinky</a>
-                                <div class="d-flex align-items-center justify-content-center mt-2">
-                                    <h5>8,19€</h5>
-                                </div>
-                                <div class="d-flex align-items-center justify-content-center mb-1">
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="far fa-star text-warning me-1"></small>
-                                    <small class="far fa-star text-warning me-1"></small>
-                                    <small>(99)</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
-                        <div class="product-item bg-light mb-4">
-                            <div class="product-img position-relative overflow-hidden">
-                                <a href="string-11-en.html"><img class="img-fluid w-100" src="img/string-11.png" alt=""></a>
-                            </div>
-                            <div class="text-center py-4">
-                                <a class="h6 text-decoration-none text-truncate text-black" href="string-11-en.html">Ernie Ball 2222 Hybrid Slinky</a>
-                                <div class="d-flex align-items-center justify-content-center mt-2">
-                                    <h5>8,19€</h5>
-                                </div>
-                                <div class="d-flex align-items-center justify-content-center mb-1">
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="far fa-star text-warning me-1"></small>
-                                    <small class="far fa-star text-warning me-1"></small>
-                                    <small>(99)</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
-                        <div class="product-item bg-light mb-4">
-                            <div class="product-img position-relative overflow-hidden">
-                                <a href="string-12-en.html"><img class="img-fluid w-100" src="img/string-12.png" alt=""></a>
-                            </div>
-                            <div class="text-center py-4">
-                                <a class="h6 text-decoration-none text-truncate text-black" href="string-12-en.html">D'Addario NYXL1052</a>
-                                <div class="d-flex align-items-center justify-content-center mt-2">
-                                    <h5>18,90€</h5>
-                                </div>
-                                <div class="d-flex align-items-center justify-content-center mb-1">
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="far fa-star text-warning me-1"></small>
-                                    <small class="far fa-star text-warning me-1"></small>
-                                    <small>(99)</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
-                        <div class="product-item bg-light mb-4">
-                            <div class="product-img position-relative overflow-hidden">
-                                <a href="string-13-en.html"><img class="img-fluid w-100" src="img/string-13.png" alt=""></a>
-                            </div>
-                            <div class="text-center py-4">
-                                <a class="h6 text-decoration-none text-truncate text-black" href="string-13-en.html">D'Addario NYXL1046</a>
-                                <div class="d-flex align-items-center justify-content-center mt-2">
-                                    <h5>17,90€</h5>
-                                </div>
-                                <div class="d-flex align-items-center justify-content-center mb-1">
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="far fa-star text-warning me-1"></small>
-                                    <small class="far fa-star text-warning me-1"></small>
-                                    <small>(99)</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
-                        <div class="product-item bg-light mb-4">
-                            <div class="product-img position-relative overflow-hidden">
-                                <a href="string-14-en.html"><img class="img-fluid w-100" src="img/string-14.png" alt=""></a>
-                            </div>
-                            <div class="text-center py-4">
-                                <a class="h6 text-decoration-none text-truncate text-black" href="string-14-en.html">D'Addario EXL110</a>
-                                <div class="d-flex align-items-center justify-content-center mt-2">
-                                    <h5>7,99€</h5>
-                                </div>
-                                <div class="d-flex align-items-center justify-content-center mb-1">
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="far fa-star text-warning me-1"></small>
-                                    <small class="far fa-star text-warning me-1"></small>
-                                    <small>(99)</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
-                        <div class="product-item bg-light mb-4">
-                            <div class="product-img position-relative overflow-hidden">
-                                <a href="string-15-en.html"><img class="img-fluid w-100" src="img/string-15.png" alt=""></a>
-                            </div>
-                            <div class="text-center py-4">
-                                <a class="h6 text-decoration-none text-truncate text-black" href="string-15-en.html">Elixir 19052 Optiweb 10-46</a>
-                                <div class="d-flex align-items-center justify-content-center mt-2">
-                                    <h5>15,90€</h5>
-                                </div>
-                                <div class="d-flex align-items-center justify-content-center mb-1">
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="far fa-star text-warning me-1"></small>
-                                    <small class="far fa-star text-warning me-1"></small>
-                                    <small>(99)</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
-                        <div class="product-item bg-light mb-4">
-                            <div class="product-img position-relative overflow-hidden">
-                                <a href="string-16-en.html"><img class="img-fluid w-100" src="img/string-16.png" alt=""></a>
-                            </div>
-                            <div class="text-center py-4">
-                                <a class="h6 text-decoration-none text-truncate text-black" href="string-16-en.html">Elixir 12052 Nanoweb 10-46</a>
-                                <div class="d-flex align-items-center justify-content-center mt-2">
-                                    <h5>14,90€</h5>
-                                </div>
-                                <div class="d-flex align-items-center justify-content-center mb-1">
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="far fa-star text-warning me-1"></small>
-                                    <small class="far fa-star text-warning me-1"></small>
-                                    <small>(99)</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
-                        <div class="product-item bg-light mb-4">
-                            <div class="product-img position-relative overflow-hidden">
-                                <a href="string-17-en.html"><img class="img-fluid w-100" src="img/string-17.png" alt=""></a>
-                            </div>
-                            <div class="text-center py-4">
-                                <a class="h6 text-decoration-none text-truncate text-black" href="string-17-en.html">Elixir 12050 Polyweb 10-46</a>
-                                <div class="d-flex align-items-center justify-content-center mt-2">
-                                    <h5>13,90€</h5>
-                                </div>
-                                <div class="d-flex align-items-center justify-content-center mb-1">
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="far fa-star text-warning me-1"></small>
-                                    <small class="far fa-star text-warning me-1"></small>
-                                    <small>(99)</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
-                        <div class="product-item bg-light mb-4">
-                            <div class="product-img position-relative overflow-hidden">
-                                <a href="string-18-en.html"><img class="img-fluid w-100" src="img/string-18.png" alt=""></a>
-                            </div>
-                            <div class="text-center py-4">
-                                <a class="h6 text-decoration-none text-truncate text-black" href="string-18-en.html">Ernie Ball 2221 Regular Slinky</a>
-                                <div class="d-flex align-items-center justify-content-center mt-2">
-                                    <h5>8,19€</h5>
-                                </div>
-                                <div class="d-flex align-items-center justify-content-center mb-1">
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="far fa-star text-warning me-1"></small>
-                                    <small class="far fa-star text-warning me-1"></small>
-                                    <small>(99)</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
-                        <div class="product-item bg-light mb-4">
-                            <div class="product-img position-relative overflow-hidden">
-                                <a href="string-19-en.html"><img class="img-fluid w-100" src="img/string-19.png" alt=""></a>
-                            </div>
-                            <div class="text-center py-4">
-                                <a class="h6 text-decoration-none text-truncate text-black" href="string-19-en.html">Ernie Ball 2215 Skinny Top Heavy Bottom</a>
-                                <div class="d-flex align-items-center justify-content-center mt-2">
-                                    <h5>8,89€</h5>
-                                </div>
-                                <div class="d-flex align-items-center justify-content-center mb-1">
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="far fa-star text-warning me-1"></small>
-                                    <small class="far fa-star text-warning me-1"></small>
-                                    <small>(99)</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
-                        <div class="product-item bg-light mb-4">
-                            <div class="product-img position-relative overflow-hidden">
-                                <a href="string-20-en.html"><img class="img-fluid w-100" src="img/string-20.png" alt=""></a>
-                            </div>
-                            <div class="text-center py-4">
-                                <a class="h6 text-decoration-none text-truncate text-black" href="string-20-en.html">Ernie Ball 2227 Ultra Slinky</a>
-                                <div class="d-flex align-items-center justify-content-center mt-2">
-                                    <h5>8,19€</h5>
-                                </div>
-                                <div class="d-flex align-items-center justify-content-center mb-1">
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="far fa-star text-warning me-1"></small>
-                                    <small class="far fa-star text-warning me-1"></small>
-                                    <small>(99)</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Shop Product End -->
-        </div>
-    </div>
-    <!-- Shop End -->
+					<!-- Shop Sidebar Start -->
+					<div class="col-lg-2 col-md-2"></div>
+					<!-- Shop Sidebar End -->
 
+					<!-- Shop Product Start -->
+					<div class="row pb-3">
+						<div class="col-12 pb-1">
+							<h2
+								id="bestrings"
+								class="section-title position-relative mb-4 text-black">
+								<span class="bg-white pe-3"
+									>ELECTRIC BASS GUITAR STRINGS</span
+								>
+							</h2>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-6 pb-1">
+							<div class="product-item bg-light mb-4">
+								<div
+									class="product-img position-relative overflow-hidden">
+									<a href="bstring-1-en.html"
+										><img
+											class="img-fluid w-100"
+											src="img/bstring-1.png"
+											alt=""
+									/></a>
+								</div>
+								<div class="text-center py-4">
+									<a
+										class="h6 text-decoration-none text-truncate text-black"
+										href="bstring-1-en.html"
+										>Elixir 14077 Bass Nanoweb</a
+									>
+									<div
+										class="d-flex align-items-center justify-content-center mt-2">
+										<h5>51,90€</h5>
+									</div>
+									<div
+										class="d-flex align-items-center justify-content-center mb-1">
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small>(99)</small>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-6 pb-1">
+							<div class="product-item bg-light mb-4">
+								<div
+									class="product-img position-relative overflow-hidden">
+									<a href="bstring-2-en.html"
+										><img
+											class="img-fluid w-100"
+											src="img/bstring-2.png"
+											alt=""
+									/></a>
+								</div>
+								<div class="text-center py-4">
+									<a
+										class="h6 text-decoration-none text-truncate text-black"
+										href="bstring-2-en.html"
+										>Rotosound RS66LE</a
+									>
+									<div
+										class="d-flex align-items-center justify-content-center mt-2">
+										<h5>25,90€</h5>
+									</div>
+									<div
+										class="d-flex align-items-center justify-content-center mb-1">
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star-half-alt text-warning me-1"></small>
+										<small>(99)</small>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-6 pb-1">
+							<div class="product-item bg-light mb-4">
+								<div
+									class="product-img position-relative overflow-hidden">
+									<a href="bstring-3-en.html"
+										><img
+											class="img-fluid w-100"
+											src="img/bstring-3.png"
+											alt=""
+									/></a>
+								</div>
+								<div class="text-center py-4">
+									<a
+										class="h6 text-decoration-none text-truncate text-black"
+										href="bstring-3-en.html"
+										>Rotosound RS66LD</a
+									>
+									<div
+										class="d-flex align-items-center justify-content-center mt-2">
+										<h5>25,50€</h5>
+									</div>
+									<div
+										class="d-flex align-items-center justify-content-center mb-1">
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star-half-alt text-warning me-1"></small>
+										<small
+											class="far fa-star text-warning me-1"></small>
+										<small>(99)</small>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-6 pb-1">
+							<div class="product-item bg-light mb-4">
+								<div
+									class="product-img position-relative overflow-hidden">
+									<a href="bstring-4-en.html"
+										><img
+											class="img-fluid w-100"
+											src="img/bstring-4.png"
+											alt=""
+									/></a>
+								</div>
+								<div class="text-center py-4">
+									<a
+										class="h6 text-decoration-none text-truncate text-black"
+										href="bstring-4-en.html"
+										>Rotosound SM66</a
+									>
+									<div
+										class="d-flex align-items-center justify-content-center mt-2">
+										<h5>25,40€</h5>
+									</div>
+									<div
+										class="d-flex align-items-center justify-content-center mb-1">
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="far fa-star text-warning me-1"></small>
+										<small
+											class="far fa-star text-warning me-1"></small>
+										<small>(99)</small>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-6 pb-1">
+							<div class="product-item bg-light mb-4">
+								<div
+									class="product-img position-relative overflow-hidden">
+									<a href="bstring-5-en.html"
+										><img
+											class="img-fluid w-100"
+											src="img/bstring-5.png"
+											alt=""
+									/></a>
+								</div>
+								<div class="text-center py-4">
+									<a
+										class="h6 text-decoration-none text-truncate text-black"
+										href="bstring-5-en.html"
+										>Elixir 14202 NanoWeb</a
+									>
+									<div
+										class="d-flex align-items-center justify-content-center mt-2">
+										<h5>63,90€</h5>
+									</div>
+									<div
+										class="d-flex align-items-center justify-content-center mb-1">
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="far fa-star text-warning me-1"></small>
+										<small
+											class="far fa-star text-warning me-1"></small>
+										<small>(99)</small>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-6 pb-1">
+							<div class="product-item bg-light mb-4">
+								<div
+									class="product-img position-relative overflow-hidden">
+									<a href="bstring-6-en.html"
+										><img
+											class="img-fluid w-100"
+											src="img/bstring-6.png"
+											alt=""
+									/></a>
+								</div>
+								<div class="text-center py-4">
+									<a
+										class="h6 text-decoration-none text-truncate text-black"
+										href="bstring-6-en.html"
+										>Rotosound RS665LD</a
+									>
+									<div
+										class="d-flex align-items-center justify-content-center mt-2">
+										<h5>30,90€</h5>
+									</div>
+									<div
+										class="d-flex align-items-center justify-content-center mb-1">
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="far fa-star text-warning me-1"></small>
+										<small
+											class="far fa-star text-warning me-1"></small>
+										<small>(99)</small>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-6 pb-1">
+							<div class="product-item bg-light mb-4">
+								<div
+									class="product-img position-relative overflow-hidden">
+									<a href="bstring-7-en.html"
+										><img
+											class="img-fluid w-100"
+											src="img/bstring-7.png"
+											alt=""
+									/></a>
+								</div>
+								<div class="text-center py-4">
+									<a
+										class="h6 text-decoration-none text-truncate text-black"
+										href="bstring-7-en.html"
+										>Rotosound RS665LC</a
+									>
+									<div
+										class="d-flex align-items-center justify-content-center mt-2">
+										<h5>32,60€</h5>
+									</div>
+									<div
+										class="d-flex align-items-center justify-content-center mb-1">
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="far fa-star text-warning me-1"></small>
+										<small
+											class="far fa-star text-warning me-1"></small>
+										<small>(99)</small>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-6 pb-1">
+							<div class="product-item bg-light mb-4">
+								<div
+									class="product-img position-relative overflow-hidden">
+									<a href="bstring-8-en.html"
+										><img
+											class="img-fluid w-100"
+											src="img/bstring-8.png"
+											alt=""
+									/></a>
+								</div>
+								<div class="text-center py-4">
+									<a
+										class="h6 text-decoration-none text-truncate text-black"
+										href="bstring-8-en.html"
+										>Rotosound RS665LB</a
+									>
+									<div
+										class="d-flex align-items-center justify-content-center mt-2">
+										<h5>32,60€</h5>
+									</div>
+									<div
+										class="d-flex align-items-center justify-content-center mb-1">
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="far fa-star text-warning me-1"></small>
+										<small
+											class="far fa-star text-warning me-1"></small>
+										<small>(99)</small>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Shop Product End -->
 
-            <!-- Shop Start -->
-            <div class="container-fluid">
-                <div class="row px-xl-5">
-                    <!-- Shop Sidebar Start -->
-                    <div class="col-lg-2 col-md-2">
-                    </div>
-                    <!-- Shop Sidebar End -->
-        
-        
-                    <!-- Shop Product Start -->
-                    <div class="col-lg-9 col-md-8 mb-5">
-                        <div class="row pb-3">
-                            <div class="col-12 pb-1">
-                                <h2 id="bstrings" class="section-title position-relative mb-4 text-black"><span class="bg-white pe-3">ACOUSTIC BASS GUITAR STRINGS</span></h2>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
-                                <div class="product-item bg-light mb-4">
-                                    <div class="product-img position-relative overflow-hidden">
-                                        <a href="bstring-9-en.html"><img class="img-fluid w-100" src="img/bstring-9.png" alt=""></a>
-                                    </div>
-                                    <div class="text-center py-4">
-                                        <a class="h6 text-decoration-none text-truncate text-black" href="bstring-9-en.html">D'Addario EPBB170</a>
-                                        <div class="d-flex align-items-center justify-content-center mt-2">
-                                            <h5>42,90€</h5>
-                                        </div>
-                                        <div class="d-flex align-items-center justify-content-center mb-1">
-                                            <small class="fa fa-star text-warning me-1"></small>
-                                            <small class="fa fa-star text-warning me-1"></small>
-                                            <small class="fa fa-star text-warning me-1"></small>
-                                            <small class="fa fa-star text-warning me-1"></small>
-                                            <small class="fa fa-star text-warning me-1"></small>
-                                            <small>(99)</small>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
-                                <div class="product-item bg-light mb-4">
-                                    <div class="product-img position-relative overflow-hidden">
-                                        <a href="bstring-10-en.html"><img class="img-fluid w-100" src="img/bstring-10.png" alt=""></a>
-                                    </div>
-                                    <div class="text-center py-4">
-                                        <a class="h6 text-decoration-none text-truncate text-black" href="bstring-10-en.html">Rotosound RS44LC</a>
-                                        <div class="d-flex align-items-center justify-content-center mt-2">
-                                            <h5>39,90€</h5>
-                                        </div>
-                                        <div class="d-flex align-items-center justify-content-center mb-1">
-                                            <small class="fa fa-star text-warning me-1"></small>
-                                            <small class="fa fa-star text-warning me-1"></small>
-                                            <small class="fa fa-star text-warning me-1"></small>
-                                            <small class="fa fa-star text-warning me-1"></small>
-                                            <small class="fa fa-star-half-alt text-warning me-1"></small>
-                                            <small>(99)</small>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
-                                <div class="product-item bg-light mb-4">
-                                    <div class="product-img position-relative overflow-hidden">
-                                        <a href="bstring-11-en.html"><img class="img-fluid w-100" src="img/bstring-11.png" alt=""></a>
-                                    </div>
-                                    <div class="text-center py-4">
-                                        <a class="h6 text-decoration-none text-truncate text-black" href="bstring-11-en.html">Rotosound RS44LD</a>
-                                        <div class="d-flex align-items-center justify-content-center mt-2">
-                                            <h5>39,90€</h5>
-                                        </div>
-                                        <div class="d-flex align-items-center justify-content-center mb-1">
-                                            <small class="fa fa-star text-warning me-1"></small>
-                                            <small class="fa fa-star text-warning me-1"></small>
-                                            <small class="fa fa-star text-warning me-1"></small>
-                                            <small class="fa fa-star-half-alt text-warning me-1"></small>
-                                            <small class="far fa-star text-warning me-1"></small>
-                                            <small>(99)</small>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
-                                <div class="product-item bg-light mb-4">
-                                    <div class="product-img position-relative overflow-hidden">
-                                        <a href="bstring-12-en.html"><img class="img-fluid w-100" src="img/bstring-12.png" alt=""></a>
-                                    </div>
-                                    <div class="text-center py-4">
-                                        <a class="h6 text-decoration-none text-truncate text-black" href="bstring-12-en.html">Elixir 14502 Anti-Rust Nanoweb</a>
-                                        <div class="d-flex align-items-center justify-content-center mt-2">
-                                            <h5>51,90€</h5>
-                                        </div>
-                                        <div class="d-flex align-items-center justify-content-center mb-1">
-                                            <small class="fa fa-star text-warning me-1"></small>
-                                            <small class="fa fa-star text-warning me-1"></small>
-                                            <small class="fa fa-star text-warning me-1"></small>
-                                            <small class="far fa-star text-warning me-1"></small>
-                                            <small class="far fa-star text-warning me-1"></small>
-                                            <small>(99)</small>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Shop Product End -->
-                </div>
-            </div>
-            <!-- Shop End -->
+					<!-- Shop End -->
 
+					<!-- Shop Start -->
 
-    <!-- Shop Start -->
-    <div class="container-fluid">
-        <div class="row px-xl-5">
-            <!-- Shop Sidebar Start -->
-            <div class="col-lg-2 col-md-2">
-            </div>
-            <!-- Shop Sidebar End -->
+					<!-- Shop Sidebar Start -->
+					<div class="col-lg-2 col-md-2"></div>
+					<!-- Shop Sidebar End -->
 
+					<!-- Shop Product Start -->
+					<div class="row pb-3">
+						<div class="col-12 pb-1">
+							<h2
+								id="picks"
+								class="section-title position-relative mb-4 text-black">
+								<span class="bg-white pe-3">PICKS</span>
+							</h2>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-6 pb-1">
+							<div class="product-item bg-light mb-4">
+								<div
+									class="product-img position-relative overflow-hidden">
+									<a href="pick-1-en.html"
+										><img
+											class="img-fluid w-100"
+											src="img/pick-1.png"
+											alt=""
+									/></a>
+								</div>
+								<div class="text-center py-4">
+									<a
+										class="h6 text-decoration-none text-truncate text-black"
+										href="pick-1-en.html"
+										>Dunlop 474R 3.00 Stubby Jazz</a
+									>
+									<div
+										class="d-flex align-items-center justify-content-center mt-2">
+										<h5>1,19€</h5>
+									</div>
+									<div
+										class="d-flex align-items-center justify-content-center mb-1">
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small>(99)</small>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-6 pb-1">
+							<div class="product-item bg-light mb-4">
+								<div
+									class="product-img position-relative overflow-hidden">
+									<a href="pick-2-en.html"
+										><img
+											class="img-fluid w-100"
+											src="img/pick-2.png"
+											alt=""
+									/></a>
+								</div>
+								<div class="text-center py-4">
+									<a
+										class="h6 text-decoration-none text-truncate text-black"
+										href="pick-2-en.html"
+										>Dunlop 44R 1.00 Nylon Standard</a
+									>
+									<div
+										class="d-flex align-items-center justify-content-center mt-2">
+										<h5>0,79€</h5>
+									</div>
+									<div
+										class="d-flex align-items-center justify-content-center mb-1">
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star-half-alt text-warning me-1"></small>
+										<small>(99)</small>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-6 pb-1">
+							<div class="product-item bg-light mb-4">
+								<div
+									class="product-img position-relative overflow-hidden">
+									<a href="pick-3-en.html"
+										><img
+											class="img-fluid w-100"
+											src="img/pick-3.png"
+											alt=""
+									/></a>
+								</div>
+								<div class="text-center py-4">
+									<a
+										class="h6 text-decoration-none text-truncate text-black"
+										href="pick-3-en.html"
+										>Dunlop 417P 2.00 Gator Grip Standard</a
+									>
+									<div
+										class="d-flex align-items-center justify-content-center mt-2">
+										<h5>0.99€</h5>
+									</div>
+									<div
+										class="d-flex align-items-center justify-content-center mb-1">
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star-half-alt text-warning me-1"></small>
+										<small
+											class="far fa-star text-warning me-1"></small>
+										<small>(99)</small>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-6 pb-1">
+							<div class="product-item bg-light mb-4">
+								<div
+									class="product-img position-relative overflow-hidden">
+									<a href="pick-4-en.html"
+										><img
+											class="img-fluid w-100"
+											src="img/pick-4.png"
+											alt=""
+									/></a>
+								</div>
+								<div class="text-center py-4">
+									<a
+										class="h6 text-decoration-none text-truncate text-black"
+										href="pick-4-en.html"
+										>Dunlop 418R 0.60 Tortex Standard</a
+									>
+									<div
+										class="d-flex align-items-center justify-content-center mt-2">
+										<h5>0,78€</h5>
+									</div>
+									<div
+										class="d-flex align-items-center justify-content-center mb-1">
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="far fa-star text-warning me-1"></small>
+										<small
+											class="far fa-star text-warning me-1"></small>
+										<small>(99)</small>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-6 pb-1">
+							<div class="product-item bg-light mb-4">
+								<div
+									class="product-img position-relative overflow-hidden">
+									<a href="pick-5-en.html"
+										><img
+											class="img-fluid w-100"
+											src="img/pick-5.png"
+											alt=""
+									/></a>
+								</div>
+								<div class="text-center py-4">
+									<a
+										class="h6 text-decoration-none text-truncate text-black"
+										href="pick-5-en.html"
+										>Dunlop 418R 0.50 Tortex Standard</a
+									>
+									<div
+										class="d-flex align-items-center justify-content-center mt-2">
+										<h5>0,79€</h5>
+									</div>
+									<div
+										class="d-flex align-items-center justify-content-center mb-1">
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small>(99)</small>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-6 pb-1">
+							<div class="product-item bg-light mb-4">
+								<div
+									class="product-img position-relative overflow-hidden">
+									<a href="pick-6-en.html"
+										><img
+											class="img-fluid w-100"
+											src="img/pick-6.png"
+											alt=""
+									/></a>
+								</div>
+								<div class="text-center py-4">
+									<a
+										class="h6 text-decoration-none text-truncate text-black"
+										href="pick-6-en.html"
+										>Dunlop 443R 0.67 Nylon Midi Standard</a
+									>
+									<div
+										class="d-flex align-items-center justify-content-center mt-2">
+										<h5>0,79€</h5>
+									</div>
+									<div
+										class="d-flex align-items-center justify-content-center mb-1">
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star-half-alt text-warning me-1"></small>
+										<small>(99)</small>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-6 pb-1">
+							<div class="product-item bg-light mb-4">
+								<div
+									class="product-img position-relative overflow-hidden">
+									<a href="pick-7-en.html"
+										><img
+											class="img-fluid w-100"
+											src="img/pick-7.png"
+											alt=""
+									/></a>
+								</div>
+								<div class="text-center py-4">
+									<a
+										class="h6 text-decoration-none text-truncate text-black"
+										href="pick-7-en.html"
+										>Dunlop 44R 0.38 Nylon Standard</a
+									>
+									<div
+										class="d-flex align-items-center justify-content-center mt-2">
+										<h5>0,79€</h5>
+									</div>
+									<div
+										class="d-flex align-items-center justify-content-center mb-1">
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star-half-alt text-warning me-1"></small>
+										<small
+											class="far fa-star text-warning me-1"></small>
+										<small>(99)</small>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-6 pb-1">
+							<div class="product-item bg-light mb-4">
+								<div
+									class="product-img position-relative overflow-hidden">
+									<a href="pick-8-en.html"
+										><img
+											class="img-fluid w-100"
+											src="img/pick-8.png"
+											alt=""
+									/></a>
+								</div>
+								<div class="text-center py-4">
+									<a
+										class="h6 text-decoration-none text-truncate text-black"
+										href="pick-8-en.html"
+										>Dunlop 418R 0.73 Tortex Standard</a
+									>
+									<div
+										class="d-flex align-items-center justify-content-center mt-2">
+										<h5>0,79€</h5>
+									</div>
+									<div
+										class="d-flex align-items-center justify-content-center mb-1">
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="far fa-star text-warning me-1"></small>
+										<small
+											class="far fa-star text-warning me-1"></small>
+										<small>(99)</small>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-6 pb-1">
+							<div class="product-item bg-light mb-4">
+								<div
+									class="product-img position-relative overflow-hidden">
+									<a href="pick-9-en.html"
+										><img
+											class="img-fluid w-100"
+											src="img/pick-9.png"
+											alt=""
+									/></a>
+								</div>
+								<div class="text-center py-4">
+									<a
+										class="h6 text-decoration-none text-truncate text-black"
+										href="pick-9-en.html"
+										>Dunlop 443R 0.80 Nylon Midi Standard</a
+									>
+									<div
+										class="d-flex align-items-center justify-content-center mt-2">
+										<h5>0,79€</h5>
+									</div>
+									<div
+										class="d-flex align-items-center justify-content-center mb-1">
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="far fa-star text-warning me-1"></small>
+										<small
+											class="far fa-star text-warning me-1"></small>
+										<small>(99)</small>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-6 pb-1">
+							<div class="product-item bg-light mb-4">
+								<div
+									class="product-img position-relative overflow-hidden">
+									<a href="pick-10-en.html"
+										><img
+											class="img-fluid w-100"
+											src="img/pick-10.png"
+											alt=""
+									/></a>
+								</div>
+								<div class="text-center py-4">
+									<a
+										class="h6 text-decoration-none text-truncate text-black"
+										href="pick-10-en.html"
+										>Dunlop 44R 0.88 Nylon Standard</a
+									>
+									<div
+										class="d-flex align-items-center justify-content-center mt-2">
+										<h5>0,79€</h5>
+									</div>
+									<div
+										class="d-flex align-items-center justify-content-center mb-1">
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="far fa-star text-warning me-1"></small>
+										<small
+											class="far fa-star text-warning me-1"></small>
+										<small>(99)</small>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-6 pb-1">
+							<div class="product-item bg-light mb-4">
+								<div
+									class="product-img position-relative overflow-hidden">
+									<a href="pick-11-en.html"
+										><img
+											class="img-fluid w-100"
+											src="img/pick-11.png"
+											alt=""
+									/></a>
+								</div>
+								<div class="text-center py-4">
+									<a
+										class="h6 text-decoration-none text-truncate text-black"
+										href="pick-11-en.html"
+										>Dunlop 412R 0.88 Tortex Sharp</a
+									>
+									<div
+										class="d-flex align-items-center justify-content-center mt-2">
+										<h5>0,79€</h5>
+									</div>
+									<div
+										class="d-flex align-items-center justify-content-center mb-1">
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="far fa-star text-warning me-1"></small>
+										<small
+											class="far fa-star text-warning me-1"></small>
+										<small>(99)</small>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Shop Product End -->
+					<!-- Shop End -->
 
-            <!-- Shop Product Start -->
-            <div class="col-lg-9 col-md-8 mb-5">
-                <div class="row pb-3">
-                    <div class="col-12 pb-1">
-                        <h2 id="bstrings" class="section-title position-relative mb-4 text-black"><span class="bg-white pe-3">ELECTRIC BASS GUITAR STRINGS</span></h2>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
-                        <div class="product-item bg-light mb-4">
-                            <div class="product-img position-relative overflow-hidden">
-                                <a href="bstring-1-en.html"><img class="img-fluid w-100" src="img/bstring-1.png" alt=""></a>
-                            </div>
-                            <div class="text-center py-4">
-                                <a class="h6 text-decoration-none text-truncate text-black" href="bstring-1-en.html">Elixir 14077 Bass Nanoweb</a>
-                                <div class="d-flex align-items-center justify-content-center mt-2">
-                                    <h5>51,90€</h5>
-                                </div>
-                                <div class="d-flex align-items-center justify-content-center mb-1">
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small>(99)</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
-                        <div class="product-item bg-light mb-4">
-                            <div class="product-img position-relative overflow-hidden">
-                                <a href="bstring-2-en.html"><img class="img-fluid w-100" src="img/bstring-2.png" alt=""></a>
-                            </div>
-                            <div class="text-center py-4">
-                                <a class="h6 text-decoration-none text-truncate text-black" href="bstring-2-en.html">Rotosound RS66LE</a>
-                                <div class="d-flex align-items-center justify-content-center mt-2">
-                                    <h5>25,90€</h5>
-                                </div>
-                                <div class="d-flex align-items-center justify-content-center mb-1">
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star-half-alt text-warning me-1"></small>
-                                    <small>(99)</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
-                        <div class="product-item bg-light mb-4">
-                            <div class="product-img position-relative overflow-hidden">
-                                <a href="bstring-3-en.html"><img class="img-fluid w-100" src="img/bstring-3.png" alt=""></a>
-                            </div>
-                            <div class="text-center py-4">
-                                <a class="h6 text-decoration-none text-truncate text-black" href="bstring-3-en.html">Rotosound RS66LD</a>
-                                <div class="d-flex align-items-center justify-content-center mt-2">
-                                    <h5>25,50€</h5>
-                                </div>
-                                <div class="d-flex align-items-center justify-content-center mb-1">
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star-half-alt text-warning me-1"></small>
-                                    <small class="far fa-star text-warning me-1"></small>
-                                    <small>(99)</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
-                        <div class="product-item bg-light mb-4">
-                            <div class="product-img position-relative overflow-hidden">
-                                <a href="bstring-4-en.html"><img class="img-fluid w-100" src="img/bstring-4.png" alt=""></a>
-                            </div>
-                            <div class="text-center py-4">
-                                <a class="h6 text-decoration-none text-truncate text-black" href="bstring-4-en.html">Rotosound SM66</a>
-                                <div class="d-flex align-items-center justify-content-center mt-2">
-                                    <h5>25,40€</h5>
-                                </div>
-                                <div class="d-flex align-items-center justify-content-center mb-1">
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="far fa-star text-warning me-1"></small>
-                                    <small class="far fa-star text-warning me-1"></small>
-                                    <small>(99)</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
-                        <div class="product-item bg-light mb-4">
-                            <div class="product-img position-relative overflow-hidden">
-                                <a href="bstring-5-en.html"><img class="img-fluid w-100" src="img/bstring-5.png" alt=""></a>
-                            </div>
-                            <div class="text-center py-4">
-                                <a class="h6 text-decoration-none text-truncate text-black" href="bstring-5-en.html">Elixir 14202 NanoWeb</a>
-                                <div class="d-flex align-items-center justify-content-center mt-2">
-                                    <h5>63,90€</h5>
-                                </div>
-                                <div class="d-flex align-items-center justify-content-center mb-1">
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="far fa-star text-warning me-1"></small>
-                                    <small class="far fa-star text-warning me-1"></small>
-                                    <small>(99)</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
-                        <div class="product-item bg-light mb-4">
-                            <div class="product-img position-relative overflow-hidden">
-                                <a href="bstring-6-en.html"><img class="img-fluid w-100" src="img/bstring-6.png" alt=""></a>
-                            </div>
-                            <div class="text-center py-4">
-                                <a class="h6 text-decoration-none text-truncate text-black" href="bstring-6-en.html">Rotosound RS665LD</a>
-                                <div class="d-flex align-items-center justify-content-center mt-2">
-                                    <h5>30,90€</h5>
-                                </div>
-                                <div class="d-flex align-items-center justify-content-center mb-1">
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="far fa-star text-warning me-1"></small>
-                                    <small class="far fa-star text-warning me-1"></small>
-                                    <small>(99)</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
-                        <div class="product-item bg-light mb-4">
-                            <div class="product-img position-relative overflow-hidden">
-                                <a href="bstring-7-en.html"><img class="img-fluid w-100" src="img/bstring-7.png" alt=""></a>
-                            </div>
-                            <div class="text-center py-4">
-                                <a class="h6 text-decoration-none text-truncate text-black" href="bstring-7-en.html">Rotosound RS665LC</a>
-                                <div class="d-flex align-items-center justify-content-center mt-2">
-                                    <h5>32,60€</h5>
-                                </div>
-                                <div class="d-flex align-items-center justify-content-center mb-1">
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="far fa-star text-warning me-1"></small>
-                                    <small class="far fa-star text-warning me-1"></small>
-                                    <small>(99)</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
-                        <div class="product-item bg-light mb-4">
-                            <div class="product-img position-relative overflow-hidden">
-                                <a href="bstring-8-en.html"><img class="img-fluid w-100" src="img/bstring-8.png" alt=""></a>
-                            </div>
-                            <div class="text-center py-4">
-                                <a class="h6 text-decoration-none text-truncate text-black" href="bstring-8-en.html">Rotosound RS665LB</a>
-                                <div class="d-flex align-items-center justify-content-center mt-2">
-                                    <h5>32,60€</h5>
-                                </div>
-                                <div class="d-flex align-items-center justify-content-center mb-1">
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="far fa-star text-warning me-1"></small>
-                                    <small class="far fa-star text-warning me-1"></small>
-                                    <small>(99)</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Shop Product End -->
-        </div>
-    </div>
-    <!-- Shop End -->
+					<!-- Shop Start -->
+					<!-- Shop Sidebar Start -->
+					<div class="col-lg-2 col-md-2"></div>
+					<!-- Shop Sidebar End -->
 
+					<!-- Shop Product Start -->
+					<div class="row pb-3">
+						<div class="col-12 pb-1">
+							<h2
+								id="cables"
+								class="section-title position-relative mb-4 text-black">
+								<span class="bg-white pe-3"
+									>INSTRUMENT CABLES</span
+								>
+							</h2>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-6 pb-1">
+							<div class="product-item bg-light mb-4">
+								<div
+									class="product-img position-relative overflow-hidden">
+									<a href="cable-1-en.html"
+										><img
+											class="img-fluid w-100"
+											src="img/cable-1.png"
+											alt=""
+									/></a>
+								</div>
+								<div class="text-center py-4">
+									<a
+										class="h6 text-decoration-none text-truncate text-black"
+										href="cable-1-en.html"
+										>Fender Professional Series Black 3m</a
+									>
+									<div
+										class="d-flex align-items-center justify-content-center mt-2">
+										<h5>16,90€</h5>
+									</div>
+									<div
+										class="d-flex align-items-center justify-content-center mb-1">
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small>(99)</small>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-6 pb-1">
+							<div class="product-item bg-light mb-4">
+								<div
+									class="product-img position-relative overflow-hidden">
+									<a href="cable-2-en.html"
+										><img
+											class="img-fluid w-100"
+											src="img/cable-2.png"
+											alt=""
+									/></a>
+								</div>
+								<div class="text-center py-4">
+									<a
+										class="h6 text-decoration-none text-truncate text-black"
+										href="cable-2-en.html"
+										>Roland RIC-B10A Black 3m</a
+									>
+									<div
+										class="d-flex align-items-center justify-content-center mt-2">
+										<h5>15,90€</h5>
+									</div>
+									<div
+										class="d-flex align-items-center justify-content-center mb-1">
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star-half-alt text-warning me-1"></small>
+										<small>(99)</small>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-6 pb-1">
+							<div class="product-item bg-light mb-4">
+								<div
+									class="product-img position-relative overflow-hidden">
+									<a href="cable-3-en.html"
+										><img
+											class="img-fluid w-100"
+											src="img/cable-3.png"
+											alt=""
+									/></a>
+								</div>
+								<div class="text-center py-4">
+									<a
+										class="h6 text-decoration-none text-truncate text-black"
+										href="cable-3-en.html"
+										>Roland RIC-G15A Black 4,5m</a
+									>
+									<div
+										class="d-flex align-items-center justify-content-center mt-2">
+										<h5>26,90€</h5>
+									</div>
+									<div
+										class="d-flex align-items-center justify-content-center mb-1">
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star-half-alt text-warning me-1"></small>
+										<small
+											class="far fa-star text-warning me-1"></small>
+										<small>(99)</small>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-6 pb-1">
+							<div class="product-item bg-light mb-4">
+								<div
+									class="product-img position-relative overflow-hidden">
+									<a href="cable-4-en.html"
+										><img
+											class="img-fluid w-100"
+											src="img/cable-4.png"
+											alt=""
+									/></a>
+								</div>
+								<div class="text-center py-4">
+									<a
+										class="h6 text-decoration-none text-truncate text-black"
+										href="cable-4-en.html"
+										>Roland RIC-B15</a
+									>
+									<div
+										class="d-flex align-items-center justify-content-center mt-2">
+										<h5>19,90€</h5>
+									</div>
+									<div
+										class="d-flex align-items-center justify-content-center mb-1">
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="far fa-star text-warning me-1"></small>
+										<small
+											class="far fa-star text-warning me-1"></small>
+										<small>(99)</small>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-6 pb-1">
+							<div class="product-item bg-light mb-4">
+								<div
+									class="product-img position-relative overflow-hidden">
+									<a href="cable-5-en.html"
+										><img
+											class="img-fluid w-100"
+											src="img/cable-5.png"
+											alt=""
+									/></a>
+								</div>
+								<div class="text-center py-4">
+									<a
+										class="h6 text-decoration-none text-truncate text-black"
+										href="cable-5-en.html"
+										>D'Addario Planet Waves PW-G-05 Black
+										1,5m</a
+									>
+									<div
+										class="d-flex align-items-center justify-content-center mt-2">
+										<h5>24,90€</h5>
+									</div>
+									<div
+										class="d-flex align-items-center justify-content-center mb-1">
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small>(99)</small>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Shop Product End -->
+					<!-- Shop End -->
 
-        <!-- Shop Start -->
-        <div class="container-fluid">
-            <div class="row px-xl-5">
-                <!-- Shop Sidebar Start -->
-                <div class="col-lg-2 col-md-2">
-                </div>
-                <!-- Shop Sidebar End -->
-    
-    
-                <!-- Shop Product Start -->
-                <div class="col-lg-9 col-md-8 mb-5">
-                    <div class="row pb-3">
-                        <div class="col-12 pb-1">
-                            <h2 id="picks" class="section-title position-relative mb-4 text-black"><span class="bg-white pe-3">PICKS</span></h2>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
-                            <div class="product-item bg-light mb-4">
-                                <div class="product-img position-relative overflow-hidden">
-                                    <a href="pick-1-en.html"><img class="img-fluid w-100" src="img/pick-1.png" alt=""></a>
-                                </div>
-                                <div class="text-center py-4">
-                                    <a class="h6 text-decoration-none text-truncate text-black" href="pick-1-en.html">Dunlop 474R 3.00 Stubby Jazz</a>
-                                    <div class="d-flex align-items-center justify-content-center mt-2">
-                                        <h5>1,19€</h5>
-                                    </div>
-                                    <div class="d-flex align-items-center justify-content-center mb-1">
-                                        <small class="fa fa-star text-warning me-1"></small>
-                                        <small class="fa fa-star text-warning me-1"></small>
-                                        <small class="fa fa-star text-warning me-1"></small>
-                                        <small class="fa fa-star text-warning me-1"></small>
-                                        <small class="fa fa-star text-warning me-1"></small>
-                                        <small>(99)</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
-                            <div class="product-item bg-light mb-4">
-                                <div class="product-img position-relative overflow-hidden">
-                                    <a href="pick-2-en.html"><img class="img-fluid w-100" src="img/pick-2.png" alt=""></a>
-                                </div>
-                                <div class="text-center py-4">
-                                    <a class="h6 text-decoration-none text-truncate text-black" href="pick-2-en.html">Dunlop 44R 1.00 Nylon Standard</a>
-                                    <div class="d-flex align-items-center justify-content-center mt-2">
-                                        <h5>0,79€</h5>
-                                    </div>
-                                    <div class="d-flex align-items-center justify-content-center mb-1">
-                                        <small class="fa fa-star text-warning me-1"></small>
-                                        <small class="fa fa-star text-warning me-1"></small>
-                                        <small class="fa fa-star text-warning me-1"></small>
-                                        <small class="fa fa-star text-warning me-1"></small>
-                                        <small class="fa fa-star-half-alt text-warning me-1"></small>
-                                        <small>(99)</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
-                            <div class="product-item bg-light mb-4">
-                                <div class="product-img position-relative overflow-hidden">
-                                    <a href="pick-3-en.html"><img class="img-fluid w-100" src="img/pick-3.png" alt=""></a>
-                                </div>
-                                <div class="text-center py-4">
-                                    <a class="h6 text-decoration-none text-truncate text-black" href="pick-3-en.html">Dunlop 417P 2.00 Gator Grip Standard</a>
-                                    <div class="d-flex align-items-center justify-content-center mt-2">
-                                        <h5>0.99€</h5>
-                                    </div>
-                                    <div class="d-flex align-items-center justify-content-center mb-1">
-                                        <small class="fa fa-star text-warning me-1"></small>
-                                        <small class="fa fa-star text-warning me-1"></small>
-                                        <small class="fa fa-star text-warning me-1"></small>
-                                        <small class="fa fa-star-half-alt text-warning me-1"></small>
-                                        <small class="far fa-star text-warning me-1"></small>
-                                        <small>(99)</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
-                            <div class="product-item bg-light mb-4">
-                                <div class="product-img position-relative overflow-hidden">
-                                    <a href="pick-4-en.html"><img class="img-fluid w-100" src="img/pick-4.png" alt=""></a>
-                                </div>
-                                <div class="text-center py-4">
-                                    <a class="h6 text-decoration-none text-truncate text-black" href="pick-4-en.html">Dunlop 418R 0.60 Tortex Standard</a>
-                                    <div class="d-flex align-items-center justify-content-center mt-2">
-                                        <h5>0,78€</h5>
-                                    </div>
-                                    <div class="d-flex align-items-center justify-content-center mb-1">
-                                        <small class="fa fa-star text-warning me-1"></small>
-                                        <small class="fa fa-star text-warning me-1"></small>
-                                        <small class="fa fa-star text-warning me-1"></small>
-                                        <small class="far fa-star text-warning me-1"></small>
-                                        <small class="far fa-star text-warning me-1"></small>
-                                        <small>(99)</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
-                            <div class="product-item bg-light mb-4">
-                                <div class="product-img position-relative overflow-hidden">
-                                    <a href="pick-5-en.html"><img class="img-fluid w-100" src="img/pick-5.png" alt=""></a>
-                                </div>
-                                <div class="text-center py-4">
-                                    <a class="h6 text-decoration-none text-truncate text-black" href="pick-5-en.html">Dunlop 418R 0.50 Tortex Standard</a>
-                                    <div class="d-flex align-items-center justify-content-center mt-2">
-                                        <h5>0,79€</h5>
-                                    </div>
-                                    <div class="d-flex align-items-center justify-content-center mb-1">
-                                        <small class="fa fa-star text-warning me-1"></small>
-                                        <small class="fa fa-star text-warning me-1"></small>
-                                        <small class="fa fa-star text-warning me-1"></small>
-                                        <small class="fa fa-star text-warning me-1"></small>
-                                        <small class="fa fa-star text-warning me-1"></small>
-                                        <small>(99)</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
-                            <div class="product-item bg-light mb-4">
-                                <div class="product-img position-relative overflow-hidden">
-                                    <a href="pick-6-en.html"><img class="img-fluid w-100" src="img/pick-6.png" alt=""></a>
-                                </div>
-                                <div class="text-center py-4">
-                                    <a class="h6 text-decoration-none text-truncate text-black" href="pick-6-en.html">Dunlop 443R 0.67 Nylon Midi Standard</a>
-                                    <div class="d-flex align-items-center justify-content-center mt-2">
-                                        <h5>0,79€</h5>
-                                    </div>
-                                    <div class="d-flex align-items-center justify-content-center mb-1">
-                                        <small class="fa fa-star text-warning me-1"></small>
-                                        <small class="fa fa-star text-warning me-1"></small>
-                                        <small class="fa fa-star text-warning me-1"></small>
-                                        <small class="fa fa-star text-warning me-1"></small>
-                                        <small class="fa fa-star-half-alt text-warning me-1"></small>
-                                        <small>(99)</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
-                            <div class="product-item bg-light mb-4">
-                                <div class="product-img position-relative overflow-hidden">
-                                    <a href="pick-7-en.html"><img class="img-fluid w-100" src="img/pick-7.png" alt=""></a>
-                                </div>
-                                <div class="text-center py-4">
-                                    <a class="h6 text-decoration-none text-truncate text-black" href="pick-7-en.html">Dunlop 44R 0.38 Nylon Standard</a>
-                                    <div class="d-flex align-items-center justify-content-center mt-2">
-                                        <h5>0,79€</h5>
-                                    </div>
-                                    <div class="d-flex align-items-center justify-content-center mb-1">
-                                        <small class="fa fa-star text-warning me-1"></small>
-                                        <small class="fa fa-star text-warning me-1"></small>
-                                        <small class="fa fa-star text-warning me-1"></small>
-                                        <small class="fa fa-star-half-alt text-warning me-1"></small>
-                                        <small class="far fa-star text-warning me-1"></small>
-                                        <small>(99)</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
-                            <div class="product-item bg-light mb-4">
-                                <div class="product-img position-relative overflow-hidden">
-                                    <a href="pick-8-en.html"><img class="img-fluid w-100" src="img/pick-8.png" alt=""></a>
-                                </div>
-                                <div class="text-center py-4">
-                                    <a class="h6 text-decoration-none text-truncate text-black" href="pick-8-en.html">Dunlop 418R 0.73 Tortex Standard</a>
-                                    <div class="d-flex align-items-center justify-content-center mt-2">
-                                        <h5>0,79€</h5>
-                                    </div>
-                                    <div class="d-flex align-items-center justify-content-center mb-1">
-                                        <small class="fa fa-star text-warning me-1"></small>
-                                        <small class="fa fa-star text-warning me-1"></small>
-                                        <small class="fa fa-star text-warning me-1"></small>
-                                        <small class="far fa-star text-warning me-1"></small>
-                                        <small class="far fa-star text-warning me-1"></small>
-                                        <small>(99)</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
-                            <div class="product-item bg-light mb-4">
-                                <div class="product-img position-relative overflow-hidden">
-                                    <a href="pick-9-en.html"><img class="img-fluid w-100" src="img/pick-9.png" alt=""></a>
-                                </div>
-                                <div class="text-center py-4">
-                                    <a class="h6 text-decoration-none text-truncate text-black" href="pick-9-en.html">Dunlop 443R 0.80 Nylon Midi Standard</a>
-                                    <div class="d-flex align-items-center justify-content-center mt-2">
-                                        <h5>0,79€</h5>
-                                    </div>
-                                    <div class="d-flex align-items-center justify-content-center mb-1">
-                                        <small class="fa fa-star text-warning me-1"></small>
-                                        <small class="fa fa-star text-warning me-1"></small>
-                                        <small class="fa fa-star text-warning me-1"></small>
-                                        <small class="far fa-star text-warning me-1"></small>
-                                        <small class="far fa-star text-warning me-1"></small>
-                                        <small>(99)</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
-                            <div class="product-item bg-light mb-4">
-                                <div class="product-img position-relative overflow-hidden">
-                                    <a href="pick-10-en.html"><img class="img-fluid w-100" src="img/pick-10.png" alt=""></a>
-                                </div>
-                                <div class="text-center py-4">
-                                    <a class="h6 text-decoration-none text-truncate text-black" href="pick-10-en.html">Dunlop 44R 0.88 Nylon Standard</a>
-                                    <div class="d-flex align-items-center justify-content-center mt-2">
-                                        <h5>0,79€</h5>
-                                    </div>
-                                    <div class="d-flex align-items-center justify-content-center mb-1">
-                                        <small class="fa fa-star text-warning me-1"></small>
-                                        <small class="fa fa-star text-warning me-1"></small>
-                                        <small class="fa fa-star text-warning me-1"></small>
-                                        <small class="far fa-star text-warning me-1"></small>
-                                        <small class="far fa-star text-warning me-1"></small>
-                                        <small>(99)</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
-                            <div class="product-item bg-light mb-4">
-                                <div class="product-img position-relative overflow-hidden">
-                                    <a href="pick-11-en.html"><img class="img-fluid w-100" src="img/pick-11.png" alt=""></a>
-                                </div>
-                                <div class="text-center py-4">
-                                    <a class="h6 text-decoration-none text-truncate text-black" href="pick-11-en.html">Dunlop 412R 0.88 Tortex Sharp</a>
-                                    <div class="d-flex align-items-center justify-content-center mt-2">
-                                        <h5>0,79€</h5>
-                                    </div>
-                                    <div class="d-flex align-items-center justify-content-center mb-1">
-                                        <small class="fa fa-star text-warning me-1"></small>
-                                        <small class="fa fa-star text-warning me-1"></small>
-                                        <small class="fa fa-star text-warning me-1"></small>
-                                        <small class="far fa-star text-warning me-1"></small>
-                                        <small class="far fa-star text-warning me-1"></small>
-                                        <small>(99)</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Shop Product End -->
-            </div>
-        </div>
-        <!-- Shop End -->
+					<!-- Shop Start -->
+					<!-- Shop Sidebar Start -->
+					<div class="col-lg-2 col-md-2"></div>
+					<!-- Shop Sidebar End -->
 
+					<!-- Shop Product Start -->
+					<div class="row pb-3">
+						<div class="col-12 pb-1">
+							<h2
+								id="bags"
+								class="section-title position-relative mb-4 text-black">
+								<span class="bg-white pe-3">BAGS</span>
+							</h2>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-6 pb-1">
+							<div class="product-item bg-light mb-4">
+								<div
+									class="product-img position-relative overflow-hidden">
+									<a href="bag-1-en.html"
+										><img
+											class="img-fluid w-100"
+											src="img/bag-1.png"
+											alt=""
+									/></a>
+								</div>
+								<div class="text-center py-4">
+									<a
+										class="h6 text-decoration-none text-truncate text-black"
+										href="bag-1-en.html"
+										>CNB EB380</a
+									>
+									<div
+										class="d-flex align-items-center justify-content-center mt-2">
+										<h5>12,90€</h5>
+									</div>
+									<div
+										class="d-flex align-items-center justify-content-center mb-1">
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small>(99)</small>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-6 pb-1">
+							<div class="product-item bg-light mb-4">
+								<div
+									class="product-img position-relative overflow-hidden">
+									<a href="bag-2-en.html"
+										><img
+											class="img-fluid w-100"
+											src="img/bag-2.png"
+											alt=""
+									/></a>
+								</div>
+								<div class="text-center py-4">
+									<a
+										class="h6 text-decoration-none text-truncate text-black"
+										href="bag-2-en.html"
+										>CNB EGB1680</a
+									>
+									<div
+										class="d-flex align-items-center justify-content-center mt-2">
+										<h5>47,90€</h5>
+									</div>
+									<div
+										class="d-flex align-items-center justify-content-center mb-1">
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star-half-alt text-warning me-1"></small>
+										<small>(99)</small>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-6 pb-1">
+							<div class="product-item bg-light mb-4">
+								<div
+									class="product-img position-relative overflow-hidden">
+									<a href="bag-3-en.html"
+										><img
+											class="img-fluid w-100"
+											src="img/bag-3.png"
+											alt=""
+									/></a>
+								</div>
+								<div class="text-center py-4">
+									<a
+										class="h6 text-decoration-none text-truncate text-black"
+										href="bag-3-en.html"
+										>Gator G-PG-ELECTRIC</a
+									>
+									<div
+										class="d-flex align-items-center justify-content-center mt-2">
+										<h5>149€</h5>
+									</div>
+									<div
+										class="d-flex align-items-center justify-content-center mb-1">
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star-half-alt text-warning me-1"></small>
+										<small
+											class="far fa-star text-warning me-1"></small>
+										<small>(99)</small>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-6 pb-1">
+							<div class="product-item bg-light mb-4">
+								<div
+									class="product-img position-relative overflow-hidden">
+									<a href="bag-4-en.html"
+										><img
+											class="img-fluid w-100"
+											src="img/bag-4.png"
+											alt=""
+									/></a>
+								</div>
+								<div class="text-center py-4">
+									<a
+										class="h6 text-decoration-none text-truncate text-black"
+										href="bag-4-en.html"
+										>CNB DGB1680</a
+									>
+									<div
+										class="d-flex align-items-center justify-content-center mt-2">
+										<h5>43,90€</h5>
+									</div>
+									<div
+										class="d-flex align-items-center justify-content-center mb-1">
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="far fa-star text-warning me-1"></small>
+										<small
+											class="far fa-star text-warning me-1"></small>
+										<small>(99)</small>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-6 pb-1">
+							<div class="product-item bg-light mb-4">
+								<div
+									class="product-img position-relative overflow-hidden">
+									<a href="bag-5-en.html"
+										><img
+											class="img-fluid w-100"
+											src="img/bag-5.png"
+											alt=""
+									/></a>
+								</div>
+								<div class="text-center py-4">
+									<a
+										class="h6 text-decoration-none text-truncate text-black"
+										href="bag-5-en.html"
+										>RockBag RB20509B DeLuxe</a
+									>
+									<div
+										class="d-flex align-items-center justify-content-center mt-2">
+										<h5>53,90€</h5>
+									</div>
+									<div
+										class="d-flex align-items-center justify-content-center mb-1">
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small
+											class="fa fa-star text-warning me-1"></small>
+										<small>(99)</small>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Shop Product End -->
+			</div>
+		</div>
+		<!-- Shop End -->
 
-    <!-- Shop Start -->
-    <div class="container-fluid">
-        <div class="row px-xl-5">
-            <!-- Shop Sidebar Start -->
-            <div class="col-lg-2 col-md-2">
-            </div>
-            <!-- Shop Sidebar End -->
+		<!-- Footer Start -->
+		<div class="container-fluid bg-black text-white pt-5">
+			<div class="row px-xl-5 pt-0">
+				<div class="col-lg-4 col-md-12 mb-5 pe-3">
+					<h5 class="text-white text-uppercase mb-4">
+						Get In Touch With Us
+					</h5>
+					<p class="mb-4">
+						If you have any questions, feel free to contact us!
+					</p>
+					<p class="mb-2">
+						<i class="fa fa-map-marker-alt text-white me-3 pe-1"></i
+						>Školská 938/6, Dunajská Streda, 929 01, Slovakia
+					</p>
+					<p class="mb-2">
+						<i class="fa fa-envelope text-white me-3"></i
+						>bence3728@gmail.com
+					</p>
+					<p class="mb-0">
+						<i class="fa fa-phone-alt text-white me-3"></i>+421 949
+						131 222
+					</p>
+				</div>
+				<div class="col-lg-8 col-md-12">
+					<div class="row">
+						<div class="col-md-4 mb-5"></div>
+						<div class="col-md-4 mb-5">
+							<h5 class="text-white text-uppercase mb-2 ms-5">
+								Actions
+							</h5>
+							<div
+								class="d-flex flex-column justify-content-start ms-5">
+								<a class="text-white mb-2" href="index-en.html"
+									><i class="fa fa-angle-right me-2"></i
+									>Home</a
+								>
+								<a class="text-white mb-2" href="cart-en.html"
+									><i class="fa fa-angle-right me-2"></i
+									>Shopping Cart</a
+								>
+								<a
+									class="text-white mb-2"
+									href="checkout-en.html"
+									><i class="fa fa-angle-right me-2"></i
+									>Checkout</a
+								>
+								<a class="text-white" href="contact-en.html"
+									><i class="fa fa-angle-right me-2"></i
+									>Contact Us</a
+								>
+							</div>
+						</div>
+						<div class="col-md-4 mb-5">
+							<h5 class="text-white text-uppercase mb-2 ms-5">
+								Follow Us
+							</h5>
+							<div class="d-flex ms-5">
+								<a
+									class="btn btn-twitter btn-square me-2 text-decoration-none"
+									href="https://www.google.sk\"
+									target="_blank"
+									><i class="fab fa-twitter"></i
+								></a>
+								<a
+									class="btn btn-facebook btn-square me-2 text-decoration-none"
+									href="#"
+									target="_blank"
+									><i class="fab fa-facebook-f"></i
+								></a>
+								<a
+									class="btn btn-instagram btn-square text-decoration-none"
+									href="#"
+									target="_blank"
+									><i class="fab fa-instagram"></i
+								></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div
+				class="row border-top mx-xl-5 py-4"
+				style="border-color: rgba(256, 256, 256, 0.1) !important">
+				<div class="col-md-6 px-xl-0">
+					<p class="mb-md-0 text-center text-md-start text-white">
+						&copy; All Rights Reserved. Designed by Bence Botló.
+					</p>
+				</div>
+				<div class="col-md-6 px-xl-0 text-center text-md-end">
+					<img class="img-fluid" src="img/payments.png" alt="" />
+				</div>
+			</div>
+		</div>
+		<!-- Footer End -->
 
+		<!-- Back to Top -->
+		<a href="#" class="btn btn-backblack back-to-top"
+			><i class="fa fa-angle-double-up"></i
+		></a>
 
-            <!-- Shop Product Start -->
-            <div class="col-lg-9 col-md-8 mb-5">
-                <div class="row pb-3">
-                    <div class="col-12 pb-1">
-                        <h2 id="cables" class="section-title position-relative mb-4 text-black"><span class="bg-white pe-3">INSTRUMENT CABLES</span></h2>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
-                        <div class="product-item bg-light mb-4">
-                            <div class="product-img position-relative overflow-hidden">
-                                <a href="cable-1-en.html"><img class="img-fluid w-100" src="img/cable-1.png" alt=""></a>
-                            </div>
-                            <div class="text-center py-4">
-                                <a class="h6 text-decoration-none text-truncate text-black" href="cable-1-en.html">Fender Professional Series Black 3m</a>
-                                <div class="d-flex align-items-center justify-content-center mt-2">
-                                    <h5>16,90€</h5>
-                                </div>
-                                <div class="d-flex align-items-center justify-content-center mb-1">
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small>(99)</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
-                        <div class="product-item bg-light mb-4">
-                            <div class="product-img position-relative overflow-hidden">
-                                <a href="cable-2-en.html"><img class="img-fluid w-100" src="img/cable-2.png" alt=""></a>
-                            </div>
-                            <div class="text-center py-4">
-                                <a class="h6 text-decoration-none text-truncate text-black" href="cable-2-en.html">Roland RIC-B10A Black 3m</a>
-                                <div class="d-flex align-items-center justify-content-center mt-2">
-                                    <h5>15,90€</h5>
-                                </div>
-                                <div class="d-flex align-items-center justify-content-center mb-1">
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star-half-alt text-warning me-1"></small>
-                                    <small>(99)</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
-                        <div class="product-item bg-light mb-4">
-                            <div class="product-img position-relative overflow-hidden">
-                                <a href="cable-3-en.html"><img class="img-fluid w-100" src="img/cable-3.png" alt=""></a>
-                            </div>
-                            <div class="text-center py-4">
-                                <a class="h6 text-decoration-none text-truncate text-black" href="cable-3-en.html">Roland RIC-G15A Black 4,5m</a>
-                                <div class="d-flex align-items-center justify-content-center mt-2">
-                                    <h5>26,90€</h5>
-                                </div>
-                                <div class="d-flex align-items-center justify-content-center mb-1">
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star-half-alt text-warning me-1"></small>
-                                    <small class="far fa-star text-warning me-1"></small>
-                                    <small>(99)</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
-                        <div class="product-item bg-light mb-4">
-                            <div class="product-img position-relative overflow-hidden">
-                                <a href="cable-4-en.html"><img class="img-fluid w-100" src="img/cable-4.png" alt=""></a>
-                            </div>
-                            <div class="text-center py-4">
-                                <a class="h6 text-decoration-none text-truncate text-black" href="cable-4-en.html">Roland RIC-B15</a>
-                                <div class="d-flex align-items-center justify-content-center mt-2">
-                                    <h5>19,90€</h5>
-                                </div>
-                                <div class="d-flex align-items-center justify-content-center mb-1">
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="far fa-star text-warning me-1"></small>
-                                    <small class="far fa-star text-warning me-1"></small>
-                                    <small>(99)</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
-                        <div class="product-item bg-light mb-4">
-                            <div class="product-img position-relative overflow-hidden">
-                                <a href="cable-5-en.html"><img class="img-fluid w-100" src="img/cable-5.png" alt=""></a>
-                            </div>
-                            <div class="text-center py-4">
-                                <a class="h6 text-decoration-none text-truncate text-black" href="cable-5-en.html">D'Addario Planet Waves PW-G-05 Black 1,5m</a>
-                                <div class="d-flex align-items-center justify-content-center mt-2">
-                                    <h5>24,90€</h5>
-                                </div>
-                                <div class="d-flex align-items-center justify-content-center mb-1">
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small class="fa fa-star text-warning me-1"></small>
-                                    <small>(99)</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Shop Product End -->
-        </div>
-    </div>
-    <!-- Shop End -->
+		<!-- JavaScript Libraries -->
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+		<script src="lib/easing/easing.min.js"></script>
+		<script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
+		<!-- Contact Javascript File -->
+		<script src="mail/jqBootstrapValidation.min.js"></script>
+		<script src="mail/contact.js"></script>
 
-        <!-- Shop Start -->
-        <div class="container-fluid">
-            <div class="row px-xl-5">
-                <!-- Shop Sidebar Start -->
-                <div class="col-lg-2 col-md-2">
-                </div>
-                <!-- Shop Sidebar End -->
-    
-    
-                <!-- Shop Product Start -->
-                <div class="col-lg-9 col-md-8 mb-5">
-                    <div class="row pb-3">
-                        <div class="col-12 pb-1">
-                            <h2 id="bags" class="section-title position-relative mb-4 text-black"><span class="bg-white pe-3">BAGS</span></h2>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
-                            <div class="product-item bg-light mb-4">
-                                <div class="product-img position-relative overflow-hidden">
-                                    <a href="bag-1-en.html"><img class="img-fluid w-100" src="img/bag-1.png" alt=""></a>
-                                </div>
-                                <div class="text-center py-4">
-                                    <a class="h6 text-decoration-none text-truncate text-black" href="bag-1-en.html">CNB EB380</a>
-                                    <div class="d-flex align-items-center justify-content-center mt-2">
-                                        <h5>12,90€</h5>
-                                    </div>
-                                    <div class="d-flex align-items-center justify-content-center mb-1">
-                                        <small class="fa fa-star text-warning me-1"></small>
-                                        <small class="fa fa-star text-warning me-1"></small>
-                                        <small class="fa fa-star text-warning me-1"></small>
-                                        <small class="fa fa-star text-warning me-1"></small>
-                                        <small class="fa fa-star text-warning me-1"></small>
-                                        <small>(99)</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
-                            <div class="product-item bg-light mb-4">
-                                <div class="product-img position-relative overflow-hidden">
-                                    <a href="bag-2-en.html"><img class="img-fluid w-100" src="img/bag-2.png" alt=""></a>
-                                </div>
-                                <div class="text-center py-4">
-                                    <a class="h6 text-decoration-none text-truncate text-black" href="bag-2-en.html">CNB EGB1680</a>
-                                    <div class="d-flex align-items-center justify-content-center mt-2">
-                                        <h5>47,90€</h5>
-                                    </div>
-                                    <div class="d-flex align-items-center justify-content-center mb-1">
-                                        <small class="fa fa-star text-warning me-1"></small>
-                                        <small class="fa fa-star text-warning me-1"></small>
-                                        <small class="fa fa-star text-warning me-1"></small>
-                                        <small class="fa fa-star text-warning me-1"></small>
-                                        <small class="fa fa-star-half-alt text-warning me-1"></small>
-                                        <small>(99)</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
-                            <div class="product-item bg-light mb-4">
-                                <div class="product-img position-relative overflow-hidden">
-                                    <a href="bag-3-en.html"><img class="img-fluid w-100" src="img/bag-3.png" alt=""></a>
-                                </div>
-                                <div class="text-center py-4">
-                                    <a class="h6 text-decoration-none text-truncate text-black" href="bag-3-en.html">Gator G-PG-ELECTRIC</a>
-                                    <div class="d-flex align-items-center justify-content-center mt-2">
-                                        <h5>149€</h5>
-                                    </div>
-                                    <div class="d-flex align-items-center justify-content-center mb-1">
-                                        <small class="fa fa-star text-warning me-1"></small>
-                                        <small class="fa fa-star text-warning me-1"></small>
-                                        <small class="fa fa-star text-warning me-1"></small>
-                                        <small class="fa fa-star-half-alt text-warning me-1"></small>
-                                        <small class="far fa-star text-warning me-1"></small>
-                                        <small>(99)</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
-                            <div class="product-item bg-light mb-4">
-                                <div class="product-img position-relative overflow-hidden">
-                                    <a href="bag-4-en.html"><img class="img-fluid w-100" src="img/bag-4.png" alt=""></a>
-                                </div>
-                                <div class="text-center py-4">
-                                    <a class="h6 text-decoration-none text-truncate text-black" href="bag-4-en.html">CNB DGB1680</a>
-                                    <div class="d-flex align-items-center justify-content-center mt-2">
-                                        <h5>43,90€</h5>
-                                    </div>
-                                    <div class="d-flex align-items-center justify-content-center mb-1">
-                                        <small class="fa fa-star text-warning me-1"></small>
-                                        <small class="fa fa-star text-warning me-1"></small>
-                                        <small class="fa fa-star text-warning me-1"></small>
-                                        <small class="far fa-star text-warning me-1"></small>
-                                        <small class="far fa-star text-warning me-1"></small>
-                                        <small>(99)</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
-                            <div class="product-item bg-light mb-4">
-                                <div class="product-img position-relative overflow-hidden">
-                                    <a href="bag-5-en.html"><img class="img-fluid w-100" src="img/bag-5.png" alt=""></a>
-                                </div>
-                                <div class="text-center py-4">
-                                    <a class="h6 text-decoration-none text-truncate text-black" href="bag-5-en.html">RockBag RB20509B DeLuxe</a>
-                                    <div class="d-flex align-items-center justify-content-center mt-2">
-                                        <h5>53,90€</h5>
-                                    </div>
-                                    <div class="d-flex align-items-center justify-content-center mb-1">
-                                        <small class="fa fa-star text-warning me-1"></small>
-                                        <small class="fa fa-star text-warning me-1"></small>
-                                        <small class="fa fa-star text-warning me-1"></small>
-                                        <small class="fa fa-star text-warning me-1"></small>
-                                        <small class="fa fa-star text-warning me-1"></small>
-                                        <small>(99)</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Shop Product End -->
-            </div>
-        </div>
-        <!-- Shop End -->
-
-
-    <!-- Footer Start -->
-    <div class="container-fluid bg-black text-white pt-5">
-        <div class="row px-xl-5 pt-0">
-            <div class="col-lg-4 col-md-12 mb-5 pe-3">
-                <h5 class="text-white text-uppercase mb-4">Get In Touch With Us</h5>
-                <p class="mb-4">If you have any questions, feel free to contact us!</p>
-                <p class="mb-2"><i class="fa fa-map-marker-alt text-white me-3 pe-1"></i>Školská 938/6, Dunajská Streda, 929 01, Slovakia</p>
-                <p class="mb-2"><i class="fa fa-envelope text-white me-3"></i>bence3728@gmail.com</p>
-                <p class="mb-0"><i class="fa fa-phone-alt text-white me-3"></i>+421 949 131 222</p>
-            </div>
-            <div class="col-lg-8 col-md-12">
-                <div class="row">
-                    <div class="col-md-4 mb-5"></div>
-                    <div class="col-md-4 mb-5">
-                        <h5 class="text-white text-uppercase mb-2 ms-5">Actions</h5>
-                        <div class="d-flex flex-column justify-content-start ms-5">
-                            <a class="text-white mb-2" href="index-en.html"><i class="fa fa-angle-right me-2"></i>Home</a>
-                            <a class="text-white mb-2" href="cart-en.html"><i class="fa fa-angle-right me-2"></i>Shopping Cart</a>
-                            <a class="text-white mb-2" href="checkout-en.html"><i class="fa fa-angle-right me-2"></i>Checkout</a>
-                            <a class="text-white" href="contact-en.html"><i class="fa fa-angle-right me-2"></i>Contact Us</a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-5">
-                        <h5 class="text-white text-uppercase mb-2 ms-5">Follow Us</h5>
-                        <div class="d-flex ms-5">
-                            <a class="btn btn-twitter btn-square me-2 text-decoration-none" href="https://www.google.sk\" target="_blank"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-facebook btn-square me-2 text-decoration-none" href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-instagram btn-square text-decoration-none" href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row border-top mx-xl-5 py-4" style="border-color: rgba(256, 256, 256, .1) !important;">
-            <div class="col-md-6 px-xl-0">
-                <p class="mb-md-0 text-center text-md-start text-white">
-                    &copy; All Rights Reserved. Designed by Bence Botló.
-                </p>
-            </div>
-            <div class="col-md-6 px-xl-0 text-center text-md-end">
-                <img class="img-fluid" src="img/payments.png" alt="">
-            </div>
-        </div>
-    </div>
-    <!-- Footer End -->
-
-
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-backblack back-to-top"><i class="fa fa-angle-double-up"></i></a>
-
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-
-    <!-- Contact Javascript File -->
-    <script src="mail/jqBootstrapValidation.min.js"></script>
-    <script src="mail/contact.js"></script>
-
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
-</body>
-
+		<!-- Template Javascript -->
+		<script src="js/main.js"></script>
+	</body>
 </html>
