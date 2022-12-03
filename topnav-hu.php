@@ -6,13 +6,13 @@ if (session_id() == '' || !isset($_SESSION) || session_status() === PHP_SESSION_
 if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) { // megnézi, hogy a felhasználó már be e jelentkezett, ha nem, átirányítja a bejelentkezési oldalra
     $href1 = 'sign-in-en.php';                                         // változók megnevezése, különböző kimenetelekkel
     $href2 = 'sign-up-en.php';
-    $login = 'Login';
-    $register = 'Register';
+    $login = 'Bejeletkezés';
+    $register = 'Regisztráció';
 } else {
     $href1 = '#';
     $href2 = 'logout.php';
     $login = htmlspecialchars($_SESSION["email"]);
-    $register = 'Log out';
+    $register = 'Kijelentkezés';
 }
 ?>
 
@@ -21,10 +21,10 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) { // megné
 
 <head>
     <meta charset="utf-8">
-    <title>GitárShop - Online Guitar Store</title>
+    <title>GitárShop - Online Gitárbolt</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="HangszerShop" name="keywords">
-    <meta content="Online Guitar Store" name="description">
+    <meta content="Online Gitárbolt" name="description">
 
     <!-- //Külsőleg használt könyvtárak -->
 
@@ -64,17 +64,17 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) { // megné
             <div class="col-lg-6 text-center text-lg-end">
                 <div class="d-inline-flex align-items-center">
                     <div class="dropdown-center mx-1">
-                        <button type="button" class="btn btn-sm btn-black dropdown-toggle" data-toggle="dropdown" aria-expanded="false">My Account</button>
+                        <button type="button" class="btn btn-sm btn-black dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Saját Fiók</button>
                         <ul class="dropdown-menu dropdown-menu-end min-width-account">
                             <li><a class="dropdown-item text-decoration-none" href="<?php echo $href1; ?>"><?php echo $login; ?></a></li>
                             <li><a class="dropdown-item text-decoration-none" href="<?php echo $href2; ?>"><?php echo $register; ?></a></li>
                         </ul>
                     </div>
                     <div class="dropdown-center mx-1">
-                        <button type="button" class="btn btn-sm btn-black dropdown-toggle" data-toggle="dropdown" aria-expanded="false">English</button>
+                        <button type="button" class="btn btn-sm btn-black dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Magyar</button>
                         <ul class="dropdown-menu dropdown-menu-end min-width-lang">
-                            <li><a class="dropdown-item text-decoration-none" href="#">EN</a></li>
-                            <li><a class="dropdown-item text-decoration-none" href="index-hu.php">HU</a></li>
+                            <li><a class="dropdown-item text-decoration-none" href="#">HU</a></li>
+                            <li><a class="dropdown-item text-decoration-none" href="index-en.php">EN</a></li>
                         </ul>
                     </div>
                 </div>
@@ -88,14 +88,14 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) { // megné
         </div>
         <div class="row align-items-center bg-light py-3 px-xl-5 d-none d-lg-flex">
             <div class="col-lg-4">
-                <a href="index-en.php" title="Back to main page" class="text-decoration-none">
+                <a href="index-hu.php" title="Back to main page" class="text-decoration-none">
                     <span class="h1 text-uppercase text-white bg-black px-2">gitár shop</span>
                 </a>
             </div>
             <div class="col-lg-4 col-6 text-start">
                 <form action="">
                     <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Search for products">
+                        <input type="text" class="form-control" placeholder="Termékek keresése">
                         <div class="input-group-append">
                             <a href="#" title="Search" class="text-decoration-none">
                                 <span class="input-group-text bg-transparent text-black pt-3">
@@ -107,7 +107,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) { // megné
                 </form>
             </div>
             <div class="col-lg-4 col-6 text-end">
-                <p class="m-0 text-dark">Customer Service</p>
+                <p class="m-0 text-dark">Ügyfélszolgálat</p>
                 <h5 class="m-0 tadaer">+421 949 131 222</h5>
             </div>
         </div>
@@ -120,7 +120,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) { // megné
         <div class="row px-xl-5">
             <div class="col-lg-12">
                 <nav class="navbar navbar-expand-lg bg-black navbar-dark py-3 py-lg-0 px-0">
-                    <a href="" class="text-decoration-none d-block d-lg-none">
+                    <a href="index-hu.php" class="text-decoration-none d-block d-lg-none">
                         <span class="h1 text-uppercase text-white bg-black px-2">Gitár Shop</span>
                     </a>
                     <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
@@ -128,14 +128,14 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) { // megné
                     </button>
                     <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                         <div class="navbar-nav me-4 py-0">
-                            <a href="guitars-en.html" class="nav-item nav-link text-decoration-none">Shop Guitars</a>
-                            <a href="bass-en.html" class="nav-item nav-link text-decoration-none">Shop Bass Guitars</a>
-                            <a href="amplifiers-en.html" class="nav-item nav-link text-decoration-none">Shop Amplifiers</a>
-                            <a href="misc-en.html" class="nav-item nav-link text-decoration-none">Shop Misc</a>
+                            <a href="guitars-en.html" class="nav-item nav-link text-decoration-none">Gitárok</a>
+                            <a href="bass-en.html" class="nav-item nav-link text-decoration-none">Basszusgitárok</a>
+                            <a href="amplifiers-en.html" class="nav-item nav-link text-decoration-none">Erősítők</a>
+                            <a href="misc-en.html" class="nav-item nav-link text-decoration-none">Kiegészítők</a>
                         </div>
                         <div class="navbar-nav py-0">
-                            <a href="guides-en.php" class="nav-item nav-link text-decoration-none">Beginner's Guides</a>
-                            <a href="contact-en.php" class="nav-item nav-link text-decoration-none">Contact</a>
+                            <a href="guides-hu.php" class="nav-item nav-link text-decoration-none">Útmutató kezdőknek</a>
+                            <a href="contact-hu.php" class="nav-item nav-link text-decoration-none">Kapcsolatfelvétel</a>
                         </div>
                         <div class="navbar-nav ms-auto py-0 d-none d-lg-block">
                             <a href="cart-en.php" class="btn px-0 ms-3 text-decoration-none">

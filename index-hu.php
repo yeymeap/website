@@ -1,4 +1,4 @@
-<?php include 'topnav.php'; ?>
+<?php include 'topnav-hu.php'; ?>
 
 <!-- Carousel Start -->
 <div class="container-fluid mb-3">
@@ -16,12 +16,12 @@
 						<div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
 							<div class="p-3" style="max-width: 700px">
 								<h1 class="display-4 text-white mb-3 animate__animated animate__fadeInDown">
-									Shop Guitars
+									Gitárok
 								</h1>
 								<p class="mx-md-5 px-5 animate__animated animate__bounceIn">
-									Shop Electric and Acoustic Guitars
+									Elektromos és Akusztikus Gitárok
 								</p>
-								<a class="btn btn-outline-light py-2 px-4 mt-3 animate__animated animate__fadeInUp text-decoration-none" href="guitars-en.html">Shop Now</a>
+								<a class="btn btn-outline-light py-2 px-4 mt-3 animate__animated animate__fadeInUp text-decoration-none" href="guitars-en.html">Vásárlás</a>
 							</div>
 						</div>
 					</div>
@@ -30,13 +30,12 @@
 						<div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
 							<div class="p-3" style="max-width: 700px">
 								<h1 class="display-4 text-white mb-3 animate__animated animate__fadeInDown">
-									Shop Bass Guitars
+									Basszusgitárok
 								</h1>
 								<p class="mx-md-5 px-5 animate__animated animate__bounceIn">
-									Shop Electric and Acoustic Bass
-									Guitars
+									Elektromos és Akusztikus Basszusgitárok
 								</p>
-								<a class="btn btn-outline-light py-2 px-4 mt-3 animate__animated animate__fadeInUp text-decoration-none" href="bass-en.html">Shop Now</a>
+								<a class="btn btn-outline-light py-2 px-4 mt-3 animate__animated animate__fadeInUp text-decoration-none" href="bass-en.html">Vásárlás</a>
 							</div>
 						</div>
 					</div>
@@ -45,14 +44,12 @@
 						<div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
 							<div class="p-3" style="max-width: 700px">
 								<h1 class="display-4 text-white mb-3 animate__animated animate__fadeInDown">
-									Guitar and Bass Amplifiers
+									Gitár és Basszusgitár Erősítők
 								</h1>
 								<p class="mx-md-5 px-5 animate__animated animate__bounceIn">
-									Shop Tube, Transistor or Modelling
-									Amplifiers for Guitars and Bass
-									Guitars
+									Lámpás, Tranzisztor és Modellező Erősítők Gitárra és Basszusgitárra
 								</p>
-								<a class="btn btn-outline-light py-2 px-4 mt-3 animate__animated animate__fadeInUp text-decoration-none" href="amplifiers-en.html">Shop Now</a>
+								<a class="btn btn-outline-light py-2 px-4 mt-3 animate__animated animate__fadeInUp text-decoration-none" href="amplifiers-en.html">Vásárlás</a>
 							</div>
 						</div>
 					</div>
@@ -69,27 +66,25 @@
 		<div class="col-lg-3 col-md-6 col-sm-12 pb-1">
 			<div class="d-flex align-items-center bg-light mb-4" style="padding: 30px">
 				<h1 class="fa fa-check text-green m-0 me-3"></h1>
-				<h5 class="font-weight-semi-bold m-0">
-					Quality Product
-				</h5>
+				<h5 class="font-weight-semi-bold m-0">Minőségi Termékek</h5>
 			</div>
 		</div>
 		<div class="col-lg-3 col-md-6 col-sm-12 pb-1">
 			<div class="d-flex align-items-center bg-light mb-4" style="padding: 30px">
 				<h1 class="fa fa-shipping-fast text-info m-0 me-2"></h1>
-				<h5 class="font-weight-semi-bold m-0">Free Shipping</h5>
+				<h5 class="font-weight-semi-bold m-0">Ingyenes Szállítás</h5>
 			</div>
 		</div>
 		<div class="col-lg-3 col-md-6 col-sm-12 pb-1">
 			<div class="d-flex align-items-center bg-light mb-4" style="padding: 30px">
 				<h1 class="fas fa-exchange-alt text-red m-0 me-3"></h1>
-				<h5 class="font-weight-semi-bold m-0">14-Day Return</h5>
+				<h5 class="font-weight-semi-bold m-0">14 Napos Visszatérítés</h5>
 			</div>
 		</div>
 		<div class="col-lg-3 col-md-6 col-sm-12 pb-1">
 			<div class="d-flex align-items-center bg-light mb-4" style="padding: 30px">
 				<h1 class="fa fa-phone-volume text-dark m-0 me-3"></h1>
-				<h5 class="font-weight-semi-bold m-0">24/7 Support</h5>
+				<h5 class="font-weight-semi-bold m-0">24 Órás Kapcsolatfelvétel</h5>
 			</div>
 		</div>
 	</div>
@@ -99,7 +94,7 @@
 <!-- Categories Start -->
 <div class="container-fluid pt-5">
 	<h2 class="section-title position-relative text-uppercase mx-xl-5 mb-4">
-		<span class="bg-white pe-3">Guitars - Bass</span>
+		<span class="bg-white pe-3">Gitárok - Basszusgitárok</span>
 	</h2>
 	<div class="row px-xl-5 pb-3">
 		<div class="col-lg-3 col-md-4 col-sm-6 pb-1">
@@ -109,8 +104,8 @@
 						<img class="img-fluid bg-white" src="img/cat-2.png" alt="" />
 					</div>
 					<div class="flex-fill ps-3 text-black">
-						<h6>Acoustic Guitars</h6>
-						<small class="text-body">5 Products</small>
+						<h6>Akusztikus Gitárok</h6>
+						<small class="text-body">5 Termék</small>
 					</div>
 				</div>
 			</a>
@@ -122,8 +117,8 @@
 						<img class="img-fluid bg-white" src="img/cat-1.png" alt="" />
 					</div>
 					<div class="flex-fill ps-3 text-black">
-						<h6>Electric Guitars</h6>
-						<small class="text-body">13 Products</small>
+						<h6>Elektromos Gitárok</h6>
+						<small class="text-body">13 Termék</small>
 					</div>
 				</div>
 			</a>
@@ -135,8 +130,8 @@
 						<img class="img-fluid bg-white" src="img/cat-3.png" alt="" />
 					</div>
 					<div class="flex-fill ps-3 text-black">
-						<h6>Acoustic Bass Guitars</h6>
-						<small class="text-body">4 Products</small>
+						<h6>Akusztikus Basszusgitárok</h6>
+						<small class="text-body">4 Termék</small>
 					</div>
 				</div>
 			</a>
@@ -148,8 +143,8 @@
 						<img class="img-fluid bg-white" src="img/cat-4.png" alt="" />
 					</div>
 					<div class="flex-fill ps-3 text-black">
-						<h6>Electric Bass Guitars</h6>
-						<small class="text-body">20 Products</small>
+						<h6>Elektromos Basszusgitárok</h6>
+						<small class="text-body">20 Termék</small>
 					</div>
 				</div>
 			</a>
@@ -161,7 +156,7 @@
 <!-- Categories Start -->
 <div class="container-fluid pt-5">
 	<h2 class="section-title position-relative text-uppercase mx-xl-5 mb-4">
-		<span class="bg-white pe-3">Amplifiers</span>
+		<span class="bg-white pe-3">Erősítők</span>
 	</h2>
 	<div class="row px-xl-5 pb-3">
 		<div class="col-lg-3 col-md-4 col-sm-6 pb-1">
@@ -171,8 +166,8 @@
 						<img class="img-fluid bg-white" src="img/cat-6.png" alt="" />
 					</div>
 					<div class="flex-fill ps-3 text-black">
-						<h6>Electron Tube Combo Amplifiers</h6>
-						<small class="text-body">5 Products</small>
+						<h6>Lámpás Kombóerősítők</h6>
+						<small class="text-body">5 Termék</small>
 					</div>
 				</div>
 			</a>
@@ -184,8 +179,8 @@
 						<img class="img-fluid bg-white" src="img/cat-5.png" alt="" />
 					</div>
 					<div class="flex-fill ps-3 text-black">
-						<h6>Transistor Combo Amplifiers</h6>
-						<small class="text-body">5 Products</small>
+						<h6>Tranzisztoros Kombóerősítők</h6>
+						<small class="text-body">5 Termék</small>
 					</div>
 				</div>
 			</a>
@@ -197,8 +192,8 @@
 						<img class="img-fluid bg-white" src="img/cat-7.png" alt="" />
 					</div>
 					<div class="flex-fill ps-3 text-black">
-						<h6>Modelling Combo Amplifiers</h6>
-						<small class="text-body">5 Products</small>
+						<h6>Modellező Kombóerősítők</h6>
+						<small class="text-body">5 Termék</small>
 					</div>
 				</div>
 			</a>
@@ -213,8 +208,8 @@
 						<img class="img-fluid bg-white" src="img/cat-8.png" alt="" />
 					</div>
 					<div class="flex-fill ps-3 text-black">
-						<h6>Bass Combo Amplifiers</h6>
-						<small class="text-body">16 Products</small>
+						<h6>Basszusgitár Kombóerősítők</h6>
+						<small class="text-body">16 Termék</small>
 					</div>
 				</div>
 			</a>
@@ -226,7 +221,7 @@
 <!-- Categories Start -->
 <div class="container-fluid pt-5 mb-5">
 	<h2 class="section-title position-relative text-uppercase mx-xl-5 mb-4">
-		<span class="bg-white pe-3">Miscellaneous items</span>
+		<span class="bg-white pe-3">Kiegészítők</span>
 	</h2>
 	<div class="row px-xl-5 pb-3">
 		<div class="col-lg-3 col-md-4 col-sm-6 pb-1">
@@ -236,8 +231,8 @@
 						<img class="img-fluid bg-white" src="img/cat-9.png" alt="" />
 					</div>
 					<div class="flex-fill ps-3 text-black">
-						<h6>Guitar Strings</h6>
-						<small class="text-body">20 Products</small>
+						<h6>Gitárhúrok</h6>
+						<small class="text-body">20 Termék</small>
 					</div>
 				</div>
 			</a>
@@ -249,8 +244,8 @@
 						<img class="img-fluid bg-white" src="img/cat-13.png" alt="" />
 					</div>
 					<div class="flex-fill ps-3 text-black">
-						<h6>Bass Strings</h6>
-						<small class="text-body">8 Products</small>
+						<h6>Basszusgitárhúrok</h6>
+						<small class="text-body">8 Termék</small>
 					</div>
 				</div>
 			</a>
@@ -262,8 +257,8 @@
 						<img class="img-fluid bg-white" src="img/cat-10.png" alt="" />
 					</div>
 					<div class="flex-fill ps-3 text-black">
-						<h6>Picks</h6>
-						<small class="text-body">11 Products</small>
+						<h6>Pengetők</h6>
+						<small class="text-body">11 Termék</small>
 					</div>
 				</div>
 			</a>
@@ -275,8 +270,8 @@
 						<img class="img-fluid bg-white" src="img/cat-11.png" alt="" />
 					</div>
 					<div class="flex-fill ps-3 text-black">
-						<h6>Instrument Cables</h6>
-						<small class="text-body">5 Products</small>
+						<h6>Kábelek</h6>
+						<small class="text-body">5 Termék</small>
 					</div>
 				</div>
 			</a>
@@ -288,8 +283,8 @@
 						<img class="img-fluid bg-white" src="img/cat-12.png" alt="" />
 					</div>
 					<div class="flex-fill ps-3 text-black">
-						<h6>Bags</h6>
-						<small class="text-body">5 Products</small>
+						<h6>Hordozótáskák</h6>
+						<small class="text-body">5 Termék</small>
 					</div>
 				</div>
 			</a>
@@ -298,4 +293,4 @@
 </div>
 <!-- Categories End -->
 
-<?php include 'footer.php'; ?>
+<?php include 'footer-hu.php'; ?>

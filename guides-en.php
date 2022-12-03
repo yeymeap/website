@@ -27,7 +27,7 @@
     <div class="row px-xl-5">
         <div class="col-6">
             <p class="h4 text-left mt-3"><b>The Acoustic Guitar</b></p>
-            <p class="col-12 pe-3 pb-3"> For people who never played music before, we recommend starting with an Acoustic Guitar! The Acoustic Guitar has a long history, being part of human culture and arts for thousands of years! Acoustic Guitars are perfect for beginners, because they require no external amplifiers, are lighter than their electric counterparts and help new guitarists develop techniques, which they can transfer to the Electric Guitar, if they start playing Electric Guitars as well! <br> The Guitar on the right is our recommendation for beginner guitarists! Feel free to click the image to the right the be redirected right to it's page!</p>
+            <p class="col-12 pe-3 pb-3">For people who have never played music before, we recommend starting with an Acoustic Guitar! The Acoustic Guitar has a long history, being part of human culture and arts for thousands of years! Acoustic Guitars are perfect for beginners, because they require no external amplifiers, are lighter than their electric counterparts and help new guitarists develop techniques, which they can transfer to the Electric Guitar, if they start playing Electric Guitars as well! <br> The Guitar on the right is our recommendation for beginner guitarists! Feel free to click the image to the right the be redirected right to it's page!</p>
         </div>
         <div class="col-6">
             <div class="d-flex justify-content-center py-5 ps-5 mb-30">
@@ -71,7 +71,7 @@
     <div class="row px-xl-5">
         <div class="col-6">
             <p class="h4 text-left mt-3"><b>Guitar Transistor Amplifiers</b></p>
-            <p class="col-12 pe-3 pb-3">Transistor Amplifiers are newer kind of amplifiers, using transistors to amplify the signal from your guitar. They are cheaper than Lamp Amplifiers, last longer, but weaker performance wise! They should only be used for guitars, using them with bass can damage the amplifier! <br>The Transistor Amplifier on the right is our recommendation for beginner guitarists! Feel free to click the image to the right the be redirected right to it's page!</p>
+            <p class="col-12 pe-3 pb-3">Transistor Amplifiers are newer kind of amplifiers, using transistors to amplify the signal from your guitar. They are cheaper than Lamp Amplifiers, last longer, but are weaker performance wise! They should only be used for guitars, using them with bass can damage the amplifier! <br>The Transistor Amplifier on the right is our recommendation for beginner guitarists! Feel free to click the image to the right the be redirected right to it's page!</p>
         </div>
         <div class="col-6">
             <div class="d-flex justify-content-center py-5 ps-5 mb-30">
