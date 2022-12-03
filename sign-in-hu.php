@@ -2,7 +2,7 @@
 session_start();
 // Megnézi, hogy a felhasználó már be e jelentkezett, ha igen, átirányítja az üdvözlő oldalra
 if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
-    header("location: welcome.php");
+    header("location: welcome-hu.php");
     exit; //megszakítja a scriptet
 }
 
@@ -18,14 +18,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     !filter_var(trim($_POST["email"]), FILTER_VALIDATE_EMAIL);
     // Megnezézi, hogy üres helyes e az email formátum
     if (empty(trim($_POST["email"]))) {
-        $email_err = "Please enter your email.";
+        $email_err = "Kérlek írd be az emailed.";
     } else {
         $email = trim($_POST["email"]);
     }
 
     // Megnezézi, hogy üres e a jelszó sor
     if (empty(trim($_POST["password"]))) {
-        $password_err = "Please enter your password.";
+        $password_err = "Kérlek írd be a jelszavad.";
     } else {
         $password = trim($_POST["password"]);
     }
@@ -62,19 +62,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             $_SESSION["email"] = $email;
 
                             // Átirányítás üdvözlőlapra
-                            header("location: welcome.php");
+                            header("location: welcome-hu.php");
                         } else {
                             // Helytelen jelszó
-                            $login_err = "Invalid email or password.";
+                            $login_err = "Helytelen email vagy jelszó.";
                         }
                     }
                 } else {
                     // Helytelen email
-                    $login_err = "Invalid email or password.";
+                    $login_err = "Helytelen email vagy jelszó.";
                 }
             } else {
                 //Egyéb esetben, általános hibaüzenet
-                echo "Oops! Something went wrong. Please try again later.";
+                echo "Hoppá! Valami nem sikerült. Kérlek próbáld újra.";
             }
 
             // Statement bezárása
@@ -87,15 +87,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 ?>
 
-<?php include 'topnav.php'; ?>
+<?php include 'topnav-hu.php'; ?>
 
 <!-- Breadrumb kezdete -->
 <div class="container-fluid">
     <div class="row px-xl-5">
         <div class="col-12">
             <nav class="breadcrumb bg-white mb-30">
-                <a class="breadcrumb-item text-dark" href="index-en.php">Home</a>
-                <span class="breadcrumb-item active">Login</span>
+                <a class="breadcrumb-item text-dark" href="index-en.php">Főoldal</a>
+                <span class="breadcrumb-item active">Bejelentkezés</span>
             </nav>
         </div>
     </div>
@@ -105,8 +105,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <!-- Bejelentkezés kezdete -->
 <div class="container-fluid">
     <div class="col-12 text-center">
-        <h2>Login</h2>
-        <p>Please fill in your credentials to login.</p>
+        <h2>Bejelentkezés</h2>
+        <p>Kérlek írd be a bejelentkezési adataidat.</p>
 
         <?php
         if (!empty($login_err)) {
@@ -121,18 +121,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <span class="invalid-feedback"><?php echo $email_err; ?></span>
                 </div>
                 <div class="form-group mb-2 col-auto">
-                    <label>Password</label>
+                    <label>Jelszó</label>
                     <input type="password" name="password" class="form-control <?php echo (!empty($password_err)) ? 'is-invalid' : ''; ?>">
                     <span class="invalid-feedback"><?php echo $password_err; ?></span>
                 </div>
                 <div class="form-group mb-2 col-auto">
-                    <input type="submit" class="btn btn-black" value="Login">
+                    <input type="submit" class="btn btn-black" value="Bejelentkezés">
                 </div>
-                <p>Don't have an account? <a href="sign-up-en.php" class="btn btn-black ms-2 text-decoration-none">Sign up now</a></p>
+                <p>Nincs még fiókod? <a href="sign-up-en.php" class="btn btn-black ms-2 text-decoration-none">Regisztrálj itt</a></p>
             </form>
         </div>
     </div>
 </div>
 <!-- Bejelentkezés vége -->
 
-<?php include 'footer.php'; ?>
+<?php include 'footer-hu.php'; ?>

@@ -4,13 +4,13 @@ if (session_id() == '' || !isset($_SESSION) || session_status() === PHP_SESSION_
 }
 
 if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) { // megnézi, hogy a felhasználó már be e jelentkezett, ha nem, átirányítja a bejelentkezési oldalra
-    $href1 = 'sign-in-en.php';                                         // változók megnevezése, különböző kimenetelekkel
-    $href2 = 'sign-up-en.php';
+    $href1 = 'sign-in-hu.php';                                         // változók megnevezése, különböző kimenetelekkel
+    $href2 = 'sign-up-hu.php';
     $login = 'Bejeletkezés';
     $register = 'Regisztráció';
 } else {
     $href1 = '#';
-    $href2 = 'logout.php';
+    $href2 = 'logout-hu.php';
     $login = htmlspecialchars($_SESSION["email"]);
     $register = 'Kijelentkezés';
 }

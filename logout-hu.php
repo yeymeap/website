@@ -9,5 +9,5 @@ $_SESSION = array();
 session_destroy();
 
 // Átirányítás a bejelentkezési oldalra
-header("location: sign-in-en.php");
+header("location: sign-in-hu.php");
 exit;
