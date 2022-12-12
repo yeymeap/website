@@ -27,7 +27,7 @@
     <div class="row px-xl-5">
         <div class="col-6">
             <p class="h4 text-left mt-3"><b>Akusztikus Gitár</b></p>
-            <p class="col-12 pe-3 pb-3">Azoknak, akik még soha nem zenéltek, azt javasoljuk, hogy kezdjék akusztikus gitárral! Az akusztikus gitár nagy múltra tekint vissza, hiszen évezredek óta része az emberi kultúrának és művészeteknek! az akusztikus gitár tökéletes a kezdőknek, hiszen nem igényel külső erősítőt, könnyebb, mint elektromos társai, és segít az új gitárosoknak olyan technikákat kifejleszteni, amelyeket át tudnak ültetni az elektromos gitárra, ha elkezdenek elektromos gitáron is játszani! <br>A jobb oldali gitár a mi ajánlásunk kezdő gitárosoknak! Nyugodtan kattints a jobb oldali képre, hogy átirányítsuk egyenesen az oldalára!</p>
+            <p class="col-12 pe-3 pb-3">Azoknak, akik még soha nem zenéltek, azt javasoljuk, hogy kezdjék akusztikus gitárral! Az akusztikus gitár nagy múltra tekint vissza, hiszen évezredek óta része az emberi kultúrának és művészeteknek! Az akusztikus gitár tökéletes a kezdőknek, hiszen nem igényel külső erősítőt, könnyebb, mint elektromos társai, és segít az új gitárosoknak olyan technikákat kifejleszteni, amelyeket át tudnak ültetni az elektromos gitárra, ha elkezdenek elektromos gitáron is játszani! <br>A jobb oldali gitár a mi ajánlásunk kezdő gitárosoknak! Nyugodtan kattints a jobb oldali képre, hogy átirányítsuk egyenesen az oldalára!</p>
         </div>
         <div class="col-6">
             <div class="d-flex justify-content-center py-5 ps-5 mb-30">
@@ -49,7 +49,7 @@
     <div class="row px-xl-5">
         <div class="col-6">
             <p class="h4 text-left mt-3"><b>Basszusgitár</b></p>
-            <p class="col-12 pe-3 pb-3">A basszusgitár a zene szíve, szinte minden műfajban jelen van, a poptól a jazzig, a metáltól a funkig, és a legfiatalabb a gitárcsaládban, ők adják a zene mélyét! Hagyományosan csak 4 húros változatban kapható, a modern basszusgitárok akár 6 húrosak is lehetnek! <br>A jobb oldali basszusgitár a mi ajánlásunk kezdő basszusgitárosoknak! Kattintson bátran a jobb oldali képre, hogy közvetlenül az oldalára irányítsuk át!</p>
+            <p class="col-12 pe-3 pb-3">A basszusgitár a zene szíve, szinte minden műfajban jelen van, a poptól a jazzig, a metáltól a funkig, és a legfiatalabb a gitárcsaládban, ők adják a zene alapját! Hagyományosan csak 4 húros változatban kaphatóak, de a modern basszusgitárok akár 6 húrosak is lehetnek! <br>A jobb oldali basszusgitár a mi ajánlásunk kezdő basszusgitárosoknak! Kattintson bátran a jobb oldali képre, hogy közvetlenül az oldalára irányítsuk át!</p>
         </div>
         <div class="col-6">
             <div class="d-flex justify-content-center py-5 ps-5 mb-30">
@@ -115,7 +115,7 @@
     <div class="row px-xl-5">
         <div class="col-6">
             <p class="h4 text-left mt-3"><b>Minden egyéb</b></p>
-            <p class="col-12 pe-3 pb-3">Ahhoz, hogy elkezdhess játszani, szükséged van néhány hasznos eszközre is! <br>Hangszerkábeleket, hogy hangszeredet az erősítőhöz csatlakoztathasd, hangolókészüléket, hogy hangolhasd a hangszeredet, pengetőket, hogy pengetni tudd a húrokat, húrokat, hogy kicserélhesd a húrokat a hangszereden, és táskákat, hogy szállítani tudd őket - ezek elengedhetetlen kellékek ahhoz, hogy elkezdhess játszani! <br>Kattints a jobb oldali képre, hogy rögtön a segédeszközök oldalunkra irányítsunk át!</p>
+            <p class="col-12 pe-3 pb-3">Ahhoz, hogy elkezdhess játszani, szükséged van néhány hasznos kiegészítőre is! <br>Hangszerkábeleket, hogy hangszeredet az erősítőhöz csatlakoztathasd, hangolókészüléket, hogy hangolhasd a hangszeredet, pengetőket, hogy pengetni tudd a húrokat, húrokat, hogy kicserélhesd a húrokat a hangszereden, és táskákat, hogy szállítani tudd őket - ezek elengedhetetlen kellékek ahhoz, hogy elkezdhess játszani! <br>Kattints a jobb oldali képre, hogy rögtön a segédeszközök oldalunkra irányítsunk át!</p>
         </div>
         <div class="col-6">
             <div class="d-flex justify-content-center py-5 ps-5 mb-30">

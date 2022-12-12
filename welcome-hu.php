@@ -4,10 +4,10 @@ session_start(); // session indítása
 
 // megnézi, hogy a felhasználó már be e jelentkezett, ha nem, átirányítja a bejelentkezési oldalra
 if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
-    header("location: sign-in-en.php");
+    header("location: sign-in-hu.php");
     exit;
 } else {
-    header("refresh:5;url=index-en.php");
+    header("refresh:5;url=index-hu.php");
 }
 ?>
 

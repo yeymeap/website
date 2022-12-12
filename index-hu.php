@@ -84,7 +84,7 @@
 		<div class="col-lg-3 col-md-6 col-sm-12 pb-1">
 			<div class="d-flex align-items-center bg-light mb-4" style="padding: 30px">
 				<h1 class="fa fa-phone-volume text-dark m-0 me-3"></h1>
-				<h5 class="font-weight-semi-bold m-0">24 Órás Kapcsolatfelvétel</h5>
+				<h5 class="font-weight-semi-bold m-0">24 Órás Támogatás</h5>
 			</div>
 		</div>
 	</div>

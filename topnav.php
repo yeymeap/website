@@ -128,8 +128,8 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) { // megné
                     </button>
                     <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                         <div class="navbar-nav me-4 py-0">
-                            <a href="guitars-en.html" class="nav-item nav-link text-decoration-none">Shop Guitars</a>
-                            <a href="bass-en.html" class="nav-item nav-link text-decoration-none">Shop Bass Guitars</a>
+                            <a href="guitars-en.php" class="nav-item nav-link text-decoration-none">Shop Guitars</a>
+                            <a href="bass-en.php" class="nav-item nav-link text-decoration-none">Shop Bass Guitars</a>
                             <a href="amplifiers-en.html" class="nav-item nav-link text-decoration-none">Shop Amplifiers</a>
                             <a href="misc-en.html" class="nav-item nav-link text-decoration-none">Shop Misc</a>
                         </div>

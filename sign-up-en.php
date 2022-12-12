@@ -1,6 +1,6 @@
 <?php
-session_start();
-// megnézi, hogy a felhasználó már be e jelentkezett, ha nem, átirányítja az üdvözlő oldalra
+session_start(); // Session indítás
+// Megnézi, hogy a felhasználó már be e jelentkezett, ha nem, átirányítja az üdvözlő oldalra
 if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
     header("location: welcome.php");
     exit;
@@ -46,7 +46,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             // Változók ideiglenes mentése statementbe
             mysqli_stmt_bind_param($stmt, "s", $param_email);
 
-            // Változó beá
+            // Változó beállítása
             $param_email = trim($_POST["email"]);
 
             // Megpróbálja lefuttatni
