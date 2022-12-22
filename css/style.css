@@ -11393,3 +11393,20 @@ button.bg-success:focus {
   --bs-btn-disabled-bg: #000;
   --bs-btn-disabled-border-color: #000;
 }
+
+.btn-transparent {
+  --bs-btn-color: transparent;
+  --bs-btn-bg: transparent;
+  --bs-btn-border-color: transparent;
+  --bs-btn-hover-color: transparent;
+  --bs-btn-hover-bg: transparent;
+  --bs-btn-hover-border-color: transparent;
+  --bs-btn-focus-shadow-rgb: none;
+  --bs-btn-active-color: transparent;
+  --bs-btn-active-bg: transparent;
+  --bs-btn-active-border-color: transparent;
+  --bs-btn-active-shadow: none;
+  --bs-btn-disabled-color: transparent;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: transparent;
+}

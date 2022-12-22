@@ -14,10 +14,10 @@
                         <div class="col-md-4 mb-5">
                             <h5 class="text-white text-uppercase mb-2 ms-5">Actions</h5>
                             <div class="d-flex flex-column justify-content-start ms-5">
-                                <a class="text-white mb-2" href="index-en.php"><i class="fa fa-angle-right me-2"></i>Home</a>
-                                <a class="text-white mb-2" href="cart-en.php"><i class="fa fa-angle-right me-2"></i>Shopping Cart</a>
-                                <a class="text-white mb-2" href="checkout-en.php"><i class="fa fa-angle-right me-2"></i>Checkout</a>
-                                <a class="text-white" href="contact-en.php"><i class="fa fa-angle-right me-2"></i>Contact Us</a>
+                                <a class="text-white mb-2" href="index.php"><i class="fa fa-angle-right me-2"></i>Home</a>
+                                <a class="text-white mb-2" href="cart.php"><i class="fa fa-angle-right me-2"></i>Shopping Cart</a>
+                                <a class="text-white mb-2" href="checkout.php"><i class="fa fa-angle-right me-2"></i>Checkout</a>
+                                <a class="text-white" href="contact.php"><i class="fa fa-angle-right me-2"></i>Contact Us</a>
                             </div>
                         </div>
                         <div class="col-md-4 mb-5">
@@ -47,5 +47,6 @@
 
         <!-- vissza az oldal tetejére -->
         <a href="#" title="Back to top" class="btn btn-backblack back-to-top"><i class="fa fa-angle-double-up"></i></a>
-    </body>
-</html>
+        </body>
+
+        </html>

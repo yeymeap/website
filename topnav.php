@@ -4,8 +4,8 @@ if (session_id() == '' || !isset($_SESSION) || session_status() === PHP_SESSION_
 }
 
 if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) { // megnézi, hogy a felhasználó már be e jelentkezett, ha nem, átirányítja a bejelentkezési oldalra
-    $href1 = 'sign-in-en.php';                                         // változók megnevezése, különböző kimenetelekkel
-    $href2 = 'sign-up-en.php';
+    $href1 = 'sign-in.php';                                         // változók megnevezése, különböző kimenetelekkel
+    $href2 = 'sign-up.php';
     $login = 'Login';
     $register = 'Register';
 } else {
@@ -53,6 +53,8 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) { // megné
     <script src="mail/jqBootstrapValidation.min.js"></script>
     <script src="mail/contact.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/nyelvvaltohu.js"></script>
+
     <!-- Külsőleg használt könyvtárak\\ -->
 </head>
 
@@ -70,12 +72,8 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) { // megné
                             <li><a class="dropdown-item text-decoration-none" href="<?php echo $href2; ?>"><?php echo $register; ?></a></li>
                         </ul>
                     </div>
-                    <div class="dropdown-center mx-1">
-                        <button type="button" class="btn btn-sm btn-black dropdown-toggle" data-toggle="dropdown" aria-expanded="false">English</button>
-                        <ul class="dropdown-menu dropdown-menu-end min-width-lang">
-                            <li><a class="dropdown-item text-decoration-none" href="#">EN</a></li>
-                            <li><a class="dropdown-item text-decoration-none" href="index-hu.php">HU</a></li>
-                        </ul>
+                    <div class="mx-1">
+                        <button class="btn btn-transparent" onclick="nyelvvaltas()"><img src="../img/hun.png"></button>
                     </div>
                 </div>
                 <div class="d-inline-flex align-items-center d-block d-lg-none">
@@ -88,25 +86,11 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) { // megné
         </div>
         <div class="row align-items-center bg-light py-3 px-xl-5 d-none d-lg-flex">
             <div class="col-lg-4">
-                <a href="index-en.php" title="Back to main page" class="text-decoration-none">
+                <a href="index.php" title="Back to main page" class="text-decoration-none">
                     <span class="h1 text-uppercase text-white bg-black px-2">gitár shop</span>
                 </a>
             </div>
-            <div class="col-lg-4 col-6 text-start">
-                <form action="">
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Search for products">
-                        <div class="input-group-append">
-                            <a href="#" title="Search" class="text-decoration-none">
-                                <span class="input-group-text bg-transparent text-black pt-3">
-                                    <i class="fa fa-search mb-2"></i>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                </form>
-            </div>
-            <div class="col-lg-4 col-6 text-end">
+            <div class="col-lg-8 col-6 text-end">
                 <p class="m-0 text-dark">Customer Service</p>
                 <h5 class="m-0 tadaer">+421 949 131 222</h5>
             </div>
@@ -120,7 +104,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) { // megné
         <div class="row px-xl-5">
             <div class="col-lg-12">
                 <nav class="navbar navbar-expand-lg bg-black navbar-dark py-3 py-lg-0 px-0">
-                    <a href="" class="text-decoration-none d-block d-lg-none">
+                    <a href="index.php" class="text-decoration-none d-block d-lg-none">
                         <span class="h1 text-uppercase text-white bg-black px-2">Gitár Shop</span>
                     </a>
                     <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
@@ -128,17 +112,17 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) { // megné
                     </button>
                     <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                         <div class="navbar-nav me-4 py-0">
-                            <a href="guitars-en.php" class="nav-item nav-link text-decoration-none">Shop Guitars</a>
-                            <a href="bass-en.php" class="nav-item nav-link text-decoration-none">Shop Bass Guitars</a>
-                            <a href="amplifiers-en.html" class="nav-item nav-link text-decoration-none">Shop Amplifiers</a>
-                            <a href="misc-en.html" class="nav-item nav-link text-decoration-none">Shop Misc</a>
+                            <a href="guitars.php" class="nav-item nav-link text-decoration-none">Shop Guitars</a>
+                            <a href="bass.php" class="nav-item nav-link text-decoration-none">Shop Bass Guitars</a>
+                            <a href="amplifiers.php" class="nav-item nav-link text-decoration-none">Shop Amplifiers</a>
+                            <a href="misc.php" class="nav-item nav-link text-decoration-none">Shop Misc</a>
                         </div>
                         <div class="navbar-nav py-0">
-                            <a href="guides-en.php" class="nav-item nav-link text-decoration-none">Beginner's Guides</a>
-                            <a href="contact-en.php" class="nav-item nav-link text-decoration-none">Contact</a>
+                            <a href="guides.php" class="nav-item nav-link text-decoration-none">Beginner's Guides</a>
+                            <a href="contact.php" class="nav-item nav-link text-decoration-none">Contact</a>
                         </div>
                         <div class="navbar-nav ms-auto py-0 d-none d-lg-block">
-                            <a href="cart-en.php" class="btn px-0 ms-3 text-decoration-none">
+                            <a href="cart.php" class="btn px-0 ms-3 text-decoration-none">
                                 <i class="fas fa-shopping-cart text-white"></i>
                                 <span class="badge text-light border border-white rounded-circle"></span>
                             </a>
