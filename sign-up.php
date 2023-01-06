@@ -85,7 +85,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             // Megpróbálja lefuttatni
             if (mysqli_stmt_execute($stmt)) {
                 // Ha sikeres, átirányit a bejelentkezési oldalra
-                header("location: sign-in-en.php");
+                header("location: sign-in.php");
             } else {
                 //Egyéb esetben, általános hibaüzenet
                 echo "Oops! Something went wrong. Please try again later.";
@@ -108,7 +108,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <div class="row px-xl-5">
         <div class="col-12">
             <nav class="breadcrumb bg-white mb-30">
-                <a class="breadcrumb-item text-dark" href="index-hu.php">Home</a>
+                <a class="breadcrumb-item text-dark" href="index.php">Home</a>
                 <span class="breadcrumb-item active">Register</span>
             </nav>
         </div>
@@ -142,7 +142,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <input type="submit" class="btn btn-black" value="Register">
                     <input type="reset" class="btn btn-white ms-2" value="Reset">
                 </div>
-                <p>Already have an account?<a class="btn btn-black ms-2 text-decoration-none" href="sign-in-en.php">Login here</a></p>
+                <p>Already have an account?<a class="btn btn-black ms-2 text-decoration-none" href="sign-in.php">Login here</a></p>
             </form>
         </div>
     </div>

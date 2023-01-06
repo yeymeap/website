@@ -3,25 +3,6 @@ include 'config.php';
 include 'topnav.php';
 ?>
 
-<?php
-/*$feltetel = $_GET['id'];
-$sql = "SELECT id, detail, manufacturer, name, image, price, description FROM products WHERE id=$feltetel";
-$result = mysqli_query($link, $sql);
-//Adatok kiolvasása adatbázisból
-if (mysqli_num_rows($result) > 0) {
-	$row = mysqli_fetch_assoc($result);
-	//Adatok megjelenítése
-	$description = $row["description"];
-	$detail = $row["detail"];
-	$manufacturer = $row["manufacturer"];
-	$name = $row["name"];
-	$image = $row["image"];
-	$price = $row["price"];
-} else {
-	echo "nem jo";
-}*/
-?>
-
 <!-- Breadcrumb Start -->
 <div class="container-fluid">
 	<div class="row px-xl-5">
@@ -58,67 +39,132 @@ if (mysqli_num_rows($result) > 0) {
 						<span class="bg-white pe-3">ACOUSTIC GUITARS</span>
 					</h2>
 				</div>
+				<?php
+				$sql = "SELECT id, manufacturer, name, image, price FROM products WHERE id=14";
+				$result = mysqli_query($link, $sql);
+				//Adatok kiolvasása adatbázisból
+				if (mysqli_num_rows($result) > 0) {
+					$row = mysqli_fetch_assoc($result);
+					//Adatok megjelenítése
+					$manufacturer = $row["manufacturer"];
+					$name = $row["name"];
+					$image = $row["image"];
+					$price = $row["price"];
+				}
+				?>
 				<div class="col-lg-4 col-md-6 col-sm-6 pb-1">
 					<div class="product-item bg-light mb-4">
 						<div class="product-img position-relative overflow-hidden">
-							<a href="product.php?id=14"><img class="img-fluid w-100" src="img/guitar-14.png" alt="" /></a>
+							<a href="product.php?id=14"><img class="img-fluid w-100" src="img/<?php echo $image ?>" alt="" /></a>
 						</div>
 						<div class="text-center py-4">
-							<a class="h6 text-decoration-none text-truncate text-black" href="product.php?id=14">Fender CD-60 V3</a>
+							<a class="h6 text-decoration-none text-truncate text-black" href="product.php?id=14"><?php echo $manufacturer . ' ', $name ?></a>
 							<div class="d-flex align-items-center justify-content-center mt-2">
-								<h5>138€</h5>
+								<h5><?php echo $price ?>&euro;</h5>
 							</div>
 						</div>
 					</div>
 				</div>
+				<?php
+				$sql = "SELECT id, manufacturer, name, image, price FROM products WHERE id=15";
+				$result = mysqli_query($link, $sql);
+				//Adatok kiolvasása adatbázisból
+				if (mysqli_num_rows($result) > 0) {
+					$row = mysqli_fetch_assoc($result);
+					//Adatok megjelenítése
+					$manufacturer = $row["manufacturer"];
+					$name = $row["name"];
+					$image = $row["image"];
+					$price = $row["price"];
+				}
+				?>
 				<div class="col-lg-4 col-md-6 col-sm-6 pb-1">
 					<div class="product-item bg-light mb-4">
 						<div class="product-img position-relative overflow-hidden">
-							<a href="product.php?id=15"><img class="img-fluid w-100" src="img/guitar-15.png" alt="" /></a>
+							<a href="product.php?id=15"><img class="img-fluid w-100" src="img/<?php echo $image ?>" alt="" /></a>
 						</div>
 						<div class="text-center py-4">
-							<a class="h6 text-decoration-none text-truncate text-black" href="product.php?id=15">LAG Tramontane T70D</a>
+							<a class="h6 text-decoration-none text-truncate text-black" href="product.php?id=15"><?php echo $manufacturer . ' ', $name ?></a>
 							<div class="d-flex align-items-center justify-content-center mt-2">
-								<h5>299€</h5>
+								<h5><?php echo $price ?>&euro;</h5>
 							</div>
 						</div>
 					</div>
 				</div>
+				<?php
+				$sql = "SELECT id, manufacturer, name, image, price FROM products WHERE id=16";
+				$result = mysqli_query($link, $sql);
+				//Adatok kiolvasása adatbázisból
+				if (mysqli_num_rows($result) > 0) {
+					$row = mysqli_fetch_assoc($result);
+					//Adatok megjelenítése
+					$manufacturer = $row["manufacturer"];
+					$name = $row["name"];
+					$image = $row["image"];
+					$price = $row["price"];
+				}
+				?>
 				<div class="col-lg-4 col-md-6 col-sm-6 pb-1">
 					<div class="product-item bg-light mb-4">
 						<div class="product-img position-relative overflow-hidden">
-							<a href="product.php?id=16"><img class="img-fluid w-100" src="img/guitar-16.png" alt="" /></a>
+							<a href="product.php?id=16"><img class="img-fluid w-100" src="img/<?php echo $image ?>" alt="" /></a>
 						</div>
 						<div class="text-center py-4">
-							<a class="h6 text-decoration-none text-truncate text-black" href="product.php?id=16">LAG Tramontane T70DC</a>
+							<a class="h6 text-decoration-none text-truncate text-black" href="product.php?id=16"><?php echo $manufacturer . ' ', $name ?></a>
 							<div class="d-flex align-items-center justify-content-center mt-2">
-								<h5>329€</h5>
+								<h5><?php echo $price ?>&euro;</h5>
 							</div>
 						</div>
 					</div>
 				</div>
+				<?php
+				$sql = "SELECT id, manufacturer, name, image, price FROM products WHERE id=17";
+				$result = mysqli_query($link, $sql);
+				//Adatok kiolvasása adatbázisból
+				if (mysqli_num_rows($result) > 0) {
+					$row = mysqli_fetch_assoc($result);
+					//Adatok megjelenítése
+					$manufacturer = $row["manufacturer"];
+					$name = $row["name"];
+					$image = $row["image"];
+					$price = $row["price"];
+				}
+				?>
 				<div class="col-lg-4 col-md-6 col-sm-6 pb-1">
 					<div class="product-item bg-light mb-4">
 						<div class="product-img position-relative overflow-hidden">
-							<a href="product.php?id=18"><img class="img-fluid w-100" src="img/guitar-18.png" alt="" /></a>
+							<a href="product.php?id=17"><img class="img-fluid w-100" src="img/<?php echo $image ?>" alt="" /></a>
 						</div>
 						<div class="text-center py-4">
-							<a class="h6 text-decoration-none text-truncate text-black" href="product.php?id=18">Takamine GD93</a>
+							<a class="h6 text-decoration-none text-truncate text-black" href="product.php?id=17"><?php echo $manufacturer . ' ', $name ?></a>
 							<div class="d-flex align-items-center justify-content-center mt-2">
-								<h5>489€</h5>
+								<h5><?php echo $price ?>&euro;</h5>
 							</div>
 						</div>
 					</div>
 				</div>
+				<?php
+				$sql = "SELECT id, manufacturer, name, image, price FROM products WHERE id=18";
+				$result = mysqli_query($link, $sql);
+				//Adatok kiolvasása adatbázisból
+				if (mysqli_num_rows($result) > 0) {
+					$row = mysqli_fetch_assoc($result);
+					//Adatok megjelenítése
+					$manufacturer = $row["manufacturer"];
+					$name = $row["name"];
+					$image = $row["image"];
+					$price = $row["price"];
+				}
+				?>
 				<div class="col-lg-4 col-md-6 col-sm-6 pb-1">
 					<div class="product-item bg-light mb-4">
 						<div class="product-img position-relative overflow-hidden">
-							<a href="product.php?id=17"><img class="img-fluid w-100" src="img/guitar-18.png" alt="" /></a>
+							<a href="product.php?id=18"><img class="img-fluid w-100" src="img/<?php echo $image ?>" alt="" /></a>
 						</div>
 						<div class="text-center py-4">
-							<a class="h6 text-decoration-none text-truncate text-black" href="product.php?id=18">Alvarez MD70BG</a>
+							<a class="h6 text-decoration-none text-truncate text-black" href="product.php?id=18"><?php echo $manufacturer . ' ', $name ?></a>
 							<div class="d-flex align-items-center justify-content-center mt-2">
-								<h5>929€</h5>
+								<h5><?php echo $price ?>&euro;</h5>
 							</div>
 						</div>
 					</div>
@@ -182,7 +228,7 @@ if (mysqli_num_rows($result) > 0) {
 							<a href="product.php?id=2"><img class="img-fluid w-100" src="img/<?php echo $image ?>" alt="" /></a>
 						</div>
 						<div class="text-center py-4">
-							<a class="h6 text-decoration-none text-truncate text-black" href="product.php?id=2">Fender Squier Bullet</a>
+							<a class="h6 text-decoration-none text-truncate text-black" href="product.php?id=2"><?php echo $manufacturer . ' ', $name ?></a>
 							<div class="d-flex align-items-center justify-content-center mt-2">
 								<h5><?php echo $price ?>&euro;</h5>
 							</div>
@@ -231,129 +277,246 @@ if (mysqli_num_rows($result) > 0) {
 				<div class="col-lg-4 col-md-6 col-sm-6 pb-1">
 					<div class="product-item bg-light mb-4">
 						<div class="product-img position-relative overflow-hidden">
-							<a href="product.php?id=3"><img class="img-fluid w-100" src="img/<?php echo $image ?>" alt="" /></a>
+							<a href="product.php?id=4"><img class="img-fluid w-100" src="img/<?php echo $image ?>" alt="" /></a>
 						</div>
 						<div class="text-center py-4">
-							<a class="h6 text-decoration-none text-truncate text-black" href="product.php?id=3"><?php echo $manufacturer, ' ', $name ?></a>
+							<a class="h6 text-decoration-none text-truncate text-black" href="product.php?id=4"><?php echo $manufacturer, ' ', $name ?></a>
 							<div class="d-flex align-items-center justify-content-center mt-2">
 								<h5><?php echo $price ?>&euro;</h5>
 							</div>
 						</div>
 					</div>
 				</div>
+				<?php
+				$sql = "SELECT id, manufacturer, name, image, price FROM products WHERE id=5";
+				$result = mysqli_query($link, $sql);
+				//Adatok kiolvasása adatbázisból
+				if (mysqli_num_rows($result) > 0) {
+					$row = mysqli_fetch_assoc($result);
+					//Adatok megjelenítése
+					$manufacturer = $row["manufacturer"];
+					$name = $row["name"];
+					$image = $row["image"];
+					$price = $row["price"];
+				}
+				?>
 				<div class="col-lg-4 col-md-6 col-sm-6 pb-1">
 					<div class="product-item bg-light mb-4">
 						<div class="product-img position-relative overflow-hidden">
-							<a href="product.php?id=5"><img class="img-fluid w-100" src="img/guitar-5.png" alt="" /></a>
+							<a href="product.php?id=5"><img class="img-fluid w-100" src="img/<?php echo $image ?>" alt="" /></a>
 						</div>
 						<div class="text-center py-4">
-							<a class="h6 text-decoration-none text-truncate text-black" href="product.php?id=5">Fender Player Series</a>
+							<a class="h6 text-decoration-none text-truncate text-black" href="product.php?id=5"><?php echo $manufacturer . ' ', $name ?></a>
 							<div class="d-flex align-items-center justify-content-center mt-2">
-								<h5>749€</h5>
+								<h5><?php echo $price ?>&euro;</h5>
 							</div>
 						</div>
 					</div>
 				</div>
+				<?php
+				$sql = "SELECT id, manufacturer, name, image, price FROM products WHERE id=6";
+				$result = mysqli_query($link, $sql);
+				//Adatok kiolvasása adatbázisból
+				if (mysqli_num_rows($result) > 0) {
+					$row = mysqli_fetch_assoc($result);
+					//Adatok megjelenítése
+					$manufacturer = $row["manufacturer"];
+					$name = $row["name"];
+					$image = $row["image"];
+					$price = $row["price"];
+				}
+				?>
 				<div class="col-lg-4 col-md-6 col-sm-6 pb-1">
 					<div class="product-item bg-light mb-4">
 						<div class="product-img position-relative overflow-hidden">
-							<a href="product.php?id=6"><img class="img-fluid w-100" src="img/guitar-6.png" alt="" /></a>
+							<a href="product.php?id=6"><img class="img-fluid w-100" src="img/<?php echo $image ?>" alt="" /></a>
 						</div>
 						<div class="text-center py-4">
-							<a class="h6 text-decoration-none text-truncate text-black" href="product.php?id=6">Fender American Professional II</a>
+							<a class="h6 text-decoration-none text-truncate text-black" href="product.php?id=6"><?php echo $manufacturer . ' ', $name ?></a>
 							<div class="d-flex align-items-center justify-content-center mt-2">
-								<h5>1890€</h5>
+								<h5><?php echo $price ?>&euro;</h5>
 							</div>
 						</div>
 					</div>
 				</div>
+				<?php
+				$sql = "SELECT id, manufacturer, name, image, price FROM products WHERE id=7";
+				$result = mysqli_query($link, $sql);
+				//Adatok kiolvasása adatbázisból
+				if (mysqli_num_rows($result) > 0) {
+					$row = mysqli_fetch_assoc($result);
+					//Adatok megjelenítése
+					$manufacturer = $row["manufacturer"];
+					$name = $row["name"];
+					$image = $row["image"];
+					$price = $row["price"];
+				}
+				?>
 				<div class="col-lg-4 col-md-6 col-sm-6 pb-1">
 					<div class="product-item bg-light mb-4">
 						<div class="product-img position-relative overflow-hidden">
-							<a href="product.php?id=7"><img class="img-fluid w-100" src="img/guitar-7.png" alt="" /></a>
+							<a href="product.php?id=7"><img class="img-fluid w-100" src="img/<?php echo $image ?>" alt="" /></a>
 						</div>
 						<div class="text-center py-4">
-							<a class="h6 text-decoration-none text-truncate text-black" href="product.php?id=7">Fender American Professional II</a>
+							<a class="h6 text-decoration-none text-truncate text-black" href="product.php?id=7"><?php echo $manufacturer . ' ', $name ?></a>
 							<div class="d-flex align-items-center justify-content-center mt-2">
-								<h5>1890€</h5>
+								<h5><?php echo $price ?>&euro;</h5>
 							</div>
 						</div>
 					</div>
 				</div>
+				<?php
+				$sql = "SELECT id, manufacturer, name, image, price FROM products WHERE id=8";
+				$result = mysqli_query($link, $sql);
+				//Adatok kiolvasása adatbázisból
+				if (mysqli_num_rows($result) > 0) {
+					$row = mysqli_fetch_assoc($result);
+					//Adatok megjelenítése
+					$manufacturer = $row["manufacturer"];
+					$name = $row["name"];
+					$image = $row["image"];
+					$price = $row["price"];
+				}
+				?>
 				<div class="col-lg-4 col-md-6 col-sm-6 pb-1">
 					<div class="product-item bg-light mb-4">
 						<div class="product-img position-relative overflow-hidden">
-							<a href="product.php?id=8"><img class="img-fluid w-100" src="img/guitar-8.png" alt="" /></a>
+							<a href="product.php?id=8"><img class="img-fluid w-100" src="img/<?php echo $image ?>" alt="" /></a>
 						</div>
 						<div class="text-center py-4">
-							<a class="h6 text-decoration-none text-truncate text-black" href="product.php?id=8">Epiphone Les Paul Studio</a>
+							<a class="h6 text-decoration-none text-truncate text-black" href="product.php?id=8"><?php echo $manufacturer . ' ', $name ?></a>
 							<div class="d-flex align-items-center justify-content-center mt-2">
-								<h5>239€</h5>
+								<h5><?php echo $price ?>&euro;</h5>
 							</div>
 						</div>
 					</div>
 				</div>
+				<?php
+				$sql = "SELECT id, manufacturer, name, image, price FROM products WHERE id=9";
+				$result = mysqli_query($link, $sql);
+				//Adatok kiolvasása adatbázisból
+				if (mysqli_num_rows($result) > 0) {
+					$row = mysqli_fetch_assoc($result);
+					//Adatok megjelenítése
+					$manufacturer = $row["manufacturer"];
+					$name = $row["name"];
+					$image = $row["image"];
+					$price = $row["price"];
+				}
+				?>
 				<div class="col-lg-4 col-md-6 col-sm-6 pb-1">
 					<div class="product-item bg-light mb-4">
 						<div class="product-img position-relative overflow-hidden">
-							<a href="product.php?id=9"><img class="img-fluid w-100" src="img/guitar-9.png" alt="" /></a>
+							<a href="product.php?id=9"><img class="img-fluid w-100" src="img/<?php echo $image ?>" alt="" /></a>
 						</div>
 						<div class="text-center py-4">
-							<a class="h6 text-decoration-none text-truncate text-black" href="product.php?id=9">Epiphone Slash Les Paul</a>
+							<a class="h6 text-decoration-none text-truncate text-black" href="product.php?id=9"><?php echo $manufacturer . ' ', $name ?></a>
 							<div class="d-flex align-items-center justify-content-center mt-2">
-								<h5>899€</h5>
+								<h5><?php echo $price ?>&euro;</h5>
 							</div>
 						</div>
 					</div>
 				</div>
+				<?php
+				$sql = "SELECT id, manufacturer, name, image, price FROM products WHERE id=10";
+				$result = mysqli_query($link, $sql);
+				//Adatok kiolvasása adatbázisból
+				if (mysqli_num_rows($result) > 0) {
+					$row = mysqli_fetch_assoc($result);
+					//Adatok megjelenítése
+					$manufacturer = $row["manufacturer"];
+					$name = $row["name"];
+					$image = $row["image"];
+					$price = $row["price"];
+				}
+				?>
 				<div class="col-lg-4 col-md-6 col-sm-6 pb-1">
 					<div class="product-item bg-light mb-4">
 						<div class="product-img position-relative overflow-hidden">
-							<a href="product.php?id=10"><img class="img-fluid w-100" src="img/guitar-10.png" alt="" /></a>
+							<a href="product.php?id=10"><img class="img-fluid w-100" src="img/<?php echo $image ?>" alt="" /></a>
 						</div>
 						<div class="text-center py-4">
-							<a class="h6 text-decoration-none text-truncate text-black" href="product.php?id=10">Gibson Les Paul Standard 50s</a>
+							<a class="h6 text-decoration-none text-truncate text-black" href="product.php?id=10"><?php echo $manufacturer . ' ', $name ?></a>
 							<div class="d-flex align-items-center justify-content-center mt-2">
-								<h5>2298€</h5>
+								<h5><?php echo $price ?>&euro;</h5>
 							</div>
 						</div>
 					</div>
 				</div>
+				<?php
+				$sql = "SELECT id, manufacturer, name, image, price FROM products WHERE id=11";
+				$result = mysqli_query($link, $sql);
+				//Adatok kiolvasása adatbázisból
+				if (mysqli_num_rows($result) > 0) {
+					$row = mysqli_fetch_assoc($result);
+					//Adatok megjelenítése
+					$manufacturer = $row["manufacturer"];
+					$name = $row["name"];
+					$image = $row["image"];
+					$price = $row["price"];
+				}
+				?>
 				<div class="col-lg-4 col-md-6 col-sm-6 pb-1">
 					<div class="product-item bg-light mb-4">
 						<div class="product-img position-relative overflow-hidden">
-							<a href="product.php?id=11"><img class="img-fluid w-100" src="img/guitar-11.png" alt="" /></a>
+							<a href="product.php?id=11"><img class="img-fluid w-100" src="img/<?php echo $image ?>" alt="" /></a>
 						</div>
 						<div class="text-center py-4">
-							<a class="h6 text-decoration-none text-truncate text-black" href="product.php?id=11">Gibson Les Paul Classic</a>
+							<a class="h6 text-decoration-none text-truncate text-black" href="product.php?id=11"><?php echo $manufacturer . ' ', $name ?></a>
 							<div class="d-flex align-items-center justify-content-center mt-2">
-								<h5>1999€</h5>
+								<h5><?php echo $price ?>&euro;</h5>
 							</div>
 						</div>
 					</div>
 				</div>
+				<?php
+				$sql = "SELECT id, manufacturer, name, image, price FROM products WHERE id=12";
+				$result = mysqli_query($link, $sql);
+				//Adatok kiolvasása adatbázisból
+				if (mysqli_num_rows($result) > 0) {
+					$row = mysqli_fetch_assoc($result);
+					//Adatok megjelenítése
+					$manufacturer = $row["manufacturer"];
+					$name = $row["name"];
+					$image = $row["image"];
+					$price = $row["price"];
+				}
+				?>
 				<div class="col-lg-4 col-md-6 col-sm-6 pb-1">
 					<div class="product-item bg-light mb-4">
 						<div class="product-img position-relative overflow-hidden">
-							<a href="product.php?id=12"><img class="img-fluid w-100" src="img/guitar-12.png" alt="" /></a>
+							<a href="product.php?id=12"><img class="img-fluid w-100" src="img/<?php echo $image ?>" alt="" /></a>
 						</div>
 						<div class="text-center py-4">
-							<a class="h6 text-decoration-none text-truncate text-black" href="product.php?id=12">Ibanez GRX-70QA</a>
+							<a class="h6 text-decoration-none text-truncate text-black" href="product.php?id=12"><?php echo $manufacturer . ' ', $name ?></a>
 							<div class="d-flex align-items-center justify-content-center mt-2">
-								<h5>219€</h5>
+								<h5><?php echo $price ?>&euro;</h5>
 							</div>
 						</div>
 					</div>
 				</div>
+				<?php
+				$sql = "SELECT id, manufacturer, name, image, price FROM products WHERE id=13";
+				$result = mysqli_query($link, $sql);
+				//Adatok kiolvasása adatbázisból
+				if (mysqli_num_rows($result) > 0) {
+					$row = mysqli_fetch_assoc($result);
+					//Adatok megjelenítése
+					$manufacturer = $row["manufacturer"];
+					$name = $row["name"];
+					$image = $row["image"];
+					$price = $row["price"];
+				}
+				?>
 				<div class="col-lg-4 col-md-6 col-sm-6 pb-1">
 					<div class="product-item bg-light mb-4">
 						<div class="product-img position-relative overflow-hidden">
-							<a href="product.php?id=13"><img class="img-fluid w-100" src="img/guitar-13.png" alt="" /></a>
+							<a href="product.php?id=13"><img class="img-fluid w-100" src="img/<?php echo $image ?>" alt="" /></a>
 						</div>
 						<div class="text-center py-4">
-							<a class="h6 text-decoration-none text-truncate text-black" href="product.php?id=13">Ibanez RG652</a>
+							<a class="h6 text-decoration-none text-truncate text-black" href="product.php?id=13"><?php echo $manufacturer . ' ', $name ?></a>
 							<div class="d-flex align-items-center justify-content-center mt-2">
-								<h5>1429€</h5>
+								<h5><?php echo $price ?>&euro;</h5>
 							</div>
 						</div>
 					</div>

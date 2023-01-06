@@ -31,7 +31,7 @@
         </div>
         <div class="col-6">
             <div class="d-flex justify-content-center py-5 ps-5 mb-30">
-                <a title="Redirect to this guitar's page" href="guitar-14-en.html"><img class="ms-5" src="img/guitar-14.png" alt="Image"></a>
+                <a title="Átirányítás ezen gitár oldalára" href="product.php?id=14"><img class="ms-5" src="../img/guitar-14.png" alt="Image"></a>
             </div>
         </div>
     </div>
@@ -42,7 +42,7 @@
         </div>
         <div class="col-6">
             <div class="d-flex justify-content-center py-5 ps-5 mb-30">
-                <a title="Redirect to this guitar's page" href="guitar-12-en.html"><img class="ms-5" src="img/guitar-12.png" alt="Image"></a>
+                <a title="Átirányítás ezen gitár oldalára" href="guitar-12-en.html"><img class="ms-5" src="../img/guitar-12.png" alt="Image"></a>
             </div>
         </div>
     </div>
@@ -53,7 +53,7 @@
         </div>
         <div class="col-6">
             <div class="d-flex justify-content-center py-5 ps-5 mb-30">
-                <a title="Redirect to this guitar's page" href="bass-5-en.html"><img class="ms-5" src="img/bass-5.png" alt="Image"></a>
+                <a title="Átirányítás ezen gitár oldalára" href="bass-5-en.html"><img class="ms-5" src="../img/bass-5.png" alt="Image"></a>
             </div>
         </div>
     </div>
@@ -64,7 +64,7 @@
         </div>
         <div class="col-6">
             <div class="d-flex justify-content-center py-5 ps-5 mb-30">
-                <a title="Redirect to amplifiers" href="amplifiers-en.html"><img class="ms-5" src="img/lamp-4.png" alt="Image"></a>
+                <a title="Átirányítás az erősítőkhöz" href="amplifiers-en.html"><img class="ms-5" src="../img/lamp-4.png" alt="Image"></a>
             </div>
         </div>
     </div>
@@ -75,7 +75,7 @@
         </div>
         <div class="col-6">
             <div class="d-flex justify-content-center py-5 ps-5 mb-30">
-                <a title="Redirect to this amplifier's page" href="amplifiers-en.html"><img class="ms-5" src="img/tamp-1.png" alt="Image"></a>
+                <a title="Átirányítás ezen erősítő oldalára" href="amplifiers-en.html"><img class="ms-5" src="../img/tamp-1.png" alt="Image"></a>
             </div>
         </div>
     </div>
@@ -86,7 +86,7 @@
         </div>
         <div class="col-6">
             <div class="d-flex justify-content-center py-5 ps-5 mb-30">
-                <a title="Redirect to this amplifier's page" href="amplifiers-en.html"><img class="ms-5" src="img/mamp-1.png" alt="Image"></a>
+                <a title="Átirányítás ezen erősítő oldalára" href="amplifiers-en.html"><img class="ms-5" src="../img/mamp-1.png" alt="Image"></a>
             </div>
         </div>
     </div>
@@ -97,7 +97,7 @@
         </div>
         <div class="col-6">
             <div class="d-flex justify-content-center py-5 ps-5 mb-30">
-                <a title="Redirect to this amplifier's page" href="amplifiers-en.html"><img class="ms-5" src="img/lamp-5.png" alt="Image"></a>
+                <a title="Átirányítás ezen erősítő oldalára" href="amplifiers-en.html"><img class="ms-5" src="../img/lamp-5.png" alt="Image"></a>
             </div>
         </div>
     </div>
@@ -108,7 +108,7 @@
         </div>
         <div class="col-6">
             <div class="d-flex justify-content-center py-5 ps-5 mb-30">
-                <a title="Redirect to this amplifier's page" href="amplifiers-en.html"><img class="ms-5" src="img/bamp-9.png" alt="Image"></a>
+                <a title="Átirányítás ezen erősítő oldalára" href="amplifiers-en.html"><img class="ms-5" src="../img/bamp-9.png" alt="Image"></a>
             </div>
         </div>
     </div>
@@ -119,11 +119,11 @@
         </div>
         <div class="col-6">
             <div class="d-flex justify-content-center py-5 ps-5 mb-30">
-                <a title="Redirect to this amplifier's page" href="misc-en.html"><img class="ms-5" src="img/tools.png" alt="Image"></a>
+                <a title="Átirányítás a kiegészítőkhöz" href="misc-en.html"><img class="ms-5" src="../img/tools.png" alt="Image"></a>
             </div>
         </div>
     </div>
 </div>
 <!-- Guide vége -->
 
-<?php include 'footer-hu.php'; ?>
+<?php include 'footer.php'; ?>

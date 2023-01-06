@@ -119,7 +119,7 @@
         </div>
         <div class="col-6">
             <div class="d-flex justify-content-center py-5 ps-5 mb-30">
-                <a title="Redirect to this amplifier's page" href="misc-en.html"><img class="ms-5" src="img/tools.png" alt="Image"></a>
+                <a title="Redirect to tools" href="misc-en.html"><img class="ms-5" src="img/tools.png" alt="Image"></a>
             </div>
         </div>
     </div>

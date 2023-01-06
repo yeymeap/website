@@ -121,7 +121,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) { // megné
                             <a href="contact.php" class="nav-item nav-link text-decoration-none">Kapcsolatfelvétel</a>
                         </div>
                         <div class="navbar-nav ms-auto py-0 d-none d-lg-block">
-                            <a href="cart-en.php" class="btn px-0 ms-3 text-decoration-none">
+                            <a href="cart.php" class="btn px-0 ms-3 text-decoration-none">
                                 <i class="fas fa-shopping-cart text-white"></i>
                                 <span class="badge text-light border border-white rounded-circle"></span>
                             </a>
