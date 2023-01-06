@@ -3,13 +3,13 @@ if (session_id() == '' || !isset($_SESSION) || session_status() === PHP_SESSION_
     session_start(); // ha nem, indít egy sessiont
 }
 
-if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) { // megnézi, hogy a felhasználó már be e jelentkezett, ha nem, átirányítja a bejelentkezési oldalra
+if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
     $href1 = 'sign-in.php';                                         // változók megnevezése, különböző kimenetelekkel
     $href2 = 'sign-up.php';
     $login = 'Login';
     $register = 'Register';
 } else {
-    $href1 = '#';
+    $href1 = 'profile.php';
     $href2 = 'logout.php';
     $login = htmlspecialchars($_SESSION["email"]);
     $register = 'Log out';
