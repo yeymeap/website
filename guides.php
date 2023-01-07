@@ -31,7 +31,7 @@
         </div>
         <div class="col-6">
             <div class="d-flex justify-content-center py-5 ps-5 mb-30">
-                <a title="Redirect to this guitar's page" href="guitar-14-en.html"><img class="ms-5" src="img/guitar-14.png" alt="Image"></a>
+                <a title="Redirect to this guitar's page" href="product.php?id=14"><img class="ms-5" src="img/guitar-14.png" alt="Image"></a>
             </div>
         </div>
     </div>
@@ -42,7 +42,7 @@
         </div>
         <div class="col-6">
             <div class="d-flex justify-content-center py-5 ps-5 mb-30">
-                <a title="Redirect to this guitar's page" href="guitar-12-en.html"><img class="ms-5" src="img/guitar-12.png" alt="Image"></a>
+                <a title="Redirect to this guitar's page" href="product.php?id=12"><img class="ms-5" src="img/guitar-12.png" alt="Image"></a>
             </div>
         </div>
     </div>
@@ -53,7 +53,7 @@
         </div>
         <div class="col-6">
             <div class="d-flex justify-content-center py-5 ps-5 mb-30">
-                <a title="Redirect to this guitar's page" href="bass-5-en.html"><img class="ms-5" src="img/bass-5.png" alt="Image"></a>
+                <a title="Redirect to this guitar's page" href="product.php?id=23"><img class="ms-5" src="img/bass-5.png" alt="Image"></a>
             </div>
         </div>
     </div>
@@ -119,7 +119,7 @@
         </div>
         <div class="col-6">
             <div class="d-flex justify-content-center py-5 ps-5 mb-30">
-                <a title="Redirect to tools" href="misc-en.html"><img class="ms-5" src="img/tools.png" alt="Image"></a>
+                <a title="Redirect to tools" href="misc.php"><img class="ms-5" src="img/tools.png" alt="Image"></a>
             </div>
         </div>
     </div>

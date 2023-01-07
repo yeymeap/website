@@ -59,6 +59,13 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
             window.history.replaceState(null, null, window.location.href);
         }
     </script>
+    <script>
+        function backButton() {
+
+            window.history.back();
+
+        }
+    </script>
 
     <!-- Külsőleg használt könyvtárak vége\\ -->
 </head>

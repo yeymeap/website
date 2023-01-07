@@ -35,7 +35,7 @@ include 'topnav.php';
 		<div class='col-lg-9 col-md-8 mb-5'>
 			<div class='row pb-3'>
 				<div class='col-12 pb-1'>
-					<h2 id='electricg' class='section-title position-relative mb-4 text-black'>
+					<h2 id='acousticg' class='section-title position-relative mb-4 text-black'>
 						<span class='bg-white pe-3'>ACOUSTIC GUITARS</span>
 					</h2>
 				</div>
@@ -65,7 +65,7 @@ include 'topnav.php';
 				<div class="col-lg-2 col-md-2"></div>
 				<div class='row pb-3'>
 					<div class='col-12 pb-1'>
-						<h2 id='acousticg' class='section-title position-relative mb-4 text-black'>
+						<h2 id='electricg' class='section-title position-relative mb-4 text-black'>
 							<span class='bg-white pe-3'>ELECTRIC GUITARS</span>
 						</h2>
 					</div>

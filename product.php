@@ -30,7 +30,7 @@ if (mysqli_num_rows($result) > 0) {
 		<div class="col-12">
 			<nav class="breadcrumb bg-white mb-30">
 				<a class="breadcrumb-item text-dark" href="index.php">Home</a>
-				<a class="breadcrumb-item text-dark" href="guitars.php">Shop</a>
+				<a class="breadcrumb-item text-dark" href="#" onclick="backButton()">Shop</a>
 				<span class="breadcrumb-item active"><?php echo "$manufacturer $name" ?></span>
 			</nav>
 		</div>
