@@ -4,6 +4,7 @@ include 'comment.php';
 include 'topnav.php';
 ?>
 
+
 <!-- Termék kezdet -->
 <?php
 $pid = $_GET["id"];
@@ -30,7 +31,7 @@ if (mysqli_num_rows($result) > 0) {
 		<div class="col-12">
 			<nav class="breadcrumb bg-white mb-30">
 				<a class="breadcrumb-item text-dark" href="index.php">Home</a>
-				<a class="breadcrumb-item text-dark" href="#" onclick="backButton()">Shop</a>
+				<a class="breadcrumb-item text-dark" href="#" onclick="backButton()">Previous page</a>
 				<span class="breadcrumb-item active"><?php echo "$manufacturer $name" ?></span>
 			</nav>
 		</div>
@@ -47,19 +48,6 @@ if (mysqli_num_rows($result) > 0) {
 				<h3><?php echo "$manufacturer $name" ?></h3>
 				<h3 class="font-weight-semi-bold mb-4"><?php echo $price ?>&euro;</h3>
 				<div class="d-flex align-items-center mb-4 pt-2">
-					<div class="input-group quantity me-3" style="width: 130px">
-						<div class="input-group-btn">
-							<button class="btn btn-black btn-minus">
-								<i class="fa fa-minus"></i>
-							</button>
-						</div>
-						<input type="text" class="form-control bg-white border-0 text-center" value="1" />
-						<div class="input-group-btn">
-							<button class="btn btn-black btn-plus">
-								<i class="fa fa-plus"></i>
-							</button>
-						</div>
-					</div>
 					<button class="btn btn-black px-3">
 						<i class="fa fa-shopping-cart me-1"></i> Add To
 						Cart
