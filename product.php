@@ -31,7 +31,7 @@ if (mysqli_num_rows($result) > 0) {
 			<nav class="breadcrumb bg-white mb-30">
 				<a class="breadcrumb-item text-dark" href="index.php">Home</a>
 				<a class="breadcrumb-item text-dark" href="guitars.php">Shop</a>
-				<span class="breadcrumb-item active"><?php echo $manufacturer, ' ', $name ?></span>
+				<span class="breadcrumb-item active"><?php echo "$manufacturer $name" ?></span>
 			</nav>
 		</div>
 	</div>
@@ -44,7 +44,7 @@ if (mysqli_num_rows($result) > 0) {
 		</div>
 		<div class="col-lg-7 h-auto mb-30 px-5 d-flex justify-content-starts">
 			<div class="h-100 bg-white p-30">
-				<h3><?php echo $manufacturer, ' ', $name ?></h3>
+				<h3><?php echo "$manufacturer $name" ?></h3>
 				<h3 class="font-weight-semi-bold mb-4"><?php echo $price ?>&euro;</h3>
 				<div class="d-flex align-items-center mb-4 pt-2">
 					<div class="input-group quantity me-3" style="width: 130px">
@@ -112,9 +112,13 @@ if (mysqli_num_rows($result) > 0) {
 							} ?>
 							<div class="col-md-6">
 								<h4 style='text-align:center' class="mb-4">
-									Comments for <?php echo $manufacturer, ' ', $name ?>
+									<?php
+									$sql = "SELECT COUNT(*) AS comnum FROM comments WHERE pid=$pid";
+									$result = mysqli_query($link, $sql);
+									$comnum = mysqli_fetch_assoc($result)['comnum'];
+									echo "$comnum comments for: $manufacturer $name"; ?>
 								</h4>
-								<div style="padding-top: 27px;">
+								<div style="padding-top: 26px;">
 									<?php getComments($link); ?>
 								</div>
 							</div>

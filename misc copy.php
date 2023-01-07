@@ -120,7 +120,7 @@ include 'topnav.php';
 						<span class='bg-white pe-3'>ACOUSTIC BASS STRINGS</span>
 					</h2>
 				</div>
-				<?php $sql = "SELECT id, manufacturer, name, price, image FROM products WHERE id BETWEEN 19 and 38";
+				<?php $sql = "SELECT id, manufacturer, name, price, image FROM products WHERE id BETWEEN 75 and 78";
 				$result = $link->query($sql);
 
 				while ($row = $result->fetch_assoc()) {
@@ -152,7 +152,7 @@ include 'topnav.php';
 						<span class='bg-white pe-3'>ELECTRIC BASS STRINGS</span>
 					</h2>
 				</div>
-				<?php $sql = "SELECT id, manufacturer, name, price, image FROM products WHERE id BETWEEN 19 and 38";
+				<?php $sql = "SELECT id, manufacturer, name, price, image FROM products WHERE id BETWEEN 67 and 74";
 				$result = $link->query($sql);
 
 				while ($row = $result->fetch_assoc()) {
@@ -184,7 +184,7 @@ include 'topnav.php';
 						<span class='bg-white pe-3'>PICKS</span>
 					</h2>
 				</div>
-				<?php $sql = "SELECT id, manufacturer, name, price, image FROM products WHERE id BETWEEN 19 and 38";
+				<?php $sql = "SELECT id, manufacturer, name, price, image FROM products WHERE id BETWEEN 79 and 89";
 				$result = $link->query($sql);
 
 				while ($row = $result->fetch_assoc()) {
@@ -216,7 +216,7 @@ include 'topnav.php';
 						<span class='bg-white pe-3'>CABLES</span>
 					</h2>
 				</div>
-				<?php $sql = "SELECT id, manufacturer, name, price, image FROM products WHERE id BETWEEN 19 and 38";
+				<?php $sql = "SELECT id, manufacturer, name, price, image FROM products WHERE id BETWEEN 90 and 94";
 				$result = $link->query($sql);
 
 				while ($row = $result->fetch_assoc()) {
@@ -248,7 +248,7 @@ include 'topnav.php';
 						<span class='bg-white pe-3'>BAGS</span>
 					</h2>
 				</div>
-				<?php $sql = "SELECT id, manufacturer, name, price, image FROM products WHERE id BETWEEN 19 and 38";
+				<?php $sql = "SELECT id, manufacturer, name, price, image FROM products WHERE id BETWEEN 95 and 99";
 				$result = $link->query($sql);
 
 				while ($row = $result->fetch_assoc()) {
