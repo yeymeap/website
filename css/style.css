@@ -11417,7 +11417,7 @@ button.bg-success:focus {
   padding: 20px;
   margin-top: 5px;
   margin-bottom: 5px;
-  background-color: #ececec;
+  background-color: #fff;
   border: 2px solid black;
   border-radius: 20px;
   word-wrap: break-word;
