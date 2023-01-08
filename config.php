@@ -7,6 +7,7 @@ define('DB_NAME', 'main');
 
 // Csatlakozás MySQL-re
 $link = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
+mysqli_set_charset($link, "utf8");
 
 // Csatlakozás ellenőrzése
 if ($link === false) {

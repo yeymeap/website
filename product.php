@@ -8,7 +8,7 @@ include 'topnav.php';
 <!-- Termék kezdet -->
 <?php
 $pid = $_GET["id"];
-$sql = "SELECT id, detail, manufacturer, name, image, price, description FROM products WHERE id=$pid";
+$sql = "SELECT id, detail, manufacturer, name, image, price, description FROM productshu WHERE id=$pid";
 $result = mysqli_query($link, $sql);
 //Adatok kiolvasása adatbázisból
 if (mysqli_num_rows($result) > 0) {
@@ -95,7 +95,7 @@ if (mysqli_num_rows($result) > 0) {
 							</div>";
 							} else {
 								echo "<div class='col-md-6'>
-							<h4 style='text-align:center'>Log in or register to leave a comment!</h4>
+							<h4 class='text-gray-dark' style='text-align:center'><a href='sign-in.php'>Log in</a> or <a href='sign-up.php'>register</a> to leave a comment!</h4>
 							</div>";
 							} ?>
 							<div class="col-md-6">

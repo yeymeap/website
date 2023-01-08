@@ -7,7 +7,10 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
     header("location: sign-in.php");
     exit;
 } else {
-    header("refresh:5;url=index.php");
+    echo "<script language='javascript'>
+    setTimeout(function() {
+        window.history.go(-2);
+    }, 2000);</script>";
 }
 ?>
 
