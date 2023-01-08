@@ -3,16 +3,16 @@ if (session_id() == '' || !isset($_SESSION) || session_status() === PHP_SESSION_
     session_start(); // ha nem, indít egy sessiont
 }
 
-if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
+if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) { // megnézi, hogy a felhasználó már be e jelentkezett, ha nem, átirányítja a bejelentkezési oldalra
     $href1 = 'sign-in.php';                                         // változók megnevezése, különböző kimenetelekkel
     $href2 = 'sign-up.php';
-    $login = 'Login';
-    $register = 'Register';
+    $login = 'Bejeletkezés';
+    $register = 'Regisztráció';
 } else {
-    $href1 = 'profile.php';
+    $href1 = '#';
     $href2 = 'logout.php';
     $login = htmlspecialchars($_SESSION["email"]);
-    $register = 'Log out';
+    $register = 'Kijelentkezés';
 }
 ?>
 
@@ -21,18 +21,18 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
 
 <head>
     <meta charset="utf-8">
-    <title>GitárShop - Online Guitar Store</title>
+    <title>GitárShop - Online Gitárbolt</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="HangszerShop" name="keywords">
-    <meta content="Online Guitar Store" name="description">
+    <meta content="Online Gitárbolt" name="description">
 
     <!-- //Külsőleg használt könyvtárak -->
 
     <!-- CSS beállítások -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="../img/favicon.ico" rel="icon">
 
     <!-- Google Web betűtípusok -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -43,31 +43,18 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
 
     <!-- Animáció könyvtárak -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="../lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
-    <!-- JavaScript -->
+    <!-- JavaScript könyvtárak -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="mail/jqBootstrapValidation.min.js"></script>
-    <script src="mail/contact.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/nyelvvaltohu.js"></script>
-    <script>
-        if (window.history.replaceState) {
-            window.history.replaceState(null, null, window.location.href);
-        }
-    </script>
-    <script>
-        function backButton() {
-
-            window.history.back();
-
-        }
-    </script>
-
-    <!-- Külsőleg használt könyvtárak vége\\ -->
+    <script src="../lib/easing/easing.min.js"></script>
+    <script src="../lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="../mail/jqBootstrapValidation.min.js"></script>
+    <script src="../mail/contact.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/nyelvvaltoen.js"></script>
+    <!-- Külsőleg használt könyvtárak\\ -->
 </head>
 
 <body>
@@ -78,14 +65,14 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
             <div class="col-lg-6 text-center text-lg-end">
                 <div class="d-inline-flex align-items-center">
                     <div class="dropdown-center mx-1">
-                        <button type="button" class="btn btn-sm btn-black dropdown-toggle" data-toggle="dropdown" aria-expanded="false">My Account</button>
+                        <button type="button" class="btn btn-sm btn-black dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Saját Fiók</button>
                         <ul class="dropdown-menu dropdown-menu-end min-width-account">
                             <li><a class="dropdown-item text-decoration-none" href="<?php echo $href1; ?>"><?php echo $login; ?></a></li>
                             <li><a class="dropdown-item text-decoration-none" href="<?php echo $href2; ?>"><?php echo $register; ?></a></li>
                         </ul>
                     </div>
                     <div class="mx-1">
-                        <button class="btn btn-transparent" onclick="nyelvvaltas()"><img src="../img/hun.png"></button>
+                        <button class="btn btn-transparent" onclick="nyelvvaltas()"><img src="../img/eng.png"></button>
                     </div>
                 </div>
                 <div class="d-inline-flex align-items-center d-block d-lg-none">
@@ -103,7 +90,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
                 </a>
             </div>
             <div class="col-lg-8 col-6 text-end">
-                <p class="m-0 text-dark">Customer Service</p>
+                <p class="m-0 text-dark">Ügyfélszolgálat</p>
                 <h5 class="m-0 tadaer">+421 949 131 222</h5>
             </div>
         </div>
@@ -124,14 +111,14 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
                     </button>
                     <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                         <div class="navbar-nav me-4 py-0">
-                            <a href="guitars.php" class="nav-item nav-link text-decoration-none">Shop Guitars</a>
-                            <a href="bass.php" class="nav-item nav-link text-decoration-none">Shop Bass Guitars</a>
-                            <a href="amplifiers.php" class="nav-item nav-link text-decoration-none">Shop Amplifiers</a>
-                            <a href="misc.php" class="nav-item nav-link text-decoration-none">Shop Misc</a>
+                            <a href="guitars.php" class="nav-item nav-link text-decoration-none">Gitárok</a>
+                            <a href="bass.php" class="nav-item nav-link text-decoration-none">Basszusgitárok</a>
+                            <a href="amplifiers.php" class="nav-item nav-link text-decoration-none">Erősítők</a>
+                            <a href="misc.php" class="nav-item nav-link text-decoration-none">Kiegészítők</a>
                         </div>
                         <div class="navbar-nav py-0">
-                            <a href="guides.php" class="nav-item nav-link text-decoration-none">Beginner's Guides</a>
-                            <a href="contact.php" class="nav-item nav-link text-decoration-none">Contact</a>
+                            <a href="guides.php" class="nav-item nav-link text-decoration-none">Útmutató kezdőknek</a>
+                            <a href="contact.php" class="nav-item nav-link text-decoration-none">Kapcsolatfelvétel</a>
                         </div>
                         <div class="navbar-nav ms-auto py-0 d-none d-lg-block">
                             <a href="cart.php" class="btn px-0 ms-3 text-decoration-none">

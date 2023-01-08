@@ -2007,6 +2007,7 @@ progress {
   appearance: none;
   border-radius: 0.375rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  resize: none;
 }
 @media (prefers-reduced-motion: reduce) {
   .form-control {
@@ -11392,4 +11393,34 @@ button.bg-success:focus {
   --bs-btn-disabled-color: #fff;
   --bs-btn-disabled-bg: #000;
   --bs-btn-disabled-border-color: #000;
+}
+
+.btn-transparent {
+  --bs-btn-color: transparent;
+  --bs-btn-bg: transparent;
+  --bs-btn-border-color: transparent;
+  --bs-btn-hover-color: transparent;
+  --bs-btn-hover-bg: transparent;
+  --bs-btn-hover-border-color: transparent;
+  --bs-btn-focus-shadow-rgb: none;
+  --bs-btn-active-color: transparent;
+  --bs-btn-active-bg: transparent;
+  --bs-btn-active-border-color: transparent;
+  --bs-btn-active-shadow: none;
+  --bs-btn-disabled-color: transparent;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: transparent;
+}
+
+.comment-box{
+  width: 670px;
+  padding: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background-color: #fff;
+  border: 2px solid black;
+  border-radius: 20px;
+  word-wrap: break-word;
+  resize: none;
+  outline: none;
 }
