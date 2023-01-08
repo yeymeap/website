@@ -8,7 +8,7 @@ include 'topnav.php';
 <!-- Termék kezdet -->
 <?php
 $pid = $_GET["id"];
-$sql = "SELECT id, detail, manufacturer, name, image, price, description FROM productshu WHERE id=$pid";
+$sql = "SELECT id, detail, manufacturer, name, image, price, description FROM products WHERE id=$pid";
 $result = mysqli_query($link, $sql);
 //Adatok kiolvasása adatbázisból
 if (mysqli_num_rows($result) > 0) {
