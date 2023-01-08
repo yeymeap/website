@@ -40,11 +40,11 @@ include 'topnav.php';
 		<div class='col-lg-9 col-md-8 mb-5'>
 			<div class='row pb-3'>
 				<div class='col-12 pb-1'>
-					<h2 id='bestrings' class='section-title position-relative mb-4 text-black'>
+					<h2 id='transistor' class='section-title position-relative mb-4 text-black'>
 						<span class='bg-white pe-3'>TRANSISTOR AMPLIFIERS</span>
 					</h2>
 				</div>
-				<?php $sql = "SELECT id, manufacturer, name, price, image FROM products WHERE id BETWEEN 67 and 74";
+				<?php $sql = "SELECT id, manufacturer, name, price, image FROM products WHERE id BETWEEN 116 and 120";
 				$result = $link->query($sql);
 
 				while ($row = $result->fetch_assoc()) {
@@ -61,7 +61,7 @@ include 'topnav.php';
 					<div class='text-center py-4'>
 					<a class='h6 text-decoration-none text-truncate text-black' href='product.php?id=$id'>$manufacturer $name</a>
 					<div class='d-flex align-items-center justify-content-center mt-2'>
-					<h5>$price &euro;</h5>
+					<h5>$price&euro;</h5>
 					</div>
 					</div>
 					</div>
@@ -72,11 +72,11 @@ include 'topnav.php';
 
 			<div class='row pb-3'>
 				<div class='col-12 pb-1'>
-					<h2 id='picks' class='section-title position-relative mb-4 text-black'>
+					<h2 id='modelling' class='section-title position-relative mb-4 text-black'>
 						<span class='bg-white pe-3'>MODELLING AMPLIFIERS</span>
 					</h2>
 				</div>
-				<?php $sql = "SELECT id, manufacturer, name, price, image FROM products WHERE id BETWEEN 79 and 89";
+				<?php $sql = "SELECT id, manufacturer, name, price, image FROM products WHERE id BETWEEN 126 and 130";
 				$result = $link->query($sql);
 
 				while ($row = $result->fetch_assoc()) {
@@ -93,7 +93,7 @@ include 'topnav.php';
 					<div class='text-center py-4'>
 					<a class='h6 text-decoration-none text-truncate text-black' href='product.php?id=$id'>$manufacturer $name</a>
 					<div class='d-flex align-items-center justify-content-center mt-2'>
-					<h5>$price &euro;</h5>
+					<h5>$price&euro;</h5>
 					</div>
 					</div>
 					</div>
@@ -104,11 +104,11 @@ include 'topnav.php';
 
 			<div class='row pb-3'>
 				<div class='col-12 pb-1'>
-					<h2 id='cables' class='section-title position-relative mb-4 text-black'>
+					<h2 id='electron' class='section-title position-relative mb-4 text-black'>
 						<span class='bg-white pe-3'>ELECTRON TUBE AMPLIFIERS</span>
 					</h2>
 				</div>
-				<?php $sql = "SELECT id, manufacturer, name, price, image FROM products WHERE id BETWEEN 90 and 94";
+				<?php $sql = "SELECT id, manufacturer, name, price, image FROM products WHERE id BETWEEN 121 and 125";
 				$result = $link->query($sql);
 
 				while ($row = $result->fetch_assoc()) {
@@ -125,7 +125,7 @@ include 'topnav.php';
 					<div class='text-center py-4'>
 					<a class='h6 text-decoration-none text-truncate text-black' href='product.php?id=$id'>$manufacturer $name</a>
 					<div class='d-flex align-items-center justify-content-center mt-2'>
-					<h5>$price &euro;</h5>
+					<h5>$price&euro;</h5>
 					</div>
 					</div>
 					</div>
@@ -136,7 +136,7 @@ include 'topnav.php';
 
 			<div class='row pb-3'>
 				<div class='col-12 pb-1'>
-					<h2 id='bags' class='section-title position-relative mb-4 text-black'>
+					<h2 id='bamp' class='section-title position-relative mb-4 text-black'>
 						<span class='bg-white pe-3'>BASS AMPLIFIERS</span>
 					</h2>
 				</div>
@@ -157,7 +157,7 @@ include 'topnav.php';
 					<div class='text-center py-4'>
 					<a class='h6 text-decoration-none text-truncate text-black' href='product.php?id=$id'>$manufacturer $name</a>
 					<div class='d-flex align-items-center justify-content-center mt-2'>
-					<h5>$price &euro;</h5>
+					<h5>$price&euro;</h5>
 					</div>
 					</div>
 					</div>

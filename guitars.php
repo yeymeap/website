@@ -56,7 +56,7 @@ include 'topnav.php';
 						<div class='text-center py-4'>
 							<a class='h6 text-decoration-none text-truncate text-black' href='product.php?id=$id'>$manufacturer $name</a>
 							<div class='d-flex align-items-center justify-content-center mt-2'>
-								<h5>$price &euro;</h5>
+								<h5>$price&euro;</h5>
 							</div>
 						</div>
 					</div>
@@ -71,7 +71,6 @@ include 'topnav.php';
 					</div>
 					<?php $sql = "SELECT id, manufacturer, name, price, image FROM products WHERE id BETWEEN 1 and 13";
 					$result = $link->query($sql);
-
 					while ($row = $result->fetch_assoc()) {
 						$id = $row["id"];
 						$manufacturer = $row["manufacturer"];
@@ -86,7 +85,7 @@ include 'topnav.php';
 						<div class='text-center py-4'>
 							<a class='h6 text-decoration-none text-truncate text-black' href='product.php?id=$id'>$manufacturer $name</a>
 							<div class='d-flex align-items-center justify-content-center mt-2'>
-								<h5>$price &euro;</h5>
+								<h5>$price&euro;</h5>
 							</div>
 						</div>
 					</div>
