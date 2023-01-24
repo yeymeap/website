@@ -16,7 +16,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
     </div>
     <div class="d-flex justify-content-center">
         <a class="mb-5 mx-3 btn btn-danger text-decoration-none" href="logout.php">Log Out</a>
-        <a class="mb-5 ms-3 btn btn-warning text-decoration-none" href="reset-password.php">Reset Your Password</a>
+        <a class="mb-5 ms-3 btn btn-warning text-decoration-none" href="reset-password.php">Change Your Password</a>
     </div>
 </div>
 <?php include 'footer.php' ?>

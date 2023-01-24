@@ -32,7 +32,7 @@ include 'topnav.php';
 		<!-- Shop Sidebar End -->
 
 		<!-- Shop Product Start -->
-		<div class='col-lg-9 col-md-8 mb-5'>
+		<div class='col-lg-8 col-md-8 mb-5'>
 			<div class='row pb-3'>
 				<div class='col-12 pb-1'>
 					<h2 id='acousticg' class='section-title position-relative mb-4 text-black'>
@@ -94,10 +94,35 @@ include 'topnav.php';
 				</div>
 			</div>
 		</div>
+		<div class="col-lg-2 col-md-2">
+			<div id="filter_container">
+				<h5 class="toc_title position-relative text-uppercase mb-3"><span class="bg-white pr-3">Filter by price</span></h5>
+				<div class="bg-light p-4 mb-30">
+					<form>
+						<div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+							<input type="radio" onclick="price0100()" name="pricefilter" class="custom-control-input" id="price-1">
+							<label class="custom-control-label" for="price-1">$0 - $100</label>
+						</div>
+						<div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+							<input type="radio" name="pricefilter" class="custom-control-input" id="price-2">
+							<label class="custom-control-label" for="price-2">$100 - $200</label>
+						</div>
+						<div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+							<input type="radio" name="pricefilter" class="custom-control-input" id="price-3">
+							<label class="custom-control-label" for="price-3">$200 - $300</label>
+						</div>
+						<div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+							<input type="radio" name="pricefilter" class="custom-control-input" id="price-4">
+							<label class="custom-control-label" for="price-4">$300 - $400</label>
+						</div>
+						<div class="custom-control custom-checkbox d-flex align-items-center justify-content-between">
+							<input type="radio" name="pricefilter" class="custom-control-input" id="price-5">
+							<label class="custom-control-label" for="price-5">$400 - $500</label>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
 	</div>
 </div>
-<?php ?>
-
-
-
 <?php include 'footer.php' ?>

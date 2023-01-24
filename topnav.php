@@ -49,7 +49,6 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="mail/jqBootstrapValidation.min.js"></script>
     <script src="mail/contact.js"></script>
     <script src="js/main.js"></script>
@@ -66,6 +65,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
 
         }
     </script>
+
 
     <!-- Külsőleg használt könyvtárak vége\\ -->
 </head>
@@ -128,8 +128,6 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
                             <a href="bass.php" class="nav-item nav-link text-decoration-none">Shop Bass Guitars</a>
                             <a href="amplifiers.php" class="nav-item nav-link text-decoration-none">Shop Amplifiers</a>
                             <a href="misc.php" class="nav-item nav-link text-decoration-none">Shop Misc</a>
-                        </div>
-                        <div class="navbar-nav py-0">
                             <a href="guides.php" class="nav-item nav-link text-decoration-none">Beginner's Guides</a>
                             <a href="contact.php" class="nav-item nav-link text-decoration-none">Contact</a>
                         </div>

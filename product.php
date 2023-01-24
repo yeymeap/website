@@ -1,7 +1,7 @@
 <?php
 include 'config.php';
-include 'comment.php';
 include 'topnav.php';
+include 'comment.php';
 ?>
 
 

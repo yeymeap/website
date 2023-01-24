@@ -67,4 +67,4 @@
 </div>
 <!-- Contact End -->
 
-<?php include 'footer-hu.php'; ?>
+<?php include 'footer.php'; ?>
