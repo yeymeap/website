@@ -128,8 +128,6 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
                             <a href="bass.php" class="nav-item nav-link text-decoration-none">Basszusgitárok</a>
                             <a href="amplifiers.php" class="nav-item nav-link text-decoration-none">Erősítők</a>
                             <a href="misc.php" class="nav-item nav-link text-decoration-none">Kiegészítők</a>
-                        </div>
-                        <div class="navbar-nav py-0">
                             <a href="guides.php" class="nav-item nav-link text-decoration-none">Útmutató kezdőknek</a>
                             <a href="contact.php" class="nav-item nav-link text-decoration-none">Kapcsolatfelvétel</a>
                         </div>

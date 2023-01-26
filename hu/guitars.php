@@ -51,7 +51,7 @@ include 'topnav.php';
 					echo "<div class='col-lg-4 col-md-6 col-sm-6 pb-1'>
 					<div class='product-item bg-light mb-4'>
 						<div class='product-img position-relative overflow-hidden'>
-							<a href='product.php?id=$id'><img class='img-fluid w-100' src='img/$image' /></a>
+							<a href='product.php?id=$id'><img class='img-fluid w-100' src='../img/$image' /></a>
 						</div>
 						<div class='text-center py-4'>
 							<a class='h6 text-decoration-none text-truncate text-black' href='product.php?id=$id'>$manufacturer $name</a>
@@ -80,7 +80,7 @@ include 'topnav.php';
 						echo "<div class='col-lg-4 col-md-6 col-sm-6 pb-1'>
 					<div class='product-item bg-light mb-4'>
 						<div class='product-img position-relative overflow-hidden'>
-							<a href='product.php?id=$id'><img class='img-fluid w-100' src='img/$image' /></a>
+							<a href='product.php?id=$id'><img class='img-fluid w-100' src='../img/$image' /></a>
 						</div>
 						<div class='text-center py-4'>
 							<a class='h6 text-decoration-none text-truncate text-black' href='product.php?id=$id'>$manufacturer $name</a>

@@ -8,8 +8,10 @@ include 'topnav.php';
 <!-- Termék kezdet -->
 <?php
 $pid = $_GET["id"];
-$sql = "SELECT id, detail, manufacturer, name, image, price, description FROM productshu WHERE id=$pid";
-$result = mysqli_query($link, $sql);
+$stmt = $link->prepare("SELECT id, detail, manufacturer, name, image, price, description FROM products WHERE id = ?");
+$stmt->bind_param("i", $pid);
+$stmt->execute();
+$result = $stmt->get_result();
 //Adatok kiolvasása adatbázisból
 if (mysqli_num_rows($result) > 0) {
 	$row = mysqli_fetch_assoc($result);
@@ -41,7 +43,7 @@ if (mysqli_num_rows($result) > 0) {
 <div class="container-fluid pb-5">
 	<div class="row px-xl-5">
 		<div class="col-lg-5 mb-30">
-			<img class="ms-5" src="img/<?php echo $image ?>" alt="Image" />
+			<img class="ms-5" src="../img/<?php echo $image ?>" alt="Image" />
 		</div>
 		<div class="col-lg-7 h-auto mb-30 px-5 d-flex justify-content-starts">
 			<div class="h-100 bg-white p-30">
@@ -100,10 +102,13 @@ if (mysqli_num_rows($result) > 0) {
 							<div class="col-md-6">
 								<h4 style='text-align:center' class="mb-4">
 									<?php
-									$sql = "SELECT COUNT(*) AS comnum FROM comments WHERE pid=$pid";
-									$result = mysqli_query($link, $sql);
+									$stmt = $link->prepare("SELECT COUNT(*) AS comnum FROM comments WHERE pid = ?");
+									$stmt->bind_param("s", $pid);
+									$stmt->execute();
+									$result = $stmt->get_result();
 									$comnum = mysqli_fetch_assoc($result)['comnum'];
-									echo "$comnum komment erre: $manufacturer $name"; ?>
+									echo "$comnum comments for: $manufacturer $name";
+									$stmt->close(); ?>
 								</h4>
 								<div style="padding-top: 26px;">
 									<?php getComments($link); ?>

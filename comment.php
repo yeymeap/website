@@ -1,14 +1,16 @@
 <?php
-function setComments($link)
+function setComments($link) //Kommentek beírása az adatbázisba
 {
     if (isset($_POST['commentSubmit'])) {
-        $pid = $_GET['id'];
-        $name = htmlspecialchars($_SESSION['email']);
-        $comment = $_POST['comment'];
-        if (empty(trim($comment))) {
+        $pid = $_GET['id']; //Termék id lekérése
+        $name = htmlspecialchars($_SESSION['email']); //Név lekérése
+        $comment = $_POST['comment']; //Komment lekérése
+        if (empty(trim($comment))) { //Megnézi üres e a komment
         } else {
-            $sql = "INSERT INTO comments (pid, name, comment) VALUES ('$pid', '$name', '$comment')";
-            $result = $link->query($sql);
+            $stmt = $link->prepare("INSERT INTO comments (pid, name, comment) VALUES (?, ?, ?)"); //Beírás adatbázisba
+            $stmt->bind_param("iss", $pid, $name, $comment);
+            $stmt->execute();
+            $stmt->close();
         }
     }
 }
@@ -17,17 +19,19 @@ function setComments($link)
 function getComments($link)
 {
     $pid = $_GET['id'];
-    $sql = "SELECT * FROM comments WHERE pid=$pid";
-    $result = $link->query($sql);
+    $stmt = $link->prepare("SELECT * FROM comments WHERE pid = ?"); //Kiolvasás adatbázisból
+    $stmt->bind_param("i", $pid);
+    $stmt->execute();
+    $result = $stmt->get_result();
     while ($row = $result->fetch_assoc()) {
         $name = $row['name'];
-        if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
+        if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) { //Megnézi be e vagyunk jelentkezve
             echo "<div class='comment-box'><p>";
             echo $row['name'] . "<br>";
             echo $row['time'] . "<br>";
             echo nl2br($row['comment']);
             echo "</p></div>";
-        } elseif ($_SESSION['isadmin'] == 1 or $name == $_SESSION['email']) {
+        } elseif ($_SESSION['isadmin'] == 1 or $name == $_SESSION['email']) { //Megnézi be e vagyunk jelentkezve
             echo "<div class='comment-box'><p>";
             echo $row['name'] . "<br>";
             echo $row['time'] . "<br>";
@@ -35,9 +39,9 @@ function getComments($link)
             echo "</p>
         <form class='delete-comment' method='POST' action='" . deleteComments($link) . "'>
         <input type='hidden' name='cid' value='" . $row['cid'] . "'>
-        <button onclick=refresh() class='btn btn-backblack fa fa-trash' name='commentDelete'></button></form>
+        <button class='btn btn-backblack fa fa-trash' name='commentDelete'></button></form>
         </div>";
-        } else {
+        } else { //Egyéb eset
             echo "<div class='comment-box'><p>";
             echo $row['name'] . "<br>";
             echo $row['time'] . "<br>";
@@ -45,14 +49,17 @@ function getComments($link)
             echo "</p></div>";
         }
     }
+    $stmt->close();
 }
 
 function deleteComments($link)
 {
     if (isset($_POST['commentDelete'])) {
         $cid = $_POST['cid'];
-        $sql = "DELETE FROM comments WHERE cid='$cid'";
-        $result = $link->query($sql);
+        $stmt = $link->prepare("DELETE FROM comments WHERE cid = ?"); //Komment törlése
+        $stmt->bind_param("i", $cid);
+        $stmt->execute();
+        $stmt->close();
         echo "<script>location.reload(0)</script>";
     }
 }
