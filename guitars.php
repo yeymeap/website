@@ -39,15 +39,15 @@ include 'topnav.php';
 						<span class='bg-white pe-3'>ACOUSTIC GUITARS</span>
 					</h2>
 				</div>
-				<?php $sql = "SELECT id, manufacturer, name, price, image FROM products WHERE id BETWEEN 14 and 18";
+				<?php $sql = "SELECT id, manufacturer, name, price, image FROM products WHERE id BETWEEN 14 and 18"; //Termékek kiolvasása adatbázisból
 				$result = $link->query($sql);
 
 				while ($row = $result->fetch_assoc()) {
-					$id = $row["id"];
-					$manufacturer = $row["manufacturer"];
-					$name = $row["name"];
-					$price = $row["price"];
-					$image = $row["image"];
+					$id = $row["id"]; //Termék id
+					$manufacturer = $row["manufacturer"]; //Termék gyártó
+					$name = $row["name"]; //Termék modell
+					$price = $row["price"]; //Termék ár
+					$image = $row["image"]; //Termék kép
 					echo "<div class='col-lg-4 col-md-6 col-sm-6 pb-1'>
 					<div class='product-item bg-light mb-4'>
 						<div class='product-img position-relative overflow-hidden'>
@@ -60,7 +60,7 @@ include 'topnav.php';
 							</div>
 						</div>
 					</div>
-				</div>";
+				</div>"; //Termék kiírása
 				} ?>
 				<div class="col-lg-2 col-md-2"></div>
 				<div class='row pb-3'>
