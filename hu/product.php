@@ -8,7 +8,7 @@ include 'topnav.php';
 <!-- Termék kezdet -->
 <?php
 $pid = $_GET["id"];
-$stmt = $link->prepare("SELECT id, detail, manufacturer, name, image, price, description FROM products WHERE id = ?");
+$stmt = $link->prepare("SELECT id, detailhu, manufacturer, name, image, price, descriptionhu FROM products WHERE id = ?");
 $stmt->bind_param("i", $pid);
 $stmt->execute();
 $result = $stmt->get_result();
@@ -16,8 +16,8 @@ $result = $stmt->get_result();
 if (mysqli_num_rows($result) > 0) {
 	$row = mysqli_fetch_assoc($result);
 	//Adatok megjelenítése
-	$description = $row["description"];
-	$detail = $row["detail"];
+	$description = $row["descriptionhu"];
+	$detail = $row["detailhu"];
 	$manufacturer = $row["manufacturer"];
 	$name = $row["name"];
 	$image = $row["image"];
