@@ -14,6 +14,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
     $login = htmlspecialchars($_SESSION["email"]);
     $register = 'Log out';
 }
+$num_items_in_cart = isset($_SESSION['cart']) ? count($_SESSION['cart']) : 0;
 ?>
 
 <!DOCTYPE html>
@@ -133,7 +134,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
                         </div>
                         <div class="navbar-nav ms-auto py-0 d-none d-lg-block">
                             <a href="cart.php" class="btn px-0 ms-3 text-decoration-none">
-                                <i class="fas fa-shopping-cart text-white"></i>
+                                <i class="fas fa-shopping-cart text-white"></i><span><?php $num_items_in_cart ?></span>
                                 <span class="badge text-light border border-white rounded-circle"></span>
                             </a>
                         </div>

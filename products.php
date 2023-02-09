@@ -15,7 +15,7 @@ $products = $stmt->fetchAll(PDO::FETCH_ASSOC);
 $total_products = $pdo->query('SELECT * FROM shoppingcart')->rowCount();
 ?>
 
-<?= template_header('Products') ?>
+<?php include 'topnav.php'; ?>
 
 <div class="products content-wrapper">
     <h1>Products</h1>
@@ -44,4 +44,4 @@ $total_products = $pdo->query('SELECT * FROM shoppingcart')->rowCount();
     </div>
 </div>
 
-<?= template_footer() ?>
+<?php include 'footer.php'; ?>

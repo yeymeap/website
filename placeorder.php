@@ -1,8 +1,7 @@
-<?= template_header('Place Order') ?>
+<?php include 'topnav.php' ?>
 
-<div class="placeorder content-wrapper">
-    <h1>Your Order Has Been Placed</h1>
-    <p>Thank you for ordering with us, we'll contact you by email with your order details.</p>
-</div>
+<div class="h1 text-black d-flex justify-content-center">Your Order Has Been Placed</div>
+<div class="h3 text-black-50 d-flex justify-content-center">Thank you for ordering with us, we'll contact you by email with your order details.</div>
 
-<?= template_footer() ?>
+
+<?php include 'footer.php' ?>

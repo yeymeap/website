@@ -1,4 +1,7 @@
-<?php include 'topnav.php'; ?>
+<?php include 'topnav.php';
+include 'config.php';
+$pdo = pdo_connect_mysql();
+?>
 
 <!-- Carousel Start -->
 <div class="container-fluid mb-3">
