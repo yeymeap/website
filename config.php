@@ -28,3 +28,4 @@ function pdo_connect_mysql()
         exit('Failed to connect to database!');
     }
 }
+$num_items_in_cart = isset($_SESSION['cart']) ? count($_SESSION['cart']) : 0;

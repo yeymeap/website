@@ -1,6 +1,4 @@
 <?php include 'topnav.php';
-include 'config.php';
-$pdo = pdo_connect_mysql();
 ?>
 
 <!-- Carousel Start -->

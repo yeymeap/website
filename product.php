@@ -2,7 +2,6 @@
 include 'config.php';
 include 'topnav.php';
 include 'comment.php';
-$pdo = pdo_connect_mysql();
 ?>
 
 

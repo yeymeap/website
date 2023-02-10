@@ -15,6 +15,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
     $register = 'Log out';
 }
 $num_items_in_cart = isset($_SESSION['cart']) ? count($_SESSION['cart']) : 0;
+
 ?>
 
 <!DOCTYPE html>
@@ -73,6 +74,7 @@ $num_items_in_cart = isset($_SESSION['cart']) ? count($_SESSION['cart']) : 0;
 
 <body>
     <!-- Fejléc kezdet -->
+
     <div class="container-fluid">
         <div class="row bg-light py-1 px-xl-5">
             <div class="col-lg-6 d-none d-lg-block"></div>
@@ -134,7 +136,7 @@ $num_items_in_cart = isset($_SESSION['cart']) ? count($_SESSION['cart']) : 0;
                         </div>
                         <div class="navbar-nav ms-auto py-0 d-none d-lg-block">
                             <a href="cart.php" class="btn px-0 ms-3 text-decoration-none">
-                                <i class="fas fa-shopping-cart text-white"></i><span><?php $num_items_in_cart ?></span>
+                                <i class="fas fa-shopping-cart text-white"></i><span class='mx-1 text-white'><?php echo $num_items_in_cart ?></span>
                                 <span class="badge text-light border border-white rounded-circle"></span>
                             </a>
                         </div>

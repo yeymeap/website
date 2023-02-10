@@ -1,6 +1,6 @@
-<?php include 'topnav.php';
-include 'config.php';
+<?php include 'config.php';
 $pdo = pdo_connect_mysql();
+session_start();
 
 // If the user clicked the add to cart button on the product page we can check for the form data
 if (isset($_POST['product_id'], $_POST['quantity']) && is_numeric($_POST['product_id']) && is_numeric($_POST['quantity'])) {
@@ -8,7 +8,7 @@ if (isset($_POST['product_id'], $_POST['quantity']) && is_numeric($_POST['produc
 	$product_id = (int)$_POST['product_id'];
 	$quantity = (int)$_POST['quantity'];
 	// Prepare the SQL statement, we basically are checking if the product exists in our databaser
-	$stmt = $pdo->prepare('SELECT * FROM shoppingcart WHERE id = ?');
+	$stmt = $pdo->prepare('SELECT * FROM products WHERE id = ?');
 	$stmt->execute([$_POST['product_id']]);
 	// Fetch the product from the database and return the result as an Array
 	$product = $stmt->fetch(PDO::FETCH_ASSOC);
@@ -52,13 +52,14 @@ if (isset($_POST['update']) && isset($_SESSION['cart'])) {
 		}
 	}
 	// Prevent form resubmission...
-	header('location: index.php?page=cart');
-	exit;
+	//header('location: cart.php');
+	//exit;
 }
 
 // Send the user to the place order page if they click the Place Order button, also the cart should not be empty
 if (isset($_POST['placeorder']) && isset($_SESSION['cart']) && !empty($_SESSION['cart'])) {
-	header('Location: index.php?page=placeorder');
+	header('Location: placeorder.php');
+	unset($_SESSION['cart']);
 	exit;
 }
 
@@ -71,7 +72,7 @@ if ($products_in_cart) {
 	// There are products in the cart so we need to select those products from the database
 	// Products in cart array to question mark string array, we need the SQL statement to include IN (?,?,?,...etc)
 	$array_to_question_marks = implode(',', array_fill(0, count($products_in_cart), '?'));
-	$stmt = $pdo->prepare('SELECT * FROM shoppingcart WHERE id IN (' . $array_to_question_marks . ')');
+	$stmt = $pdo->prepare('SELECT * FROM products WHERE id IN (' . $array_to_question_marks . ')');
 	// We only need the array keys, not the values, the keys are the id's of the products
 	$stmt->execute(array_keys($products_in_cart));
 	// Fetch the products from the database and return the result as an Array
@@ -81,6 +82,7 @@ if ($products_in_cart) {
 		$subtotal += (float)$product['price'] * (int)$products_in_cart[$product['id']];
 	}
 }
+include 'topnav.php';
 ?>
 
 <!-- Breadcrumb Start -->
@@ -97,46 +99,57 @@ if ($products_in_cart) {
 <!-- Breadcrumb End -->
 
 <!-- Cart Start -->
-<div class="container-fluid">
-	<div class="row px-xl-5">
-		<div class="col-lg-8 table-responsive mb-5">
-			<table class="table table-white table-borderless table-hover text-center mb-0">
-				<thead class="thead">
+<div class="cart content-wrapper">
+	<h1>Shopping Cart</h1>
+	<form action="cart.php" method="post">
+		<div class="col-lg-12 justify-content-center">
+			<table>
+				<thead>
 					<tr>
-						<th>Products</th>
-						<th>Price</th>
-						<th>Quantity</th>
-						<th>Total</th>
-						<th>Remove</th>
+						<td colspan="2">Product</td>
+						<td>Price</td>
+						<td>Quantity</td>
+						<td>Total</td>
 					</tr>
 				</thead>
+				<tbody>
+					<?php if (empty($products)) : ?>
+						<tr>
+							<td colspan="5" style="text-align:center;">You have no products added in your Shopping Cart</td>
+						</tr>
+					<?php else : ?>
+						<?php foreach ($products as $product) : ?>
+							<tr>
+								<td class="img">
+									<a href="product.php?id=<?= $product['id'] ?>">
+										<img src="img/<?= $product['image'] ?>" width="50" height="50" alt="<?= $product['name'] ?>">
+									</a>
+								</td>
+								<td>
+									<a href="product.php?id=<?= $product['id'] ?>"><?= $product['name'] ?></a>
+									<br>
+									<a href="cart.php?remove=<?= $product['id'] ?>" class="remove">Remove</a>
+								</td>
+								<td class="price"><?= $product['price'] ?>&euro;</td>
+								<td class="quantity">
+									<input type="number" name="quantity-<?= $product['id'] ?>" value="<?= $products_in_cart[$product['id']] ?>" placeholder="Quantity" required>
+								</td>
+								<td class="price"><?= $product['price'] * $products_in_cart[$product['id']] ?>&euro;</td>
+							</tr>
+						<?php endforeach; ?>
+					<?php endif; ?>
+				</tbody>
 			</table>
-		</div>
-		<div class="col-lg-4">
-			<h5 class="section-title position-relative text-uppercase mb-3">
-				<span class="bg-white pe-3">Cart Summary</span>
-			</h5>
-			<div class="bg-white p-30 mb-5">
-				<div class="border-bottom pb-2">
-					<div class="d-flex justify-content-between mb-3">
-						<h6>Subtotal</h6>
-						<h6>0€</h6>
-					</div>
-					<div class="d-flex justify-content-between">
-						<h6 class="font-weight-medium">Shipping</h6>
-						<h6 class="font-weight-medium">0€</h6>
-					</div>
-				</div>
-				<div class="pt-2">
-					<div class="d-flex justify-content-between mt-2">
-						<h5>Total</h5>
-						<h5>0€</h5>
-					</div>
-					<a href="placeorder.php" class="btn btn-block btn-black font-weight-bold my-3 py-3 text-decoration-none">Proceed To Checkout</a>
-				</div>
+			<div class="subtotal">
+				<span class="text">Subtotal</span>
+				<span class="price"><?= $subtotal ?>&euro;</span>
+			</div>
+			<div>
+				<input class='btn btn-black' type="submit" value="Update" name="update">
+				<a href="placeorder.php"><input class='btn btn-black' type="submit" value="Place Order" name="placeorder"></a>
 			</div>
 		</div>
-	</div>
+	</form>
 </div>
 <!-- Cart End -->
 
