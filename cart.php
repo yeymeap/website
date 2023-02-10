@@ -99,12 +99,12 @@ include 'topnav.php';
 <!-- Breadcrumb End -->
 
 <!-- Cart Start -->
-<div class="cart content-wrapper">
-	<h1>Shopping Cart</h1>
+<div class="container fluid">
+	<h1 class="d-flex justify-content-center">Shopping Cart</h1><br>
 	<form action="cart.php" method="post">
-		<div class="col-lg-12 justify-content-center">
-			<table>
-				<thead>
+		<div class="col-lg-12 d-flex justify-content-center">
+			<table class="mx-5 table table-white table-borderless text-center mb-0">
+				<thead class="">
 					<tr>
 						<td colspan="2">Product</td>
 						<td>Price</td>
@@ -112,10 +112,10 @@ include 'topnav.php';
 						<td>Total</td>
 					</tr>
 				</thead>
-				<tbody>
+				<tbody class="ms-5">
 					<?php if (empty($products)) : ?>
 						<tr>
-							<td colspan="5" style="text-align:center;">You have no products added in your Shopping Cart</td>
+							<td colspan="5" style="text-align:center">You have no products added in your Shopping Cart</td>
 						</tr>
 					<?php else : ?>
 						<?php foreach ($products as $product) : ?>
@@ -140,9 +140,9 @@ include 'topnav.php';
 					<?php endif; ?>
 				</tbody>
 			</table>
-			<div class="subtotal">
-				<span class="text">Subtotal</span>
-				<span class="price"><?= $subtotal ?>&euro;</span>
+			<div class="col-lg-6 my-2">
+				<span class="text-black">Subtotal</span>
+				<span class="text-black"><?= $subtotal ?>&euro;</span>
 			</div>
 			<div>
 				<input class='btn btn-black' type="submit" value="Update" name="update">

@@ -136,7 +136,10 @@ $num_items_in_cart = isset($_SESSION['cart']) ? count($_SESSION['cart']) : 0;
                         </div>
                         <div class="navbar-nav ms-auto py-0 d-none d-lg-block">
                             <a href="cart.php" class="btn px-0 ms-3 text-decoration-none">
-                                <i class="fas fa-shopping-cart text-white"></i><span class='mx-1 text-white'><?php echo $num_items_in_cart ?></span>
+                                <i class="fas fa-shopping-cart text-white"></i><span class='mx-1 text-white'><?php if ($num_items_in_cart != 0) {
+                                                                                                                    echo $num_items_in_cart;
+                                                                                                                } else {
+                                                                                                                }  ?></span>
                                 <span class="badge text-light border border-white rounded-circle"></span>
                             </a>
                         </div>
