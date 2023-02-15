@@ -103,8 +103,8 @@ include 'topnav.php';
 	<h1 class="d-flex justify-content-center">Shopping Cart</h1><br>
 	<form action="cart.php" method="post">
 		<div class="col-lg-12 d-flex justify-content-center">
-			<table class="mx-5 table table-white table-borderless text-center mb-0">
-				<thead class="">
+			<table class="mx-5 table table-white table-borderless text-center mb-5">
+				<thead>
 					<tr>
 						<td colspan="2">Product</td>
 						<td>Price</td>
@@ -112,7 +112,7 @@ include 'topnav.php';
 						<td>Total</td>
 					</tr>
 				</thead>
-				<tbody class="ms-5">
+				<tbody>
 					<?php if (empty($products)) : ?>
 						<tr>
 							<td colspan="5" style="text-align:center">You have no products added in your Shopping Cart</td>
@@ -120,32 +120,41 @@ include 'topnav.php';
 					<?php else : ?>
 						<?php foreach ($products as $product) : ?>
 							<tr>
-								<td class="img">
-									<a href="product.php?id=<?= $product['id'] ?>">
-										<img src="img/<?= $product['image'] ?>" width="50" height="50" alt="<?= $product['name'] ?>">
-									</a>
-								</td>
+								<div>
+									<td>
+										<a href="product.php?id=<?= $product['id'] ?>">
+											<img src="img/<?= $product['image'] ?>" width="50" height="50" alt="<?= $product['name'] ?>">
+										</a>
+									</td>
+									<td>
+										<a href="product.php?id=<?= $product['id'] ?>"><?= $product['name'] ?></a>
+										<br>
+										<a href="cart.php?remove=<?= $product['id'] ?>" class="remove">Remove</a>
+									</td>
+								</div>
+								<td><?= $product['price'] ?>&euro;</td>
 								<td>
-									<a href="product.php?id=<?= $product['id'] ?>"><?= $product['name'] ?></a>
-									<br>
-									<a href="cart.php?remove=<?= $product['id'] ?>" class="remove">Remove</a>
-								</td>
-								<td class="price"><?= $product['price'] ?>&euro;</td>
-								<td class="quantity">
 									<input type="number" name="quantity-<?= $product['id'] ?>" value="<?= $products_in_cart[$product['id']] ?>" placeholder="Quantity" required>
 								</td>
-								<td class="price"><?= $product['price'] * $products_in_cart[$product['id']] ?>&euro;</td>
+								<td><?php
+									$value = $product['price'] * $products_in_cart[$product['id']];
+									if ($value != 0) {
+										echo $value;
+									} ?> &euro;
+								</td>
 							</tr>
 						<?php endforeach; ?>
 					<?php endif; ?>
 				</tbody>
 			</table>
-			<div class="col-lg-6 my-2">
+			<div class="my-2 mx-2">
 				<span class="text-black">Subtotal</span>
-				<span class="text-black"><?= $subtotal ?>&euro;</span>
+				<i class="text-black d-flex justify-content-center" style="margin-top: 30px;"><?= $subtotal ?>&euro;</i>
 			</div>
-			<div>
-				<input class='btn btn-black' type="submit" value="Update" name="update">
+		</div>
+		<div class="d-flex justify-content-center">
+			<div class="">
+				<input class='btn btn-black my-2' type="submit" value="Update" name="update">
 				<a href="placeorder.php"><input class='btn btn-black' type="submit" value="Place Order" name="placeorder"></a>
 			</div>
 		</div>

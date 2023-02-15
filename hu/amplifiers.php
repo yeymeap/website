@@ -1,5 +1,6 @@
 <?php
 include 'config.php';
+pdo_connect_mysql();
 include 'topnav.php';
 ?>
 
@@ -44,7 +45,7 @@ include 'topnav.php';
 						<span class='bg-white pe-3'>TRANSZISZTOROS ERŐSÍTŐK</span>
 					</h2>
 				</div>
-				<?php $sql = "SELECT id, manufacturer, name, price, image FROM productshu WHERE id BETWEEN 116 and 120";
+				<?php $sql = "SELECT id, manufacturer, name, price, image FROM products WHERE id BETWEEN 116 and 120";
 				$result = $link->query($sql);
 
 				while ($row = $result->fetch_assoc()) {
@@ -76,7 +77,7 @@ include 'topnav.php';
 						<span class='bg-white pe-3'>MODELLEZŐ ERŐSÍTŐK</span>
 					</h2>
 				</div>
-				<?php $sql = "SELECT id, manufacturer, name, price, image FROM productshu WHERE id BETWEEN 126 and 130";
+				<?php $sql = "SELECT id, manufacturer, name, price, image FROM products WHERE id BETWEEN 126 and 130";
 				$result = $link->query($sql);
 
 				while ($row = $result->fetch_assoc()) {
@@ -108,7 +109,7 @@ include 'topnav.php';
 						<span class='bg-white pe-3'>ELEKTRONLÁMPÁS ERŐSÍTŐK</span>
 					</h2>
 				</div>
-				<?php $sql = "SELECT id, manufacturer, name, price, image FROM productshu WHERE id BETWEEN 121 and 125";
+				<?php $sql = "SELECT id, manufacturer, name, price, image FROM products WHERE id BETWEEN 121 and 125";
 				$result = $link->query($sql);
 
 				while ($row = $result->fetch_assoc()) {
@@ -140,7 +141,7 @@ include 'topnav.php';
 						<span class='bg-white pe-3'>BASSZUSGITÁR ERŐSÍTŐK</span>
 					</h2>
 				</div>
-				<?php $sql = "SELECT id, manufacturer, name, price, image FROM productshu WHERE id BETWEEN 100 and 115";
+				<?php $sql = "SELECT id, manufacturer, name, price, image FROM products WHERE id BETWEEN 100 and 115";
 				$result = $link->query($sql);
 
 				while ($row = $result->fetch_assoc()) {

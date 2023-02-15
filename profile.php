@@ -1,5 +1,4 @@
 <?php
-error_reporting(0);
 session_start(); // session indítása
 
 // megnézi, hogy a felhasználó már be e jelentkezett, ha nem, átirányítja a bejelentkezési oldalra

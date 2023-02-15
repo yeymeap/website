@@ -1,5 +1,6 @@
 <?php
 include 'config.php';
+pdo_connect_mysql();
 include 'topnav.php';
 ?>
 
@@ -39,7 +40,7 @@ include 'topnav.php';
 						<span class='bg-white pe-3'>AKUSZTIKUS BASSZUSGITÁROK</span>
 					</h2>
 				</div>
-				<?php $sql = "SELECT id, manufacturer, name, price, image FROM productshu WHERE id BETWEEN 39 and 42";
+				<?php $sql = "SELECT id, manufacturer, name, price, image FROM products WHERE id BETWEEN 39 and 42";
 				$result = $link->query($sql);
 
 				while ($row = $result->fetch_assoc()) {
@@ -69,7 +70,7 @@ include 'topnav.php';
 							<span class='bg-white pe-3'>ELEKTROMOS BASSZUSGITÁROK</span>
 						</h2>
 					</div>
-					<?php $sql = "SELECT id, manufacturer, name, price, image FROM productshu WHERE id BETWEEN 19 and 38";
+					<?php $sql = "SELECT id, manufacturer, name, price, image FROM products WHERE id BETWEEN 19 and 38";
 					$result = $link->query($sql);
 
 					while ($row = $result->fetch_assoc()) {

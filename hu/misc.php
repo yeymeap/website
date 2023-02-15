@@ -1,5 +1,6 @@
 <?php
 include 'config.php';
+pdo_connect_mysql();
 include 'topnav.php';
 ?>
 
@@ -57,7 +58,7 @@ include 'topnav.php';
 						<span class='bg-white pe-3'>AKUSZTIKUS GITÁRHÚROK</span>
 					</h2>
 				</div>
-				<?php $sql = "SELECT id, manufacturer, name, price, image FROM productshu WHERE id BETWEEN 63 and 66";
+				<?php $sql = "SELECT id, manufacturer, name, price, image FROM products WHERE id BETWEEN 63 and 66";
 				$result = $link->query($sql);
 
 				while ($row = $result->fetch_assoc()) {
@@ -88,7 +89,7 @@ include 'topnav.php';
 						<span class='bg-white pe-3'>ELEKTROMOS GITÁRHÚROK</span>
 					</h2>
 				</div>
-				<?php $sql = "SELECT id, manufacturer, name, price, image FROM productshu WHERE id BETWEEN 43 and 62";
+				<?php $sql = "SELECT id, manufacturer, name, price, image FROM products WHERE id BETWEEN 43 and 62";
 				$result = $link->query($sql);
 
 				while ($row = $result->fetch_assoc()) {
@@ -120,7 +121,7 @@ include 'topnav.php';
 						<span class='bg-white pe-3'>AKUSZTIKUS BASSZUSGITÁRHÚROK</span>
 					</h2>
 				</div>
-				<?php $sql = "SELECT id, manufacturer, name, price, image FROM productshu WHERE id BETWEEN 75 and 78";
+				<?php $sql = "SELECT id, manufacturer, name, price, image FROM products WHERE id BETWEEN 75 and 78";
 				$result = $link->query($sql);
 
 				while ($row = $result->fetch_assoc()) {
@@ -152,7 +153,7 @@ include 'topnav.php';
 						<span class='bg-white pe-3'>ELEKTROMOS BASSZUSGITÁRHÚROK</span>
 					</h2>
 				</div>
-				<?php $sql = "SELECT id, manufacturer, name, price, image FROM productshu WHERE id BETWEEN 67 and 74";
+				<?php $sql = "SELECT id, manufacturer, name, price, image FROM products WHERE id BETWEEN 67 and 74";
 				$result = $link->query($sql);
 
 				while ($row = $result->fetch_assoc()) {
@@ -184,7 +185,7 @@ include 'topnav.php';
 						<span class='bg-white pe-3'>PENGETŐK</span>
 					</h2>
 				</div>
-				<?php $sql = "SELECT id, manufacturer, name, price, image FROM productshu WHERE id BETWEEN 79 and 89";
+				<?php $sql = "SELECT id, manufacturer, name, price, image FROM products WHERE id BETWEEN 79 and 89";
 				$result = $link->query($sql);
 
 				while ($row = $result->fetch_assoc()) {
@@ -216,7 +217,7 @@ include 'topnav.php';
 						<span class='bg-white pe-3'>HANGSZERKÁBELEK</span>
 					</h2>
 				</div>
-				<?php $sql = "SELECT id, manufacturer, name, price, image FROM productshu WHERE id BETWEEN 90 and 94";
+				<?php $sql = "SELECT id, manufacturer, name, price, image FROM products WHERE id BETWEEN 90 and 94";
 				$result = $link->query($sql);
 
 				while ($row = $result->fetch_assoc()) {
@@ -248,7 +249,7 @@ include 'topnav.php';
 						<span class='bg-white pe-3'>HORDOZÓTÁSKÁK</span>
 					</h2>
 				</div>
-				<?php $sql = "SELECT id, manufacturer, name, price, image FROM productshu WHERE id BETWEEN 95 and 99";
+				<?php $sql = "SELECT id, manufacturer, name, price, image FROM products WHERE id BETWEEN 95 and 99";
 				$result = $link->query($sql);
 
 				while ($row = $result->fetch_assoc()) {

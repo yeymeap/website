@@ -6,7 +6,7 @@ if (session_id() == '' || !isset($_SESSION) || session_status() === PHP_SESSION_
 if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
     $href1 = 'sign-in.php';                                         // változók megnevezése, különböző kimenetelekkel
     $href2 = 'sign-up.php';
-    $login = 'Login';
+    $login = 'Bejelentkezés';
     $register = 'Regisztráció';
 } else {
     $href1 = 'profile.php';
@@ -14,6 +14,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
     $login = htmlspecialchars($_SESSION["email"]);
     $register = 'Kijelentkezés';
 }
+$num_items_in_cart = isset($_SESSION['cart']) ? count($_SESSION['cart']) : 0;
 ?>
 
 <!DOCTYPE html>
@@ -133,7 +134,10 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
                         </div>
                         <div class="navbar-nav ms-auto py-0 d-none d-lg-block">
                             <a href="cart.php" class="btn px-0 ms-3 text-decoration-none">
-                                <i class="fas fa-shopping-cart text-white"></i>
+                                <i class="fas fa-shopping-cart text-white"></i><span class='mx-1 text-white'><?php if ($num_items_in_cart != 0) {
+                                                                                                                    echo $num_items_in_cart;
+                                                                                                                } else {
+                                                                                                                }  ?></span>
                                 <span class="badge text-light border border-white rounded-circle"></span>
                             </a>
                         </div>

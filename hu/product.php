@@ -23,7 +23,7 @@ if (mysqli_num_rows($result) > 0) {
 	$image = $row["image"];
 	$price = $row["price"];
 } else {
-	echo "nem jo";
+	exit('A termék nem létezik!');
 }
 ?>
 
@@ -49,11 +49,13 @@ if (mysqli_num_rows($result) > 0) {
 			<div class="h-100 bg-white p-30">
 				<h3><?php echo "$manufacturer $name" ?></h3>
 				<h3 class="font-weight-semi-bold mb-4"><?php echo $price ?>&euro;</h3>
-				<div class="d-flex align-items-center mb-4 pt-2">
-					<button class="btn btn-black px-3">
-						<i class="fa fa-shopping-cart me-1"></i>Kosárba
-					</button>
-				</div>
+				<form action="cart.php" method="POST">
+					<div class="d-inline-flex">
+						<input class="form-control bg-white border-1 text-center" style="width: 130px;" type="number" name="quantity" value="1" min="1" placeholder="Quantity" required>
+						<input type="hidden" name="product_id" value="<?= $_GET['id'] ?>">
+						<input class="btn btn-black mx-3" type="submit" value="Add to cart">
+					</div>
+				</form>
 			</div>
 		</div>
 	</div>
