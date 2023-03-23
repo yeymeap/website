@@ -43,7 +43,7 @@ if (mysqli_num_rows($result) > 0) {
 <div class="container-fluid pb-5">
 	<div class="row px-xl-5">
 		<div class="col-lg-5 mb-30">
-			<img class="ms-5" src="img/<?php echo $image ?>" alt="Image" />
+			<img class="ms-5" src="img/<?php echo $image ?>" alt="<?php echo $image ?>" />
 		</div>
 		<div class="col-lg-7 h-auto mb-30 px-5 d-flex justify-content-starts">
 			<div class="h-100 bg-white p-30">

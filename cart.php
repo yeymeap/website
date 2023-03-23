@@ -1,6 +1,8 @@
 <?php include 'config.php';
 $pdo = pdo_connect_mysql();
-session_start();
+if (session_id() == '' || !isset($_SESSION) || session_status() === PHP_SESSION_NONE) { //megnézi fut e már session
+	session_start(); // ha nem, indít egy sessiont
+}
 
 // If the user clicked the add to cart button on the product page we can check for the form data
 if (isset($_POST['product_id'], $_POST['quantity']) && is_numeric($_POST['product_id']) && is_numeric($_POST['quantity'])) {
@@ -57,9 +59,9 @@ if (isset($_POST['update']) && isset($_SESSION['cart'])) {
 }
 
 // Send the user to the place order page if they click the Place Order button, also the cart should not be empty
-if (isset($_POST['placeorder']) && isset($_SESSION['cart']) && !empty($_SESSION['cart'])) {
-	header('Location: placeorder.php');
-	unset($_SESSION['cart']);
+if (isset($_POST['checkout']) && isset($_SESSION['cart']) && !empty($_SESSION['cart'])) {
+	header('Location: checkout.php');
+	//unset($_SESSION['cart']);
 	exit;
 }
 
@@ -101,6 +103,7 @@ include 'topnav.php';
 <!-- Cart Start -->
 <div class="container fluid">
 	<h1 class="d-flex justify-content-center">Shopping Cart</h1><br>
+	<h1 class="section-title position-relative"></h1>
 	<form action="cart.php" method="post">
 		<div class="col-lg-12 d-flex justify-content-center">
 			<table class="mx-5 table table-white table-borderless text-center mb-5">
@@ -115,7 +118,7 @@ include 'topnav.php';
 				<tbody>
 					<?php if (empty($products)) : ?>
 						<tr>
-							<td colspan="5" style="text-align:center">You have no products added in your Shopping Cart</td>
+							<td colspan="5" style="text-align:center; padding-left:150px">You have no products added in your Shopping Cart</td>
 						</tr>
 					<?php else : ?>
 						<?php foreach ($products as $product) : ?>
@@ -147,15 +150,16 @@ include 'topnav.php';
 					<?php endif; ?>
 				</tbody>
 			</table>
-			<div class="my-2 mx-2">
-				<span class="text-black">Subtotal</span>
-				<i class="text-black d-flex justify-content-center" style="margin-top: 30px;"><?= $subtotal ?>&euro;</i>
+			<div class="mx-2">
+				<h3 class="text-black">Subtotal</h3>
+				<i class="text-black d-flex justify-content-center" style="margin-top: 30px;"><?= $subtotal;
+																								$_SESSION['subtotal'] = $subtotal; ?>&euro;</i>
 			</div>
 		</div>
-		<div class="d-flex justify-content-center">
-			<div class="">
-				<input class='btn btn-black my-2' type="submit" value="Update" name="update">
-				<a href="placeorder.php"><input class='btn btn-black' type="submit" value="Place Order" name="placeorder"></a>
+		<div class='d-flex justify-content-center'>
+			<div>
+				<input class='btn btn-black my-2' type='submit' value='Update Quantity' name='update'>
+				<a href='checkout.php'><input class='btn btn-black' type='submit' value='Checkout' name='checkout'></a>
 			</div>
 		</div>
 	</form>
