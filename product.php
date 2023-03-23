@@ -1,18 +1,20 @@
 <?php
 include 'config.php';
-include 'comment.php';
 include 'topnav.php';
+include 'comment.php';
 ?>
 
 
 <!-- Termék kezdet -->
 <?php
 $pid = $_GET["id"];
-$sql = "SELECT id, detail, manufacturer, name, image, price, description FROM products WHERE id=$pid";
-$result = mysqli_query($link, $sql);
+$stmt = $link->prepare("SELECT id, detail, manufacturer, name, image, price, description FROM products WHERE id = ?");
+$stmt->bind_param("i", $pid);
+$stmt->execute();
+$result = $stmt->get_result();
 //Adatok kiolvasása adatbázisból
 if (mysqli_num_rows($result) > 0) {
-	$row = mysqli_fetch_assoc($result);
+	$product = $row = mysqli_fetch_assoc($result);
 	//Adatok megjelenítése
 	$description = $row["description"];
 	$detail = $row["detail"];
@@ -21,7 +23,7 @@ if (mysqli_num_rows($result) > 0) {
 	$image = $row["image"];
 	$price = $row["price"];
 } else {
-	echo "nem jo";
+	exit('Product does not exist!');
 }
 ?>
 
@@ -41,18 +43,19 @@ if (mysqli_num_rows($result) > 0) {
 <div class="container-fluid pb-5">
 	<div class="row px-xl-5">
 		<div class="col-lg-5 mb-30">
-			<img class="ms-5" src="img/<?php echo $image ?>" alt="Image" />
+			<img class="ms-5" src="img/<?php echo $image ?>" alt="<?php echo $image ?>" />
 		</div>
 		<div class="col-lg-7 h-auto mb-30 px-5 d-flex justify-content-starts">
 			<div class="h-100 bg-white p-30">
 				<h3><?php echo "$manufacturer $name" ?></h3>
 				<h3 class="font-weight-semi-bold mb-4"><?php echo $price ?>&euro;</h3>
-				<div class="d-flex align-items-center mb-4 pt-2">
-					<button class="btn btn-black px-3">
-						<i class="fa fa-shopping-cart me-1"></i> Add To
-						Cart
-					</button>
-				</div>
+				<form action="cart.php" method="POST">
+					<div class="d-inline-flex">
+						<input class="form-control bg-white border-1 text-center" style="width: 130px;" type="number" name="quantity" value="1" min="1" placeholder="Quantity" required>
+						<input type="hidden" name="product_id" value="<?= $_GET['id'] ?>">
+						<input class="btn btn-black mx-3" type="submit" value="Add to cart">
+					</div>
+				</form>
 			</div>
 		</div>
 	</div>
@@ -95,16 +98,19 @@ if (mysqli_num_rows($result) > 0) {
 							</div>";
 							} else {
 								echo "<div class='col-md-6'>
-							<h4 style='text-align:center'>Log in or register to leave a comment!</h4>
+							<h4 class='text-gray-dark' style='text-align:center'><a href='sign-in.php'>Log in</a> or <a href='sign-up.php'>register</a> to leave a comment!</h4>
 							</div>";
 							} ?>
 							<div class="col-md-6">
 								<h4 style='text-align:center' class="mb-4">
 									<?php
-									$sql = "SELECT COUNT(*) AS comnum FROM comments WHERE pid=$pid";
-									$result = mysqli_query($link, $sql);
+									$stmt = $link->prepare("SELECT COUNT(*) AS comnum FROM comments WHERE pid = ?");
+									$stmt->bind_param("s", $pid);
+									$stmt->execute();
+									$result = $stmt->get_result();
 									$comnum = mysqli_fetch_assoc($result)['comnum'];
-									echo "$comnum comments for: $manufacturer $name"; ?>
+									echo "$comnum comments for: $manufacturer $name";
+									$stmt->close(); ?>
 								</h4>
 								<div style="padding-top: 26px;">
 									<?php getComments($link); ?>

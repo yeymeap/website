@@ -1,5 +1,5 @@
 <?php
-include 'configsuli.php';
+include 'config.php';
 
 //adatok manuális feltöltése az adatbázisba
 //először megadjuk, hogy melyik helyekre töltünk fel, aztán megadjuk az adatokat(values) 

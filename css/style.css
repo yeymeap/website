@@ -11413,6 +11413,7 @@ button.bg-success:focus {
 }
 
 .comment-box{
+  position: relative;
   width: 670px;
   padding: 20px;
   margin-top: 5px;
@@ -11423,4 +11424,30 @@ button.bg-success:focus {
   word-wrap: break-word;
   resize: none;
   outline: none;
+}
+
+.delete-comment{
+position: absolute;
+top: 5px;
+right: 10px;
+}
+
+.delete-comment button{
+  width: 40px;
+  height: 30px;
+}
+
+#filter_container {
+  background: #FFFFFF none repeat scroll 0 0;
+  border: 1px solid #aaa;
+  display: table;
+  font-size: 95%;
+  padding: 10px;
+  width: auto;
+  top: 0;
+  margin-left: auto;
+}
+
+.custom-control-label{
+  margin-left: 5px;
 }

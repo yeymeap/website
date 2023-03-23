@@ -1,4 +1,8 @@
-<?php include 'topnav.php'; ?>
+<?php
+include 'config.php';
+pdo_connect_mysql();
+include 'topnav.php';
+?>
 
 <!-- Breadrumb kezdete -->
 <div class="container-fluid">
@@ -64,7 +68,7 @@
         </div>
         <div class="col-6">
             <div class="d-flex justify-content-center py-5 ps-5 mb-30">
-                <a title="Redirect to amplifiers" href="amplifiers-en.html"><img class="ms-5" src="img/lamp-4.png" alt="Image"></a>
+                <a title="Redirect to amplifiers" href="amplifiers.php"><img class="ms-5" src="img/lamp-4.png" alt="Image"></a>
             </div>
         </div>
     </div>
@@ -75,7 +79,7 @@
         </div>
         <div class="col-6">
             <div class="d-flex justify-content-center py-5 ps-5 mb-30">
-                <a title="Redirect to this amplifier's page" href="amplifiers-en.html"><img class="ms-5" src="img/tamp-1.png" alt="Image"></a>
+                <a title="Redirect to this amplifier's page" href="product.php?id=116"><img class="ms-5" src="img/tamp-1.png" alt="Image"></a>
             </div>
         </div>
     </div>
@@ -86,7 +90,7 @@
         </div>
         <div class="col-6">
             <div class="d-flex justify-content-center py-5 ps-5 mb-30">
-                <a title="Redirect to this amplifier's page" href="amplifiers-en.html"><img class="ms-5" src="img/mamp-1.png" alt="Image"></a>
+                <a title="Redirect to this amplifier's page" href="product.php?id=126"><img class="ms-5" src="img/mamp-1.png" alt="Image"></a>
             </div>
         </div>
     </div>
@@ -97,7 +101,7 @@
         </div>
         <div class="col-6">
             <div class="d-flex justify-content-center py-5 ps-5 mb-30">
-                <a title="Redirect to this amplifier's page" href="amplifiers-en.html"><img class="ms-5" src="img/lamp-5.png" alt="Image"></a>
+                <a title="Redirect to this amplifier's page" href="product.php?id=123"><img class="ms-5" src="img/lamp-5.png" alt="Image"></a>
             </div>
         </div>
     </div>
@@ -108,7 +112,7 @@
         </div>
         <div class="col-6">
             <div class="d-flex justify-content-center py-5 ps-5 mb-30">
-                <a title="Redirect to this amplifier's page" href="amplifiers-en.html"><img class="ms-5" src="img/bamp-9.png" alt="Image"></a>
+                <a title="Redirect to this amplifier's page" href="product.php?id=108"><img class="ms-5" src="img/bamp-9.png" alt="Image"></a>
             </div>
         </div>
     </div>

@@ -33,7 +33,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Adatatok ellenőrzése
     if (empty($email_err) && empty($password_err)) {
         // Adatbázisból kiválasztás
-        $sql = "SELECT id, email, password FROM users WHERE email = ?";
+        $sql = "SELECT id, email, password, isadmin FROM users WHERE email = ?";
 
         if ($stmt = mysqli_prepare($link, $sql)) {
             // Változók ideiglenes mentése statementbe
@@ -50,7 +50,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 // Megnézi, hogy létezik e az email az adatbázisban, ha igen, ellenőrzi, hogy helyes e a hozzátartozó jelszó
                 if (mysqli_stmt_num_rows($stmt) == 1) {
                     // Változók tárolása
-                    mysqli_stmt_bind_result($stmt, $id, $email, $hashed_password);
+                    mysqli_stmt_bind_result($stmt, $id, $email, $hashed_password, $isadmin);
                     if (mysqli_stmt_fetch($stmt)) {
                         if (password_verify($password, $hashed_password)) {
                             // Helyes jelszó esetén új session létrehozása
@@ -60,6 +60,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             $_SESSION["loggedin"] = true;
                             $_SESSION["id"] = $id;
                             $_SESSION["email"] = $email;
+                            $_SESSION["isadmin"] = $isadmin;
 
                             // Átirányítás üdvözlőlapra
                             header("location: welcome.php");

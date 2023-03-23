@@ -3,17 +3,18 @@ if (session_id() == '' || !isset($_SESSION) || session_status() === PHP_SESSION_
     session_start(); // ha nem, indít egy sessiont
 }
 
-if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) { // megnézi, hogy a felhasználó már be e jelentkezett, ha nem, átirányítja a bejelentkezési oldalra
+if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
     $href1 = 'sign-in.php';                                         // változók megnevezése, különböző kimenetelekkel
     $href2 = 'sign-up.php';
-    $login = 'Bejeletkezés';
+    $login = 'Bejelentkezés';
     $register = 'Regisztráció';
 } else {
-    $href1 = '#';
+    $href1 = 'profile.php';
     $href2 = 'logout.php';
     $login = htmlspecialchars($_SESSION["email"]);
     $register = 'Kijelentkezés';
 }
+$num_items_in_cart = isset($_SESSION['cart']) ? count($_SESSION['cart']) : 0;
 ?>
 
 <!DOCTYPE html>
@@ -21,10 +22,10 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) { // megné
 
 <head>
     <meta charset="utf-8">
-    <title>GitárShop - Online Gitárbolt</title>
+    <title>GitárShop - Online Guitar Store</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="HangszerShop" name="keywords">
-    <meta content="Online Gitárbolt" name="description">
+    <meta content="Online Guitar Store" name="description">
 
     <!-- //Külsőleg használt könyvtárak -->
 
@@ -43,9 +44,9 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) { // megné
 
     <!-- Animáció könyvtárak -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
-    <link href="../lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
-    <!-- JavaScript könyvtárak -->
+    <!-- JavaScript -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
     <script src="../lib/easing/easing.min.js"></script>
@@ -54,7 +55,20 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) { // megné
     <script src="../mail/contact.js"></script>
     <script src="../js/main.js"></script>
     <script src="../js/nyelvvaltoen.js"></script>
-    <!-- Külsőleg használt könyvtárak\\ -->
+    <script>
+        if (window.history.replaceState) {
+            window.history.replaceState(null, null, window.location.href);
+        }
+    </script>
+    <script>
+        function backButton() {
+
+            window.history.back();
+
+        }
+    </script>
+
+    <!-- Külsőleg használt könyvtárak vége\\ -->
 </head>
 
 <body>
@@ -65,7 +79,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) { // megné
             <div class="col-lg-6 text-center text-lg-end">
                 <div class="d-inline-flex align-items-center">
                     <div class="dropdown-center mx-1">
-                        <button type="button" class="btn btn-sm btn-black dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Saját Fiók</button>
+                        <button type="button" class="btn btn-sm btn-black dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Fiókom</button>
                         <ul class="dropdown-menu dropdown-menu-end min-width-account">
                             <li><a class="dropdown-item text-decoration-none" href="<?php echo $href1; ?>"><?php echo $login; ?></a></li>
                             <li><a class="dropdown-item text-decoration-none" href="<?php echo $href2; ?>"><?php echo $register; ?></a></li>
@@ -90,7 +104,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) { // megné
                 </a>
             </div>
             <div class="col-lg-8 col-6 text-end">
-                <p class="m-0 text-dark">Ügyfélszolgálat</p>
+                <p class="m-0 text-dark">Ügyfélszolgáltatás</p>
                 <h5 class="m-0 tadaer">+421 949 131 222</h5>
             </div>
         </div>
@@ -115,14 +129,15 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) { // megné
                             <a href="bass.php" class="nav-item nav-link text-decoration-none">Basszusgitárok</a>
                             <a href="amplifiers.php" class="nav-item nav-link text-decoration-none">Erősítők</a>
                             <a href="misc.php" class="nav-item nav-link text-decoration-none">Kiegészítők</a>
-                        </div>
-                        <div class="navbar-nav py-0">
                             <a href="guides.php" class="nav-item nav-link text-decoration-none">Útmutató kezdőknek</a>
                             <a href="contact.php" class="nav-item nav-link text-decoration-none">Kapcsolatfelvétel</a>
                         </div>
                         <div class="navbar-nav ms-auto py-0 d-none d-lg-block">
                             <a href="cart.php" class="btn px-0 ms-3 text-decoration-none">
-                                <i class="fas fa-shopping-cart text-white"></i>
+                                <i class="fas fa-shopping-cart text-white"></i><span class='mx-1 text-white'><?php if ($num_items_in_cart != 0) {
+                                                                                                                    echo $num_items_in_cart;
+                                                                                                                } else {
+                                                                                                                }  ?></span>
                                 <span class="badge text-light border border-white rounded-circle"></span>
                             </a>
                         </div>

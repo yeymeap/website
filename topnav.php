@@ -14,6 +14,8 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
     $login = htmlspecialchars($_SESSION["email"]);
     $register = 'Log out';
 }
+$num_items_in_cart = isset($_SESSION['cart']) ? count($_SESSION['cart']) : 0;
+
 ?>
 
 <!DOCTYPE html>
@@ -49,7 +51,6 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="mail/jqBootstrapValidation.min.js"></script>
     <script src="mail/contact.js"></script>
     <script src="js/main.js"></script>
@@ -67,11 +68,13 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
         }
     </script>
 
+
     <!-- Külsőleg használt könyvtárak vége\\ -->
 </head>
 
 <body>
     <!-- Fejléc kezdet -->
+
     <div class="container-fluid">
         <div class="row bg-light py-1 px-xl-5">
             <div class="col-lg-6 d-none d-lg-block"></div>
@@ -128,14 +131,15 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
                             <a href="bass.php" class="nav-item nav-link text-decoration-none">Shop Bass Guitars</a>
                             <a href="amplifiers.php" class="nav-item nav-link text-decoration-none">Shop Amplifiers</a>
                             <a href="misc.php" class="nav-item nav-link text-decoration-none">Shop Misc</a>
-                        </div>
-                        <div class="navbar-nav py-0">
                             <a href="guides.php" class="nav-item nav-link text-decoration-none">Beginner's Guides</a>
                             <a href="contact.php" class="nav-item nav-link text-decoration-none">Contact</a>
                         </div>
                         <div class="navbar-nav ms-auto py-0 d-none d-lg-block">
                             <a href="cart.php" class="btn px-0 ms-3 text-decoration-none">
-                                <i class="fas fa-shopping-cart text-white"></i>
+                                <i class="fas fa-shopping-cart text-white"></i><span class='mx-1 text-white'><?php if ($num_items_in_cart != 0) {
+                                                                                                                    echo $num_items_in_cart;
+                                                                                                                } else {
+                                                                                                                }  ?></span>
                                 <span class="badge text-light border border-white rounded-circle"></span>
                             </a>
                         </div>

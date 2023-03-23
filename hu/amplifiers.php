@@ -9,8 +9,8 @@ include 'topnav.php';
 	<div class="row px-xl-5">
 		<div class="col-12">
 			<nav class="breadcrumb bg-white mb-30">
-				<a class="breadcrumb-item text-black" href="index.php">Home</a>
-				<span class="breadcrumb-item active">Amplifiers</span>
+				<a class="breadcrumb-item text-black" href="index.php">Főoldal</a>
+				<span class="breadcrumb-item active">Erősítők</span>
 			</nav>
 		</div>
 	</div>
@@ -23,18 +23,18 @@ include 'topnav.php';
 		<!-- Shop Sidebar Start -->
 		<div class="col-lg-2 col-md-2">
 			<div id="toc_container">
-				<p class="toc_title">Contents</p>
+				<p class="toc_title">Tartalom</p>
 				<ul class="toc_list">
 					<li>
-						<a href="#transistor">Transistor Amplifiers</a>
+						<a href="#transistor">Transzisztoros erősítők</a>
 					</li>
 					<li>
-						<a href="#modelling">Modelling Amplifiers</a>
+						<a href="#modelling">Modellező erősítők</a>
 					</li>
 					<li>
-						<a href="#electron">Electron Tube Amplifiers</a>
+						<a href="#electron">Elektronlámpás erősítők</a>
 					</li>
-					<li><a href="#bamp">Bass Amplifiers</a></li>
+					<li><a href="#bamp">Basszusgitár erősítők</a></li>
 				</ul>
 			</div>
 		</div>
@@ -42,7 +42,7 @@ include 'topnav.php';
 			<div class='row pb-3'>
 				<div class='col-12 pb-1'>
 					<h2 id='transistor' class='section-title position-relative mb-4 text-black'>
-						<span class='bg-white pe-3'>TRANSISTOR AMPLIFIERS</span>
+						<span class='bg-white pe-3'>TRANSZISZTOROS ERŐSÍTŐK</span>
 					</h2>
 				</div>
 				<?php $sql = "SELECT id, manufacturer, name, price, image FROM products WHERE id BETWEEN 116 and 120";
@@ -57,7 +57,7 @@ include 'topnav.php';
 					echo "<div class='col-lg-4 col-md-6 col-sm-6 pb-1'>
 					<div class='product-item bg-light mb-4'>
 					<div class='product-img position-relative overflow-hidden'>
-					<a href='product.php?id=$id'><img class='img-fluid w-100' src='img/$image' /></a>
+					<a href='product.php?id=$id'><img class='img-fluid w-100' src='../img/$image' /></a>
 					</div>
 					<div class='text-center py-4'>
 					<a class='h6 text-decoration-none text-truncate text-black' href='product.php?id=$id'>$manufacturer $name</a>
@@ -74,7 +74,7 @@ include 'topnav.php';
 			<div class='row pb-3'>
 				<div class='col-12 pb-1'>
 					<h2 id='modelling' class='section-title position-relative mb-4 text-black'>
-						<span class='bg-white pe-3'>MODELLING AMPLIFIERS</span>
+						<span class='bg-white pe-3'>MODELLEZŐ ERŐSÍTŐK</span>
 					</h2>
 				</div>
 				<?php $sql = "SELECT id, manufacturer, name, price, image FROM products WHERE id BETWEEN 126 and 130";
@@ -89,7 +89,7 @@ include 'topnav.php';
 					echo "<div class='col-lg-4 col-md-6 col-sm-6 pb-1'>
 					<div class='product-item bg-light mb-4'>
 					<div class='product-img position-relative overflow-hidden'>
-					<a href='product.php?id=$id'><img class='img-fluid w-100' src='img/$image' /></a>
+					<a href='product.php?id=$id'><img class='img-fluid w-100' src='../img/$image' /></a>
 					</div>
 					<div class='text-center py-4'>
 					<a class='h6 text-decoration-none text-truncate text-black' href='product.php?id=$id'>$manufacturer $name</a>
@@ -106,7 +106,7 @@ include 'topnav.php';
 			<div class='row pb-3'>
 				<div class='col-12 pb-1'>
 					<h2 id='electron' class='section-title position-relative mb-4 text-black'>
-						<span class='bg-white pe-3'>ELECTRON TUBE AMPLIFIERS</span>
+						<span class='bg-white pe-3'>ELEKTRONLÁMPÁS ERŐSÍTŐK</span>
 					</h2>
 				</div>
 				<?php $sql = "SELECT id, manufacturer, name, price, image FROM products WHERE id BETWEEN 121 and 125";
@@ -121,7 +121,7 @@ include 'topnav.php';
 					echo "<div class='col-lg-4 col-md-6 col-sm-6 pb-1'>
 					<div class='product-item bg-light mb-4'>
 					<div class='product-img position-relative overflow-hidden'>
-					<a href='product.php?id=$id'><img class='img-fluid w-100' src='img/$image' /></a>
+					<a href='product.php?id=$id'><img class='img-fluid w-100' src='../img/$image' /></a>
 					</div>
 					<div class='text-center py-4'>
 					<a class='h6 text-decoration-none text-truncate text-black' href='product.php?id=$id'>$manufacturer $name</a>
@@ -138,7 +138,7 @@ include 'topnav.php';
 			<div class='row pb-3'>
 				<div class='col-12 pb-1'>
 					<h2 id='bamp' class='section-title position-relative mb-4 text-black'>
-						<span class='bg-white pe-3'>BASS AMPLIFIERS</span>
+						<span class='bg-white pe-3'>BASSZUSGITÁR ERŐSÍTŐK</span>
 					</h2>
 				</div>
 				<?php $sql = "SELECT id, manufacturer, name, price, image FROM products WHERE id BETWEEN 100 and 115";
@@ -153,7 +153,7 @@ include 'topnav.php';
 					echo "<div class='col-lg-4 col-md-6 col-sm-6 pb-1'>
 					<div class='product-item bg-light mb-4'>
 					<div class='product-img position-relative overflow-hidden'>
-					<a href='product.php?id=$id'><img class='img-fluid w-100' src='img/$image' /></a>
+					<a href='product.php?id=$id'><img class='img-fluid w-100' src='../img/$image' /></a>
 					</div>
 					<div class='text-center py-4'>
 					<a class='h6 text-decoration-none text-truncate text-black' href='product.php?id=$id'>$manufacturer $name</a>

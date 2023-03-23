@@ -62,7 +62,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             $_SESSION["email"] = $email;
 
                             // Átirányítás üdvözlőlapra
-                            header("location: welcome-hu.php");
+                            header("location: welcome.php");
                         } else {
                             // Helytelen jelszó
                             $login_err = "Helytelen email vagy jelszó.";
@@ -74,7 +74,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 }
             } else {
                 //Egyéb esetben, általános hibaüzenet
-                echo "Hoppá! Valami nem sikerült. Kérlek próbáld újra.";
+                echo "Hoppá! Valami félresikerült. Kérlek próbáld újra később.";
             }
 
             // Statement bezárása
@@ -87,14 +87,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 ?>
 
-<?php include 'topnav-hu.php'; ?>
+<?php include 'topnav.php'; ?>
 
 <!-- Breadrumb kezdete -->
 <div class="container-fluid">
     <div class="row px-xl-5">
         <div class="col-12">
             <nav class="breadcrumb bg-white mb-30">
-                <a class="breadcrumb-item text-dark" href="index-en.php">Főoldal</a>
+                <a class="breadcrumb-item text-dark" href="index.php">Főoldal</a>
                 <span class="breadcrumb-item active">Bejelentkezés</span>
             </nav>
         </div>
@@ -106,7 +106,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <div class="container-fluid">
     <div class="col-12 text-center">
         <h2>Bejelentkezés</h2>
-        <p>Kérlek írd be a bejelentkezési adataidat.</p>
+        <p>Kérlek írd be a kért adatokat.</p>
 
         <?php
         if (!empty($login_err)) {
@@ -126,13 +126,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <span class="invalid-feedback"><?php echo $password_err; ?></span>
                 </div>
                 <div class="form-group mb-2 col-auto">
-                    <input type="submit" class="btn btn-black" value="Bejelentkezés">
+                    <input type="submit" class="btn btn-black" value="Login">
                 </div>
-                <p>Nincs még fiókod? <a href="sign-up-en.php" class="btn btn-black ms-2 text-decoration-none">Regisztrálj itt</a></p>
+                <p>Nincs még fiókod? <a href="sign-up.php" class="btn btn-black ms-2 text-decoration-none">Regisztrálj itt</a></p>
             </form>
         </div>
     </div>
 </div>
 <!-- Bejelentkezés vége -->
 
-<?php include 'footer-hu.php'; ?>
+<?php include 'footer.php'; ?>

@@ -24,7 +24,7 @@
                             <h5 class="text-white text-uppercase mb-2 ms-5">Follow Us</h5>
                             <div class="d-flex ms-5">
                                 <a class="btn btn-twitter btn-square me-2 text-decoration-none" href="https://twitter.com/yey_meap/" target="_blank"><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-facebook btn-square me-2 text-decoration-none" href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-facebook btn-square me-2 text-decoration-none" href="https://www.facebook.com/bence.botlo.5/" target="_blank"><i class="fab fa-facebook-f"></i></a>
                                 <a class="btn btn-instagram btn-square text-decoration-none" href="https://www.instagram.com/botlobence/" target="_blank"><i class="fab fa-instagram"></i></a>
                             </div>
                         </div>

@@ -72,3 +72,12 @@ todo:
 	✔ fix favicon
 
 	✔ fix button colors not updating? (ctrl+shift+s)
+
+	used webpages, libraries:
+		bootstrap
+		font awesome
+		google fonts
+		animate.css
+		w3schools
+	
+	later migrate to xampp
