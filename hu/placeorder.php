@@ -11,8 +11,8 @@ if (!isset($_SESSION['authenticate'])) {
     //echo "A checkout.php oldalról jöttél!";
     $_SESSION['authenticate'] = null;
     include 'topnav.php';
-    echo
-    "<div class='container-fluid'>
+    if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
+        echo "<div class='container-fluid'>
     <div class='col-12'>
         <div class='my-5'>
             <div class='h1 text-black d-flex justify-content-center'>A rendelésed leadtad</div><br>
@@ -21,5 +21,16 @@ if (!isset($_SESSION['authenticate'])) {
     </div>
 </div>
 </div>";
+    } else {
+        echo "<div class='container-fluid'>
+    <div class='col-12'>
+        <div class='my-5'>
+            <div class='h1 text-black d-flex justify-content-center'>A rendelésed leadtad, $login</div><br>
+            <div class='h2 text-black-50 d-flex justify-content-center'>Köszönjük, hogy tőlünk rendeltél, a rendelésed további részleteit email-ben küldjük!</div>
+        </div>
+    </div>
+</div>
+</div>";
+    }
     include 'footer.php';
 }
